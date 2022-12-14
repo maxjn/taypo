@@ -54,17 +54,9 @@
         <!-- Tags  Start -->
         <div>
             <h4 class="mb-3">Tags</h4>
-            <div>
-                <a class="btn-link rounded-4 d-inline-block py-2 px-3 bg-light-3 m-1" href="#">Agency</a>
-                <a class="btn-link rounded-4 d-inline-block py-2 px-3 bg-light-3 m-1" href="#">Web
-                    Design</a>
-                <a class="btn-link rounded-4 d-inline-block py-2 px-3 bg-light-3 m-1" href="#">Saas</a>
-                <a class="btn-link rounded-4 d-inline-block py-2 px-3 bg-light-3 m-1" href="#">Corporate</a>
-                <a class="btn-link rounded-4 d-inline-block py-2 px-3 bg-light-3 m-1" href="#">Creative</a>
-                <a class="btn-link rounded-4 d-inline-block py-2 px-3 bg-light-3 m-1" href="#">Software</a>
-                <a class="btn-link rounded-4 d-inline-block py-2 px-3 bg-light-3 m-1" href="#">Landing</a>
-                <a class="btn-link rounded-4 d-inline-block py-2 px-3 bg-light-3 m-1" href="#">Startup</a>
-            </div>
+            <?php
+            get_template_part('templates\single\tag\tags', null, ['show' => 'all']);
+            ?>
         </div>
         <!-- Tags  End -->
 
