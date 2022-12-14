@@ -910,15 +910,18 @@ Other
 .page-item.active .page-link {
   background-color: var(--primary);
 }
-.page-item a.page-link:hover {
+.page-item a:hover {
   color: var(--white) !important;
   background-color: var(--primary);
   border-color: var(--primary);
 }
-.link-title {
+.link-title,
+.page-item a,
+.page-item span {
   color: var(--text-dark);
   display: inline-block;
 }
+.page-item a,
 .link-title:hover {
   color: var(--primary);
 }

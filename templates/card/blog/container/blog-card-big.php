@@ -31,12 +31,17 @@ if (isset($args['query'])) { // if there was a $query->
 
                 <?php
                         endwhile;
+                        // *Pagination
+                        get_template_part('templates\archive\pagination');
                         ?>
             </div>
             <?php
                     if (!is_home()) {
                     ?>
         </div>
+        <?php // *Pagination
+                        get_template_part('templates\archive\pagination');
+                    ?>
     </div>
     <?php
                     }
@@ -80,11 +85,14 @@ if (isset($args['query'])) { // if there was a $query->
 
                 <?php
                         endwhile;
+                        // *Pagination
+                        get_template_part('templates\archive\pagination');
                         ?>
 
             </div>
             <?php if (!is_home()) { ?>
         </div>
+
     </div>
     <?php
                     }

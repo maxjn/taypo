@@ -23,14 +23,15 @@ $arg = [
     'hide_title_if_empty' => false,
 ];
 
-$categories = get_terms($arg);
+$taxonomies = get_terms($arg);
 
 
-foreach ($categories as $category) {
+foreach ($taxonomies as $taxonomy) {
 ?>
 <li class="mb-3">
-    <a class="btn-link d-flex justify-content-between align-items-center" href="#">
-        <?= $category->name   ?> <span class="small bg-light-2 p-2 rounded text-dark"><?= $category->count ?></span>
+    <a class="btn-link d-flex justify-content-between align-items-center"
+        href="<?= get_term_link($taxonomy->term_id) ?> ">
+        <?= $taxonomy->name   ?> <span class="small bg-light-2 p-2 rounded text-dark"><?= $taxonomy->count ?></span>
     </a>
 </li>
 <?php

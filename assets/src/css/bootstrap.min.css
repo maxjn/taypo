@@ -4418,7 +4418,8 @@ fieldset:disabled .btn {
   padding-left: 0;
   list-style: none;
 }
-.page-link {
+a,
+span {
   position: relative;
   display: block;
   padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
@@ -4432,45 +4433,55 @@ fieldset:disabled .btn {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .page-link {
+  a,
+  span {
     transition: none;
   }
 }
-.page-link:hover {
+a:hover,
+span:hover {
   z-index: 2;
   color: var(--bs-pagination-hover-color);
   background-color: var(--bs-pagination-hover-bg);
   border-color: var(--bs-pagination-hover-border-color);
 }
-.page-link:focus {
+a:focus,
+span:focus {
   z-index: 3;
   color: var(--bs-pagination-focus-color);
   background-color: var(--bs-pagination-focus-bg);
   outline: 0;
   box-shadow: var(--bs-pagination-focus-box-shadow);
 }
-.active > .page-link,
-.page-link.active {
+.active > a,
+a.active,
+.active > span,
+span.active {
   z-index: 3;
   color: var(--bs-pagination-active-color);
   background-color: var(--bs-pagination-active-bg);
   border-color: var(--bs-pagination-active-border-color);
 }
-.disabled > .page-link,
-.page-link.disabled {
+.disabled > a,
+a.disabled,
+.disabled > span,
+span.disabled {
   color: var(--bs-pagination-disabled-color);
   pointer-events: none;
   background-color: var(--bs-pagination-disabled-bg);
   border-color: var(--bs-pagination-disabled-border-color);
 }
-.page-item:not(:first-child) .page-link {
+.page-item:not(:first-child) a,
+.page-item:not(:first-child) span {
   margin-left: -1px;
 }
-.page-item:first-child .page-link {
+.page-item:first-child a,
+.page-item:first-child span {
   border-top-left-radius: var(--bs-pagination-border-radius);
   border-bottom-left-radius: var(--bs-pagination-border-radius);
 }
-.page-item:last-child .page-link {
+.page-item:last-child a,
+.page-item:last-child span {
   border-top-right-radius: var(--bs-pagination-border-radius);
   border-bottom-right-radius: var(--bs-pagination-border-radius);
 }
