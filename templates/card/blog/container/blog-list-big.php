@@ -1,5 +1,17 @@
-<!--blog start-->
+<?php
+// WP_Query arguments
+$args = array(
+    'post_type'              => array('post'), // use any for any kind of post type, custom post type slug for custom post type
+    'post_status'            => array('publish'), // Also support: pending, draft, auto-draft, future, private, inherit, trash, any
+    'posts_per_page'         => '3', // use -1 for all post
+    'order'                  => 'DESC', // Also support: ASC
+    'orderby'                => 'date', // Also support: none, rand, id, title, slug, modified, parent, menu_order, comment_count
+);
 
+// The Query
+$query = new WP_Query($args);
+?>
+<!--blog start-->
 <section>
     <div class="container">
         <div class="row align-items-end mb-6">
@@ -16,71 +28,67 @@
         </div>
         <!-- / .row -->
         <div class="row align-items-center">
+            <?php
+            if ($query->have_posts()) {
+                $item = 3
+            ?>
+            <?php
+
+
+
+                while ($query->have_posts()) : $query->the_post();
+
+
+                    if ($item % 3 == 0) {
+                        // *Firs Blog Post
+                ?>
             <div class="col-md-12 col-lg-5 mb-5 mb-lg-0">
                 <div class="card p-4 border-0 shadow rounded-4">
-                    <img class="rounded-4 img-fluid" src="images/blog/01.jpg" alt="Image">
-                    <div class="card-body p-0 pt-4">
-                        <div>
-                            <div class="d-inline-block bg-light text-center px-2 py-1 rounded me-2">
-                                <i class="bi bi-calendar3 text-dark me-1"></i> October 30, 2022
-                            </div>
-                            <a class="d-inline-block btn-link" href="#">Business</a>
-                        </div>
-                        <h2 class="h5 my-3">
-                            <a class="link-title" href="blog-single.html">Create Stunning Websites Like a Pro With
-                                Taypo</a>
-                        </h2>
-                        <p class="mb-0">Highly at nisi nam vestibulum ut eget vitae sed. Potenti aliquam feugiat proin
-                            facilisi. ac nunc always made uniquely calibrated.</p>
-                    </div>
+                    <?php
+                                get_template_part('templates\card\blog\content\blog-card-thumbnail');
+                                get_template_part('templates\card\blog\content\blog-card-body');
+                                ?>
                 </div>
             </div>
+            <?php
+                    } else {
+                        // *List Blog Posts
+                        $class = "mb-4";
+                        if ($item % 2 == 0) {
+                        ?>
             <div class="col-md-12 col-lg-7 mb-5 mb-lg-0">
-                <div class="card p-4 border-0 shadow rounded-4">
+                <?php
+                        }
+                            ?>
+
+                <div class="card p-4 border-0 shadow rounded-4   <?php
+                                                                                if ($item % 2 == 0) {
+                                                                                    echo $class;
+                                                                                }
+                                                                                ?>">
                     <div class="row">
                         <div class="col-md-5">
-                            <img class="rounded-4 img-fluid h-100" src="images/blog/02.jpg" alt="Image">
+                            <?php
+                                        get_template_part('templates\card\blog\content\blog-card-thumbnail', null, ['class' => 'h-100']);
+                                        ?>
                         </div>
                         <div class="col-md-7">
-                            <div class="card-body ps-0">
-                                <div>
-                                    <div class="d-inline-block bg-light text-center px-2 py-1 rounded me-2">
-                                        <i class="bi bi-calendar3 text-dark me-1"></i> October 30, 2022
-                                    </div>
-                                    <a class="d-inline-block btn-link" href="#">Sass</a>
-                                </div>
-                                <h2 class="h5 my-3">
-                                    <a class="link-title" href="blog-single.html">10 Simple Practices That Will Help You
-                                        Get Better</a>
-                                </h2>
-                                <p class="mb-0">Highly at nisi nam vestibulum ut eget vitae always made uniquely</p>
-                            </div>
+                            <?php
+                                        get_template_part('templates\card\blog\content\blog-card-body');
+                                        ?>
                         </div>
                     </div>
                 </div>
-                <div class="card p-4 border-0 shadow rounded-4 mt-4">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img class="rounded-4 img-fluid h-100" src="images/blog/03.jpg" alt="Image">
-                        </div>
-                        <div class="col-md-7">
-                            <div class="card-body ps-0">
-                                <div>
-                                    <div class="d-inline-block bg-light text-center px-2 py-1 rounded me-2">
-                                        <i class="bi bi-calendar3 text-dark me-1"></i> October 30, 2022
-                                    </div>
-                                    <a class="d-inline-block btn-link" href="#">Sass</a>
-                                </div>
-                                <h2 class="h5 my-3">
-                                    <a class="link-title" href="blog-single.html">Made World-Class Design With Taypo
-                                        products</a>
-                                </h2>
-                                <p class="mb-0">Highly at nisi nam vestibulum ut eget vitae always made uniquely</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <?php
+                            if ($item == 1) {
+                            ?>
+            </div> <?php
+                                }
+                            }
+                            $item--;
+                        endwhile;
+                    }
+                                    ?>
         </div>
     </div>
 </section>
