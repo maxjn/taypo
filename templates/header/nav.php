@@ -15,20 +15,10 @@ $header_menus   = wp_get_nav_menu_items($header_menu_id);
 <div class="col">
     <nav class="navbar navbar-expand-lg p-4 shadow bg-white">
         <!-- menu logo start -->
-        <a class="navbar-brand logo" href="index.html">
+        <a class="navbar-brand logo" href="<?= home_url() ?>">
             <?php
-            if (function_exists('the_custom_logo') && has_custom_logo()) {
+            get_template_part('templates\header\logo');
             ?>
-            <img class="img-fluid" src="<?= get_custom_logo(); ?>" alt="Logo">
-            <?php
-
-            } else { ?>
-            <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/libraries/images/logo.png"
-                alt="Logo">
-            <?php
-            }
-            ?>
-
         </a>
         <!-- menu logo end -->
 
@@ -121,7 +111,7 @@ $header_menus   = wp_get_nav_menu_items($header_menu_id);
 
         <div class="d-flex align-items-center">
             <a class="login-btn btn-link" href="login.html">
-                <i class="bi bi-person me-2 fs-3 align-middle"></i>Login </a>
+                <i class="bi bi-person me-2 fs-3 align-middle"></i><?= esc_html_e('Login', 'taypo') ?> </a>
             <div class="right-menu ms-4">
                 <button class="navbar-toggler d-block border-0 p-3 bg-white shadow" type="button"
                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">

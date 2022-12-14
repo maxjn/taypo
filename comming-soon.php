@@ -48,11 +48,16 @@
                             </div>
                         </div>
                         <div class="col-lg-4 ms-auto">
-                            <a class="navbar-brand logo" href="index.html">
-                                <img class="img-fluid" src="images/logo.png" alt="">
+                            <!-- logo start -->
+                            <a class="navbar-brand logo" href="<?= home_url() ?>">
+                                <?php
+                                get_template_part('templates\header\logo');
+                                ?>
                             </a>
+                            <!-- logo end -->
                             <div class="mt-5">
-                                <h4 class="mb-4">Subscribe to get notified!</h4>
+                                <h4 class="mb-4"><?php esc_html_e('Subscribe to get notified!', 'taypo'); ?></h4>
+                                <!-- Subscribe form start -->
                                 <div class="subscribe-form">
                                     <form id="mc-form" class="group">
                                         <input value="" name="EMAIL" class="email form-control" id="mc-email"
@@ -61,6 +66,7 @@
                                             value="Subscribe Now" type="submit">
                                     </form>
                                 </div>
+                                <!-- Subscribe form end -->
                             </div>
                         </div>
                     </div>

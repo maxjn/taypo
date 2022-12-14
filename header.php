@@ -3,22 +3,9 @@
 
 <head>
 
-    <!-- meta tags -->
-    <meta charset="utf-8">
-    <meta name="keywords" content="bootstrap 5, premium, multipurpose, sass, scss, saas, rtl" />
-    <meta name="description" content="Multipurpose Bootstrap5 Template" />
-    <meta name="author" content="www.themeht.com" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Title -->
     <!-- inject css start -->
     <?php wp_head(); ?>
-
-
-
-
-
-
     <!-- inject css end -->
 
 </head>

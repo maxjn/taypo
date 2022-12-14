@@ -5,18 +5,9 @@
         <div class="row">
             <div class="col-md-12 col-lg-4 pe-lg-7">
                 <!-- Logo Start -->
-                <a class="footer-logo" href="index.html">
+                <a class="footer-logo" href="<?= home_url() ?>">
                     <?php
-                    if (function_exists('the_custom_logo') && has_custom_logo()) {
-                    ?>
-                    <img class="img-fluid" src="<?= get_custom_logo(); ?>" alt="Logo">
-                    <?php
-
-                    } else { ?>
-                    <img class="img-fluid" src="<?= get_template_directory_uri() ?>/assets/libraries/images/logo.png"
-                        alt="Logo">
-                    <?php
-                    }
+                    get_template_part('templates\header\logo');
                     ?>
                 </a>
                 <!-- Logo end -->
