@@ -46,10 +46,11 @@
                         </div>
                         <div class="col-lg-5">
                             <div>
-                                <h2>Oops! Page Not Found</h2>
-                                <h6 class="mb-5">You’re either misspelling the URL or requesting a page that's no longer
-                                    here.</h6>
-                                <a class="btn btn-primary" href="index.html">Back To Home Page</a>
+                                <h2><?php esc_html_e('Oops! Page Not Found'); ?></h2>
+                                <h6 class="mb-5"><?php esc_html_e('You’re either misspelling the URL or requesting a page that\'s no longer
+                                    here', 'taypo'); ?> .</h6>
+                                <a class="btn btn-primary"
+                                    href="<?= home_url(); ?>"><?php esc_html_e('Back To Home Page', 'taypo'); ?></a>
                             </div>
                         </div>
                     </div>

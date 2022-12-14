@@ -1,7 +1,7 @@
       <!-- single post meta start -->
       <div class="d-md-flex justify-content-between">
           <div class="d-flex align-items-center">
-              <h6 class="mb-0 me-4">Share It:</h6>
+              <h6 class="mb-0 me-4"><?= esc_html_e('Share It', 'taypo') ?>:</h6>
               <div class="social-icons">
                   <ul class="list-inline mb-0">
                       <li class="list-inline-item">

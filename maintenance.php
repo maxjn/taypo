@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from themeht.com/taypo/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Nov 2022 04:46:22 GMT -->
-
 <head>
     <!-- inject css start -->
     <?php
@@ -73,8 +71,5 @@
     <!-- inject js end -->
 
 </body>
-
-
-<!-- Mirrored from themeht.com/taypo/html/maintenance.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Nov 2022 04:52:50 GMT -->
 
 </html>
