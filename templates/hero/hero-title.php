@@ -1,3 +1,12 @@
+<?php
+$title = '';
+$page = '';
+if (is_archive()) {
+    $title = get_the_archive_title();
+    $page = 'Archive';
+}
+?>
+
 <!--hero section start-->
 
 <section class="position-relative overflow-hidden">
@@ -9,9 +18,9 @@
                     <ol class="breadcrumb justify-content-center bg-transparent p-0 m-0">
                         <li class="breadcrumb-item"><a class="text-dark" href="#">Home</a>
                         </li>
-                        <li class="breadcrumb-item">Pages</li>
+                        <li class="breadcrumb-item"><?= $page ?></li>
                         <li class="breadcrumb-item active text-primary" aria-current="page">
-                            <?= get_the_title() ?></li>
+                            <?= $title ?></li>
                     </ol>
                 </nav>
             </div>

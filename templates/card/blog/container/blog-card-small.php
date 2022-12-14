@@ -29,8 +29,14 @@ if (isset($args['query'])) { // if there was a $query->
                     ?>
 
         </div>
+
+        <?php // *Pagination
+                get_template_part('templates\archive\pagination');
+                ?>
+
     </div>
     <?php
+
     } else {
         get_template_part('templates\content-non');
     }
@@ -70,7 +76,13 @@ if (isset($args['query'])) { // if there was a $query->
                         ?>
 
         </div>
+
+        <?php // *Pagination
+                    get_template_part('templates\archive\pagination');
+                    ?>
+
     </div>
+
     <?php
         } else {
             get_template_part('templates\content-non');
