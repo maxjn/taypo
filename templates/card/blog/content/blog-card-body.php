@@ -41,6 +41,6 @@
     <?php
 
     ?>
-    <p class="mb-0"><?php the_excerpt(); ?></p>
+    <p class="mb-0"><?php the_excerpt() ?></p>
 </div>
 <!-- Body End -->

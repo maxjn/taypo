@@ -21,7 +21,8 @@ get_template_part('templates\hero\hero1')
     // The Query
     $query = new WP_Query($args);
 
-    get_template_part('templates\card\blog\container\blog-card-small', null, ['query' => $query])
+    get_template_part('templates\card\blog\container\blog-card-small', null, ['query' => $query]);
+    get_template_part('templates\card\blog\container\blog-list-big');
     ?>
 </div>
 
