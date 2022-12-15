@@ -13,10 +13,6 @@ if (is_active_sidebar('sidebar-1')) {
 
             //*Taxonomies
             get_template_part('templates\widget\container\taxonomy-list');
-
-            //*Recent Posts
-            get_template_part('templates\widget\container\recent-posts');
-
             //*Tags
             get_template_part('templates\widget\container\tags-list');
 
