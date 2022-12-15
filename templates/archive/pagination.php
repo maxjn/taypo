@@ -19,10 +19,12 @@ if (!is_front_page()) {
         <nav aria-label="...">
             <ul class="pagination justify-content-center">
                 <?php
-                    foreach ($links as $link) {
-                        echo '<li class="page-item">';
-                        echo $link;
-                        echo '</li>';
+                    if (isset($links) && is_array($links)) {
+                        foreach ($links as $link) {
+                            echo '<li class="page-item">';
+                            echo $link;
+                            echo '</li>';
+                        }
                     }
                     ?>
             </ul>
