@@ -38,7 +38,7 @@ class Sidebars
          * Actions
          */
         add_action('widgets_init', [$this, 'register_sidebars']);
-        add_action('widgets_init', [$this, 'register_clock_widget']);
+        add_action('widgets_init', [$this, 'register_recent_posts_widget']);
     }
 
     /**
@@ -85,8 +85,8 @@ class Sidebars
         );
     }
 
-    public function register_clock_widget()
+    public function register_recent_posts_widget()
     {
-        register_widget('TAYPO_THEME\Inc\Clock_Widget');
+        register_widget('TAYPO_THEME\Inc\Recent_Posts_Widget');
     }
 }
