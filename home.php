@@ -20,7 +20,7 @@ get_template_part('templates\hero\hero-title')
                 get_template_part('templates\card\blog\container\blog-card-big');
 
                 // *Sidebar
-                get_template_part('templates\sidebar\sidebar');
+                get_template_part('templates\sidebar\blog-sidebar');
 
                 ?>
 
