@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Recent Posts Widget
+ * Categoty List Widget
  *
  * @package Taypo
  */
@@ -12,7 +12,7 @@ use WP_Widget;
 
 use TAYPO_THEME\Inc\Traits\Singleton;
 
-class Recent_Posts_Widget extends WP_Widget
+class Category_List_Widget extends WP_Widget
 {
 
     use Singleton;
@@ -23,9 +23,9 @@ class Recent_Posts_Widget extends WP_Widget
     public function __construct()
     {
         parent::__construct(
-            'recent_posts', // Base ID
-            'Recent Posts (Taypo)', // Name
-            ['description' => __('Shows your 3 latest posts', 'taypo'),] // Args
+            'category_list', // Base ID
+            'Category List (Taypo)', // Name
+            ['description' => __('Shows your 8 top categories with the number of their posts', 'taypo'),] // Args
         );
     }
 
@@ -49,9 +49,12 @@ class Recent_Posts_Widget extends WP_Widget
         if (!empty($title)) {
             echo $before_title . $title . $after_title;
         }
-
-        get_template_part('templates\card\blog\container\blog-list-small'); //Widget Itself
-
+?>
+<ul class="list-unstyled">
+    <?php get_template_part('templates\widget\content\taxonomy-list-item'); //Widget Itself
+            ?>
+</ul>
+<?php
         echo $after_widget;
     }
 
@@ -70,7 +73,7 @@ class Recent_Posts_Widget extends WP_Widget
         } else {
             $title = '';
         }
-?>
+    ?>
 <p>
     <label for="<?php echo $this->get_field_name('title'); ?>"><?php _e('Title:', 'taypo'); ?></label>
     <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>"

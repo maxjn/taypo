@@ -43,12 +43,12 @@ $query = new WP_Query($args);
                         // *Firs Blog Post
                 ?>
             <div class="col-md-12 col-lg-5 mb-5 mb-lg-0">
-                <div class="card p-4 border-0 shadow rounded-4">
+                <article class="card p-4 border-0 shadow rounded-4">
                     <?php
                                 get_template_part('templates\card\blog\content\blog-card-thumbnail');
                                 get_template_part('templates\card\blog\content\blog-card-body');
                                 ?>
-                </div>
+                </article>
             </div>
             <?php
                     } else {
@@ -61,11 +61,11 @@ $query = new WP_Query($args);
                         }
                             ?>
 
-                <div class="card p-4 border-0 shadow rounded-4   <?php
-                                                                                if ($item % 2 == 0) {
-                                                                                    echo $class;
-                                                                                }
-                                                                                ?>">
+                <article class="card p-4 border-0 shadow rounded-4   <?php
+                                                                                    if ($item % 2 == 0) {
+                                                                                        echo $class;
+                                                                                    }
+                                                                                    ?>">
                     <div class="row">
                         <div class="col-md-5">
                             <?php
@@ -78,7 +78,7 @@ $query = new WP_Query($args);
                                         ?>
                         </div>
                     </div>
-                </div>
+                </article>
                 <?php
                             if ($item == 1) {
                             ?>

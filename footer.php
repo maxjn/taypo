@@ -6,10 +6,6 @@
 
             <?php
             dynamic_sidebar('sidebar-3');
-            get_template_part('templates\widget\container\about');
-            get_template_part('templates\widget\container\link-list');
-            get_template_part('templates\widget\container\link-list');
-            get_template_part('templates\widget\container\contact');
             ?>
 
 
