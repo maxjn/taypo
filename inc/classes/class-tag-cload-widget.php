@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Recent Posts Widget
+ * Tag_Cload Widget
  *
  * @package Taypo
  */
@@ -12,7 +12,7 @@ use WP_Widget;
 
 use TAYPO_THEME\Inc\Traits\Singleton;
 
-class Recent_Posts_Widget extends WP_Widget
+class Tag_Cload_Widget extends WP_Widget
 {
 
     use Singleton;
@@ -23,9 +23,9 @@ class Recent_Posts_Widget extends WP_Widget
     public function __construct()
     {
         parent::__construct(
-            'recent_posts', // Base ID
-            'Recent Posts (Taypo)', // Name
-            ['description' => __('Shows your 3 latest posts', 'taypo'),] // Args
+            'tag_cload', // Base ID
+            'Tag Cload (Taypo)', // Name
+            ['description' => __('Shows All the tags in your site', 'taypo'),] // Args
         );
     }
 
@@ -50,7 +50,7 @@ class Recent_Posts_Widget extends WP_Widget
             echo $before_title . $title . $after_title;
         }
 
-        get_template_part('templates\card\blog\container\blog-list-small'); //Widget Itself
+        get_template_part('templates\single\tag\tag-items', null, ['show' => 'all']); //widget itself
 
         echo $after_widget;
     }

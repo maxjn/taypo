@@ -14,14 +14,7 @@
 
             <?php
             dynamic_sidebar('sidebar-2');
-            get_template_part('templates\widget\container\about-2');
-            get_template_part('templates\widget\container\search-form');
-            get_template_part('templates\widget\container\contact-2');
-            get_template_part('templates\widget\container\social-media');
             ?>
-
-
-
 
         </div>
     </div>
