@@ -3,7 +3,7 @@
 /**
  * Header Navigation template.
  *
- * @package Aquila
+ * @package Taypo
  */
 
 $menu_class     = \Taypo_Theme\Inc\Menus::get_instance();
@@ -110,14 +110,47 @@ $header_menus   = wp_get_nav_menu_items($header_menu_id);
         <!-- Header Menu End -->
 
         <div class="d-flex align-items-center">
-            <a class="login-btn btn-link" href="login.html">
-                <i class="bi bi-person me-2 fs-3 align-middle"></i><?= esc_html_e('Login', 'taypo') ?> </a>
-            <div class="right-menu ms-4">
+
+            <?php
+            $login_url = taypo_get_template_page_url('templates/login.php');
+
+            if (!is_user_logged_in() && $login_url != null) { ?>
+            <!-- Login btn Start -->
+            <a class="login-btn btn-link" href="<?= $login_url ?>">
+                <i class="bi bi-person me-2 fs-3 align-middle"></i><?= esc_html_e('Login', 'taypo') ?>
+            </a>
+            <!-- Login btn End -->
+
+            <?php }
+
+            if (is_user_logged_in()) {
+                $user = wp_get_current_user();
+            ?>
+            <!-- User Info Start -->
+            <div class="d-flex align-items-center">
+                <div>
+                    <img alt="Image" src="<?= get_avatar_url($user->ID, ['size' => '40'])  ?>"
+                        class="img-fluid rounded-circle">
+                </div>
+                <div class="ms-3">
+                    <span class="font-w-6 text-dark mb-0"><?= $user->display_name ?></span>
+                    <small class="text-muted fst-italic"><?= implode(', ', $user->roles)  ?></small>
+                </div>
+            </div>
+            <!-- User Info End -->
+
+            <?php
+            }
+            ?>
+
+            <!-- toggle btn start -->
+            <div class=" right-menu ms-4">
                 <button class="navbar-toggler d-block border-0 p-3 bg-white shadow" type="button"
                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <i class="bi bi-list-nested fs-3 text-dark"></i>
                 </button>
             </div>
+            <!-- toggle btn end -->
         </div>
     </nav>
 </div>
