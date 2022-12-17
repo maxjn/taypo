@@ -35,7 +35,6 @@ class Menus
     {
         register_nav_menus([
             'taypo-header-menu' => esc_html__('Header Menu', 'taypo'),
-            'taypo-footer-menu' => esc_html__('Footer Menu', 'taypo'),
         ]);
     }
 

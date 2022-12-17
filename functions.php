@@ -17,7 +17,9 @@ if (!defined('TAYPO_DIR_URI')) {
 
 
 require_once TAYPO_DIR_PATH . '/inc/helpers/autoloader.php';
-//require_once TAYPO_DIR_PATH . '/inc/helpers/template-tags.php';
+require_once TAYPO_DIR_PATH . '/inc/helpers/template-tags.php';
+
+
 
 function taypo_get_theme_instance()
 {

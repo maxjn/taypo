@@ -14,7 +14,7 @@ if (isset($args['class'])) { // if there was a $class->
 
 ?>
 <!-- Thumbnail Start -->
-<a href="<?php the_permalink() ?>">
+<a href="<?php the_permalink(); ?>" class=" <?= $classes ?> ">
     <?php
     // check if the post or page has a Featured Image assigned to it.
     if (has_post_thumbnail()) {
@@ -22,8 +22,8 @@ if (isset($args['class'])) { // if there was a $class->
     } //end if
     else {
     ?>
-    <img class="<?= $classes ?>" src="<?= get_template_directory_uri() ?>\assets\libraries\images\blog\01.jpg"
-        alt="Image">
+    <img class="<?= $classes ?>" loading="lazy"
+        src="<?= get_template_directory_uri() ?>\assets\libraries\images\blog\01.jpg" alt="Image">
     <?php
     } //end else
     ?>
