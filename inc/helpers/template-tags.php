@@ -7,15 +7,27 @@
  */
 
 /**
- * Gets the thumbnail with Lazy Load.
- * Should be called in the WordPress Loop.
+ * Get the url of the page that uses the spisific template.
  *
- * @param int|null $post_id               Post ID.
- * @param string   $size                  The registered image size.
- * @param array    $additional_attributes Additional attributes.
+ * If 'null' was returned it means that the template has not been used.
  *
- * @return string
+ * @param string $TEMPLATE_NAME template name / relative path
+ *
+ * @return null|string
  */
+function taypo_get_template_page_url($TEMPLATE_NAME)
+{
+    $url = null;
+    $pages = get_pages(array(
+        'meta_key' => '_wp_page_template',
+        'meta_value' => $TEMPLATE_NAME
+    ));
+    if (isset($pages[0])) {
+        $url = get_page_link($pages[0]->ID);
+    }
+    return $url;
+}
+
 /**
  * Get the trimmed version of post excerpt.
  *
