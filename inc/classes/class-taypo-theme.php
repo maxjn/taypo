@@ -3,7 +3,7 @@
 /**
  * Bootstraps the Theme.
  *
- * @package Aquila
+ * @package Taypo
  */
 
 namespace TAYPO_THEME\Inc;
