@@ -1,4 +1,5 @@
 <!-- Template Name: Forgot Password
+Post Type: page
  -->
 <?php
 // Redirect to the home page if logged in

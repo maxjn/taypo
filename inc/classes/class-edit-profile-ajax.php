@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Sign Up Ajax Request
+ * Edit Progile Ajax Request
  *
  * @package Taypo
  */
@@ -10,7 +10,7 @@ namespace Taypo_THEME\Inc;
 
 use Taypo_THEME\Inc\Traits\Singleton;
 
-class SignUp_Ajax
+class Edit_Profile_Ajax
 {
 
     use Singleton;
@@ -26,18 +26,18 @@ class SignUp_Ajax
     {
 
         /**
-         * Sign Up script ajax hooks
+         * Edit Progile script ajax hooks
          */
-        add_action('wp_ajax_nopriv_signup_ajax', [$this, 'signup_ajax']);
+        add_action('wp_ajax_edit_profile_ajax', [$this, 'edit_profile_ajax']);
     }
 
     /**
-     * Sign Up script call back
+     * Edit Progile script call back
      *
      * @param bool $initial_request Initial Request( non-ajax request to Login Form ).
      *
      */
-    public function signup_ajax(bool $initial_request = false)
+    public function edit_profile_ajax(bool $initial_request = false)
     {
 
         if (!$initial_request && !check_ajax_referer('myajax_nonces', 'ajax_nonce', false)) {
@@ -53,43 +53,32 @@ class SignUp_Ajax
          * check if all fields are filled in
          * Perform AJAX request
          */
+        $user_id = get_current_user_id();
         $name = $_POST['name'];
         $lastName = $_POST['lastName'];
-        $userName = $_POST['userName'];
+        $displyName = $_POST['displayName'];
         $email = $_POST['email'];
-        $password = $_POST['password'];
-        $passwordRepeat = $_POST['passwordRepeat'];
         $error = false;
         $message = '';
         $user_data = array(
-            'user_login' => $userName,
+            'ID' => $user_id,
             'user_email' => $email,
             'first_name' => $name,
             'last_name' => $lastName,
-            'display_name' => $name . ' ' . $lastName,
-            'user_pass' => $password,
+            'display_name' => $displyName,
         );
 
-        if (empty($name) || empty($lastName) || empty($userName) || empty($password) || empty($email) || empty($passwordRepeat)) {
+        if (empty($name) || empty($lastName) || empty($displyName) || empty($email)) {
             $error = true;
             $message .= '<p>' . __('Please fill out the fields', 'Taypo') . '</p>';
-        } else if ($password != $passwordRepeat) {
-            $error = true;
-            $message .= '<p>' . __('Password and its conform are not the same.', 'Taypo') . '</p>';
         } else {
-            $user = wp_insert_user($user_data);
+            $user = wp_update_user($user_data);
             if (is_wp_error($user)) {
                 $message .= $user->get_error_message();
                 $error = true;
             } else {
-                $info = array(
-                    'user_login'    => $userName,
-                    'user_password' => $password,
-                    'remember'      => false
-                );
 
-                wp_signon($info);
-                $message .= '<p>' . __('Signed up & Logged in successfuly', 'Taypo') . '</p>';
+                $message .= '<p>' . __('Profile updated successfuly', 'Taypo') . '</p>';
             }
         }
 

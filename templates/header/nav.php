@@ -9,6 +9,10 @@
 $menu_class     = \Taypo_Theme\Inc\Menus::get_instance();
 $header_menu_id = $menu_class->get_menu_id('taypo-header-menu');
 $header_menus   = wp_get_nav_menu_items($header_menu_id);
+$login_url = taypo_get_template_page_url('templates/login.php');
+$profile_url = taypo_get_template_page_url('templates/profile.php');
+$edit_pass_url = taypo_get_template_page_url('templates/edit-password.php');
+
 
 ?>
 
@@ -112,8 +116,6 @@ $header_menus   = wp_get_nav_menu_items($header_menu_id);
         <div class="d-flex align-items-center">
 
             <?php
-            $login_url = taypo_get_template_page_url('templates/login.php');
-
             if (!is_user_logged_in() && $login_url != null) { ?>
             <!-- Login btn Start -->
             <a class="login-btn btn-link" href="<?= $login_url ?>">
@@ -143,9 +145,20 @@ $header_menus   = wp_get_nav_menu_items($header_menu_id);
                         </div>
                     </a>
                     <ul class="dropdown-menu">
+
+                        <?php
+                            if ($profile_url != null) { ?>
                         <li>
-                            <a href="" class="dropdown-item">Profile</a>
+                            <a href="<?= $profile_url ?>"
+                                class="dropdown-item"><?php esc_html_e('Profile', 'taypo') ?></a>
                         </li>
+                        <?php }
+                            if ($edit_pass_url != null) { ?>
+                        <li>
+                            <a href="<?= $edit_pass_url ?>"
+                                class="dropdown-item"><?php esc_html_e('Edit Password', 'taypo') ?></a>
+                        </li>
+                        <?php } ?>
                         <li> <a class="dropdown-item"
                                 href="<?php echo wp_logout_url(home_url()); ?>"><?php esc_html_e('LogOut', 'taypo') ?></a>
                         </li>
