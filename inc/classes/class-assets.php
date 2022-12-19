@@ -63,11 +63,14 @@ class Assets
         wp_register_script('countdown', TAYPO_DIST_JS_URI . '/jquery.countdown.min.js', array('odometer'), 1.1, true);
         wp_register_script('typer', TAYPO_DIST_JS_URI . '/typer.js', array('countdown'), 1.1, true);
         wp_register_script('theme-script', TAYPO_DIST_JS_URI . '/theme-script.js', array('typer'), 1.1, true);
+        wp_register_script('main', TAYPO_DIST_JS_URI . '/main.js',  array('theme-script'), 1.1, true);
 
-        wp_register_script('main', TAYPO_DIST_JS_URI . '/main.js', false, 1.1, true);
+        wp_localize_script('main', 'ajax_object', [
+            'ajax_url'    => admin_url('admin-ajax.php'),
+            'ajax_nonce' => wp_create_nonce('login_signup_nonces'),
+        ]);
 
         // Enqueue Scripts.
-        wp_enqueue_script('main');
         wp_enqueue_script('my-jquery');
         wp_enqueue_script('bootstrap');
         wp_enqueue_script('modernizr');
@@ -80,5 +83,6 @@ class Assets
         wp_enqueue_script('countdown');
         wp_enqueue_script('typer');
         wp_enqueue_script('theme-script');
+        wp_enqueue_script('main');
     }
 }

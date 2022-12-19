@@ -19,6 +19,9 @@ class TAYPO_THEME
         Assets::get_instance();
         Menus::get_instance();
         Sidebars::get_instance();
+        Btn_Ajax::get_instance();
+        Login_Ajax::get_instance();
+        SignUp_Ajax::get_instance();
         $this->setup_hooks();
     }
 
@@ -42,7 +45,7 @@ class TAYPO_THEME
          * Make theme available for translation.
          * Translations can be placed in the /languages/ directory.
          */
-        load_theme_textdomain('taypo', get_template_directory() . '/languages');
+        // load_theme_textdomain('taypo', get_template_directory() . '/languages');
 
         /**
          * Let WordPress manage the document title.

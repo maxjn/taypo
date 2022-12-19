@@ -5,36 +5,40 @@
   var checkLock = false;
   var defaults = {
     interval: 250,
-    force_process: false
+    force_process: false,
   };
   var $window = $(window);
 
   var $priorAppeared = [];
 
   function isAppeared() {
-    return $(this).is(':appeared');
+    return $(this).is(":appeared");
   }
 
   function isNotTriggered() {
-    return !$(this).data('_appear_triggered');
+    return !$(this).data("_appear_triggered");
   }
 
   function process() {
     checkLock = false;
 
-    for (var index = 0, selectorsLength = selectors.length; index < selectorsLength; index++) {
+    for (
+      var index = 0, selectorsLength = selectors.length;
+      index < selectorsLength;
+      index++
+    ) {
       var $appeared = $(selectors[index]).filter(isAppeared);
 
       $appeared
         .filter(isNotTriggered)
-        .data('_appear_triggered', true)
-        .trigger('appear', [$appeared]);
+        .data("_appear_triggered", true)
+        .trigger("appear", [$appeared]);
 
       if ($priorAppeared[index]) {
         var $disappeared = $priorAppeared[index].not($appeared);
         $disappeared
-          .data('_appear_triggered', false)
-          .trigger('disappear', [$disappeared]);
+          .data("_appear_triggered", false)
+          .trigger("disappear", [$disappeared]);
       }
       $priorAppeared[index] = $appeared;
     }
@@ -50,7 +54,7 @@
     return function (element) {
       var $element = $(element);
 
-      if (!$element.is(':visible')) {
+      if (!$element.is(":visible")) {
         return false;
       }
 
@@ -60,10 +64,14 @@
       var left = offset.left;
       var top = offset.top;
 
-      if (top + $element.height() >= windowTop &&
-          top - ($element.data('appear-top-offset') || 0) <= windowTop + $window.height() &&
-          left + $element.width() >= windowLeft &&
-          left - ($element.data('appear-left-offset') || 0) <= windowLeft + $window.width()) {
+      if (
+        top + $element.height() >= windowTop &&
+        top - ($element.data("appear-top-offset") || 0) <=
+          windowTop + $window.height() &&
+        left + $element.width() >= windowLeft &&
+        left - ($element.data("appear-left-offset") || 0) <=
+          windowLeft + $window.width()
+      ) {
         return true;
       }
       return false;
@@ -75,7 +83,7 @@
     appear: function (selector, options) {
       $.appear(this, options);
       return this;
-    }
+    },
   });
 
   $.extend({
@@ -109,12 +117,14 @@
         return true;
       }
       return false;
-    }
+    },
   });
-}(function () {
-  if (typeof module !== 'undefined') {
-    // Node
-    return require('jquery');
-  }
-  return jQuery;
-}()));
+})(
+  (function () {
+    if (typeof module !== "undefined") {
+      // Node
+      return require("jquery");
+    }
+    return jQuery;
+  })()
+);
