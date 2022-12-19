@@ -513,6 +513,13 @@ header .navbar-nav .nav-item {
   margin-left: 0.1em;
   vertical-align: middle;
 }
+.nav-link.dropdown-toggle.user::after {
+  content: "";
+}
+.nav-link.dropdown-toggle.user {
+  display: flex;
+  cursor: pointer;
+}
 
 @media (max-width: 991.98px) {
   /*Header*/

@@ -30,22 +30,24 @@ get_header();
                         <h2 class="mb-5">
                             <?php esc_html_e('Login Your Account', 'taypo') ?>
                         </h2>
-                        <form id="contact-form" method="post" action="https://themeht.com/taypo/html/php/contact.php">
+                        <div class="form-message"></div>
+                        <form id="login_form" method="post">
                             <div class="messages"></div>
                             <div class="form-group">
-                                <input id="form_username" type="text" name="name" class="form-control"
+                                <input id="userName" type="text" name="userName" class="form-control"
                                     placeholder="<?php esc_html_e('User name', 'taypo') ?>" required>
                             </div>
                             <div class="form-group">
-                                <input id="form_password" type="password" name="password" class="form-control"
+                                <input id="password" type="password" name="password" class="form-control"
                                     placeholder="<?php esc_html_e('Password', 'taypo') ?>" required>
                             </div>
                             <div class="mt-4 mb-5">
                                 <div class="remember-checkbox d-flex align-items-center justify-content-between">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="check1">
+                                        <input class="form-check-input" type="checkbox" value="" id="remember"
+                                            name="remember">
                                         <label class="form-check-label"
-                                            for="check1"><?php esc_html_e('Remember me', 'taypo') ?></label>
+                                            for="remember"><?php esc_html_e('Remember me', 'taypo') ?></label>
                                     </div>
                                     <?php
                                     $forgot_url = taypo_get_template_page_url('templates/forgot-password.php');
@@ -55,7 +57,8 @@ get_header();
                                         href="<?= $forgot_url ?>"><?php esc_html_e('Forgot Password?', 'taypo') ?></a>
                                     <?php } ?>
                                 </div>
-                            </div> <button class="btn btn-primary"><?php esc_html_e('Login Now', 'taypo') ?></button>
+                            </div> <button class="btn btn-primary"
+                                type="submit"><?php esc_html_e('Login Now', 'taypo') ?></button>
                         </form>
 
                         <?php
