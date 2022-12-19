@@ -1,4 +1,5 @@
 <!-- Template Name: Login
+Post Type: page
  -->
 <?php
 // Redirect to the home page if logged in

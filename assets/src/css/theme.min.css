@@ -577,6 +577,25 @@ header .navbar-nav .nav-item {
 }
 
 /* ------------------------
+Form
+------------------------*/
+.form-message {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.form-message.success {
+  color: green;
+}
+.form-message.failure {
+  color: #ff150e;
+}
+
+.form-message p {
+  margin: 0;
+}
+
+/* ------------------------
 Contact
 ------------------------*/
 .form-control {

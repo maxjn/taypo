@@ -67,7 +67,7 @@ class Assets
 
         wp_localize_script('main', 'ajax_object', [
             'ajax_url'    => admin_url('admin-ajax.php'),
-            'ajax_nonce' => wp_create_nonce('login_signup_nonces'),
+            'ajax_nonce' => wp_create_nonce('myajax_nonces'),
         ]);
 
         // Enqueue Scripts.

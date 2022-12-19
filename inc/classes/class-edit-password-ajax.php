@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Login Ajax Request
+ * Edit Password Ajax Request
  *
  * @package Taypo
  */
@@ -10,7 +10,7 @@ namespace Taypo_THEME\Inc;
 
 use Taypo_THEME\Inc\Traits\Singleton;
 
-class Login_Ajax
+class Edit_Password_Ajax
 {
 
     use Singleton;
@@ -26,18 +26,18 @@ class Login_Ajax
     {
 
         /**
-         * Login script ajax hooks
+         * Edit Password script ajax hooks
          */
-        add_action('wp_ajax_nopriv_login_ajax', [$this, 'login_ajax']);
+        add_action('wp_ajax_edit_password_ajax', [$this, 'edit_password_ajax']);
     }
 
     /**
-     * Login script call back
+     * Edit Password script call back
      *
-     * @param bool $initial_request Initial Request( non-ajax request to Login Form ).
+     * @param bool $initial_request Initial Request( non-ajax request to Edit Password Form ).
      *
      */
-    public function login_ajax(bool $initial_request = false)
+    public function edit_password_ajax(bool $initial_request = false)
     {
 
         if (!$initial_request && !check_ajax_referer('myajax_nonces', 'ajax_nonce', false)) {
@@ -53,33 +53,37 @@ class Login_Ajax
          * check if all fields are filled in
          * Perform AJAX request
          */
+        $user = wp_get_current_user();
+        $user_password = $user->user_pass;
+        $user_id = $user->ID;
+        $currentPassword = $_POST['currentPassword'];
+        $newPassword = $_POST['newPassword'];
+        $repeatPassword = $_POST['repeatPassword'];
 
-        $userName = $_POST['userName'];
-        $password = $_POST['password'];
-        $remember = $_POST['remember'];
         $error = false;
         $message = '';
 
-        if (empty($userName) || empty($password)) {
+        if (empty($currentPassword) || empty($newPassword) || empty($repeatPassword)) {
             $error = true;
             $message .= '<p>' . __('Please fill out the fields', 'Taypo') . '</p>';
-        } else {
+        } elseif (!empty($newPassword) === empty($repeatPassword)) {
+            $error = true;
+            $message .= '<p>' . __('New Password and its conform don\'t match', 'Taypo') . '</p>';
+        } elseif (!wp_check_password($currentPassword, $user_password, $user_id)) {
             /**
-             * Perform automatic login.
+             * Perform password authorization.
              */
-            $info = array(
-                'user_login'    => $userName,
-                'user_password' => $password,
-                'remember'      => $remember
-            );
+            $error = true;
+            $message .= '<p>' . __('Current password is wrong', 'Taypo') . '</p>';
+        } else {
 
-            $user = wp_signon($info);
-
-            if (is_wp_error($user)) {
-                $message .= $user->get_error_message();
+            $result = reset_password($user, $newPassword);
+            if (is_wp_error($result)) {
+                $message .= $result->get_error_message();
                 $error = true;
             } else {
-                $message .= '<p>' . __('You Logged in successfuly', 'Taypo') . '</p>';
+
+                $message .= '<p>' . __('Password Updated Successfuly', 'Taypo') . '</p>';
             }
         }
 
