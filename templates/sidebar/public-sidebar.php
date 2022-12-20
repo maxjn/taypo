@@ -11,10 +11,15 @@
         <!-- close btn end -->
 
         <div class="offcanvas-body px-md-10 px-4 py-8">
+            <!-- profile nav start -->
+            <nav class="nav-profile-sidebar">
+                <?php get_template_part('templates\header\nav-profile'); ?>
+            </nav>
+            <!-- profile nav end -->
 
-            <?php
-            dynamic_sidebar('sidebar-2');
-            ?>
+            <!-- Widgets Srart -->
+            <?php dynamic_sidebar('sidebar-2'); ?>
+            <!-- Widgets End -->
 
         </div>
     </div>

@@ -18,6 +18,7 @@ if (isset($args['query'])) { // if there was a $query->
                 <div class="card p-4 border-0 shadow rounded-4">
 
                     <?php
+
                                 get_template_part('templates\card\blog\content\blog-card-thumbnail');
                                 get_template_part('templates\card\blog\content\blog-card-body');
                                 ?>

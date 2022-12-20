@@ -10,14 +10,14 @@
   <!-- https://www.jclabs.co.uk/lost-password-form-and-password-reset-form/ -->
 - Comments
 - ACF Dynamic HomePage
+- Like & Save system
+- Cudtom Post Type
+- Breadcrumbs
 - RTL
 - Translate
 
 ### TODO:
 
-- Fix ajax variables ✓
 - ADD privacy policy template
-- Add Profile Template & Update Profile Ajax ✓
-- Add style to '.form-message' ✓
-- Add Edit Password Template & Update Password Ajax . ✓
-- Add post type condition to templates. ✓
+
+- ADD comments.php and customise comments & comment form
