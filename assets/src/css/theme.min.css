@@ -360,6 +360,9 @@ Background
 .bg-primary {
   background-color: var(--primary) !important;
 }
+.bg-primary-5 {
+  background-color: rgba(255, 21, 14, 0.3);
+}
 .bg-light {
   background-color: var(--bg-light) !important;
 }
@@ -519,6 +522,21 @@ header .navbar-nav .nav-item {
 .nav-link.dropdown-toggle.user {
   display: flex;
   cursor: pointer;
+}
+
+.nav-profile .display-name {
+  color: #212529;
+}
+
+.nav-profile-sidebar .display-name,
+.nav-profile-sidebar .login-btn {
+  color: #eaeaea;
+}
+
+@media (max-width: 1199.98px) {
+  .nav-profile {
+    display: none;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -926,7 +944,29 @@ Countdown
   margin-bottom: 0;
   color: var(--primary);
 }
+/* ------------------------
+Biography
+------------------------*/
+.author-biography {
+  position: relative;
+}
+.biography-header {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
 
+.biography-header .posts-till-now {
+  line-height: 1;
+}
+
+.biography-header .post-count {
+  font-size: 3rem;
+}
+.biography-header .describtion {
+  font-size: 0.8rem;
+}
 /* ------------------------
 Other
 ------------------------*/
@@ -976,6 +1016,10 @@ Other
 }
 .typed-cursor {
   color: var(--white);
+}
+
+a.bread-crumb-link {
+  display: flex;
 }
 
 /* ------------------------

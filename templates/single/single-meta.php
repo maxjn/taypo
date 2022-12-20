@@ -35,7 +35,7 @@
           <div class="d-flex align-items-center text-md-end mt-5 mt-md-0">
               <h6 class="mb-0 me-4"><?= esc_html_e('Tags', 'taypo') ?>: </h6>
               <?php
-                get_template_part('templates\single\tag\tags', null, ['show' => 'post']);
+                get_template_part('templates\single\tag\tag-items', null, ['show' => 'post']);
                 ?>
           </div>
       </div>
