@@ -1023,6 +1023,23 @@ a.bread-crumb-link {
 }
 
 /* ------------------------
+    Comments Output
+------------------------*/
+/* https://www.wpbeginner.com/wp-themes/how-to-style-your-wordpress-comments-layout/ */
+.commentlist,
+.commentlist .children {
+  list-style-type: none;
+}
+
+.no-comments {
+  border-bottom: 1px solid var(--primary);
+}
+
+.comment-wrapper {
+  width: 100%;
+}
+
+/* ------------------------
     Scroll to Top
 ------------------------*/
 .scroll-top {

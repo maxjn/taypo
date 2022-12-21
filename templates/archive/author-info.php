@@ -9,7 +9,7 @@ $author_id = get_the_author_meta('ID');
         <img alt="Image" src="<?= get_avatar_url($author_id, ['size' => '100'])  ?>"
             class="img-fluid rounded-circle px-5">
         <div class="posts-till-now">
-            <span class="post-count text-primary">24</span>
+            <span class="post-count text-primary"><?= count_user_posts($author_id)  ?></span>
             <span class="describtion text-dark"><?php esc_html_e('Posts till today', 'taypo'); ?></span>
         </div>
     </header>

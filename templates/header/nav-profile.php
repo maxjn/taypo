@@ -47,7 +47,7 @@ if (is_user_logged_in()) {
             </li>
             <?php } ?>
             <li> <a class="dropdown-item"
-                    href="<?php echo wp_logout_url(home_url()); ?>"><?php esc_html_e('LogOut', 'taypo') ?></a>
+                    href="<?php echo wp_logout_url(get_permalink()); ?>"><?php esc_html_e('LogOut', 'taypo') ?></a>
             </li>
         </ul>
         <!-- User Info End -->
