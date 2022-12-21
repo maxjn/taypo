@@ -24,9 +24,8 @@ get_header();
 
                     get_template_part('templates\card\blog\container\blog-card-medium');
 
-                    get_template_part('templates\comment\comment-message');
 
-                    get_template_part('templates\comment\comment-form');
+                    comments_template('');
 
                     ?>
 
