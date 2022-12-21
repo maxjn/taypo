@@ -2,6 +2,8 @@
 $login_url = taypo_get_template_page_url('templates/login.php');
 $profile_url = taypo_get_template_page_url('templates/profile.php');
 $edit_pass_url = taypo_get_template_page_url('templates/edit-password.php');
+$liked_posts_url = taypo_get_template_page_url('templates/liked-posts.php');
+$saved_posts_url = taypo_get_template_page_url('templates/saved-posts.php');
 
 ?>
 <?php
@@ -39,6 +41,16 @@ if (is_user_logged_in()) {
                 if ($profile_url != null) { ?>
             <li>
                 <a href="<?= $profile_url ?>" class="dropdown-item"><?php esc_html_e('Profile', 'taypo') ?></a>
+            </li>
+            <?php }
+                if ($liked_posts_url != null) { ?>
+            <li>
+                <a href="<?= $liked_posts_url ?>" class="dropdown-item"><?php esc_html_e('Liked Posts', 'taypo') ?></a>
+            </li>
+            <?php }
+                if ($saved_posts_url != null) { ?>
+            <li>
+                <a href="<?= $saved_posts_url ?>" class="dropdown-item"><?php esc_html_e('Saved Posts', 'taypo') ?></a>
             </li>
             <?php }
                 if ($edit_pass_url != null) { ?>

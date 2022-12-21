@@ -39,6 +39,7 @@ if (isset($args['query'])) { // if there was a $query->
     <?php
 
     } else {
+
         get_template_part('templates\content-non');
     }
         ?>

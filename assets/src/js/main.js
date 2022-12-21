@@ -128,4 +128,53 @@ jQuery(document).ready(function () {
       },
     });
   });
+
+  //*Like Ajax
+  $(".post-like").on("click", function () {
+    var post_id = $(this).attr("post_id");
+    var element = $(this);
+    $.ajax({
+      url: ajaxUrl,
+      type: "POST",
+      data: {
+        action: "like_ajax",
+        post_id: post_id,
+        ajax_nonce: ajaxNonce,
+      },
+      success: function (result) {
+        if ((result.type = "like")) {
+          element.toggleClass("bi-heart-fill");
+          element.toggleClass("bi-heart");
+        } else {
+          element.toggleClass("bi-heart-fill");
+          element.toggleClass("bi-heart");
+        }
+        element.text(result.value);
+      },
+    });
+  });
+
+  //*save Ajax
+  $(".post-save").on("click", function () {
+    var post_id = $(this).attr("post_id");
+    var element = $(this);
+    $.ajax({
+      url: ajaxUrl,
+      type: "POST",
+      data: {
+        action: "save_ajax",
+        post_id: post_id,
+        ajax_nonce: ajaxNonce,
+      },
+      success: function (result) {
+        if ((result.type = "save")) {
+          element.toggleClass("bi-bookmark-fill");
+          element.toggleClass("bi-bookmark");
+        } else {
+          element.toggleClass("bi-bookmark-fill");
+          element.toggleClass("bi-bookmark");
+        }
+      },
+    });
+  });
 });

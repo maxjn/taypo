@@ -24,6 +24,8 @@ class TAYPO_THEME
         SignUp_Ajax::get_instance();
         Edit_Profile_Ajax::get_instance();
         Edit_Password_Ajax::get_instance();
+        Like_Ajax::get_instance();
+        Save_Ajax::get_instance();
         Comment_Form::get_instance();
 
         $this->setup_hooks();

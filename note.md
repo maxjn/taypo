@@ -1,16 +1,16 @@
 ###### TODO:
 
-- File Structure
-- Custom Menu
-- Sidebars
-- Widgets
-- Login and Sign Up Ajax
-- Profile Edit Ajax - ?Reset Password Ajax form
+- File Structure ✓
+- Custom Menu ✓
+- Sidebars ✓
+- Widgets ✓
+- Login and Sign Up Ajax ✓
+- Profile Edit Ajax - ?Reset Password Ajax form ✓
   <!-- https://wordpress.stackexchange.com/questions/60318/sending-the-reset-password-link-programatically -->
   <!-- https://www.jclabs.co.uk/lost-password-form-and-password-reset-form/ -->
-- Comments
+- Comments ✓
 - ACF Dynamic HomePage
-- Like & Save system
+- Like & Save system \*
 - Cudtom Post Type
 - Breadcrumbs
 - RTL
@@ -20,4 +20,7 @@
 
 - ADD privacy policy template
 
-- ADD comments.php and customise comments & comment form
+- like & save buttons & their styles were added ✓
+- like & save ajaxes were added ✓
+- like & save templates were added ✓
+- fix medium posts meta style
