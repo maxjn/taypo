@@ -1040,6 +1040,36 @@ a.bread-crumb-link {
 }
 
 /* ------------------------
+Blog Card
+------------------------*/
+.card {
+  overflow: hidden;
+}
+
+.like-save-meta {
+  font-size: 1.3rem;
+}
+.card:hover .card-like-save-meta {
+  top: 15px;
+}
+.card-like-save-meta {
+  position: absolute;
+  top: -100%;
+  z-index: 99;
+  transition: ease-in-out 0.3s;
+}
+.like-save-meta span {
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+.like-save-meta span:hover {
+  color: var(--primary);
+}
+
+.like-save-meta span.bi-heart-fill::before {
+  color: var(--primary);
+}
+/* ------------------------
     Scroll to Top
 ------------------------*/
 .scroll-top {

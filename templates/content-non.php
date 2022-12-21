@@ -42,6 +42,16 @@ if (is_home() || is_front_page()) {
             </p>
             <?php
                 get_template_part('templates\widget\container\search-form');
+            } elseif (is_page_template('templates/saved-posts.php')) {
+            ?>
+            <p><?php esc_html_e('You haven\'t saved anything yet.', 'taypo'); ?>
+            </p>
+            <?php
+            } elseif (is_page_template('templates/liked-posts.php')) {
+            ?>
+            <p><?php esc_html_e('You haven\'t liked anything yet.', 'taypo'); ?>
+            </p>
+            <?php
             } else {
             ?>
             <p><?php esc_html_e('It seems that we cannot find what you are looking for . Perhaps search can help', 'taypo'); ?>
