@@ -27,6 +27,7 @@ class TAYPO_THEME
         Like_Ajax::get_instance();
         Save_Ajax::get_instance();
         Comment_Form::get_instance();
+        Theme_Setting_PO::get_instance();
 
         $this->setup_hooks();
     }
