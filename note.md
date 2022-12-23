@@ -27,3 +27,5 @@
 - ADD privacy policy template
 
 - Add ACF json file ✓
+
+- Hero Sections got dynamic using acf ✓

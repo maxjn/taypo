@@ -23,21 +23,24 @@ get_header();
         while (have_rows('content_placement', 'options')) {
             the_row();
 
+            // every layout and their fields
+            $layout_fields = get_fields('options')['content_placement'];
+
             // Get the row layout.
             $layout = get_row_layout();
             // Hero Layout 1
             if ($layout == 'hero_secction_1') {
-                get_template_part('templates\hero\hero1');
+                get_template_part('templates\hero\hero1', null, ['fields' => $layout_fields[0]]);
             } // Hero Layout 1 ###
 
             // Hero Layout 2
             if ($layout == 'hero_secction_2') {
-                get_template_part('templates\hero\hero2');
+                get_template_part('templates\hero\hero2', null, ['fields' => $layout_fields[1]]);
             } // Hero Layout 2 ###
 
             // Hero Layout 3
             if ($layout == 'hero_secction_3') {
-                get_template_part('templates\hero\hero3');
+                get_template_part('templates\hero\hero3', null, ['fields' => $layout_fields[2]]);
             } // Hero Layout 3 ###
 
             // Feature Box 1

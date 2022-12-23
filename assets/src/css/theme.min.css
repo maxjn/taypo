@@ -968,6 +968,12 @@ Biography
   font-size: 0.8rem;
 }
 /* ------------------------
+Hero Section
+------------------------*/
+.hero-image {
+  width: 100%;
+}
+/* ------------------------
 Other
 ------------------------*/
 .accordion-button:focus {
