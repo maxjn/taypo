@@ -1,0 +1,352 @@
+[
+    {
+        "key": "group_63a442b032dd8",
+        "title": "Content Placement",
+        "fields": [
+            {
+                "key": "field_63a442b004508",
+                "label": "Content Placement",
+                "name": "content_placement",
+                "aria-label": "",
+                "type": "flexible_content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layouts": {
+                    "layout_63a44339d010e": {
+                        "key": "layout_63a44339d010e",
+                        "name": "hero_secction_1",
+                        "label": "Hero Secction 1",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_63a576af4eea5",
+                                "label": "Title Firs Part",
+                                "name": "title_firs_part",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "Hi I'm",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_63a577094eea6",
+                                "label": "Title Main Part",
+                                "name": "title_main_part",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "Maxjn",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_63a577464eea7",
+                                "label": "Title Last Part",
+                                "name": "title_last_part",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "A WP Developer",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_63a577b04eea8",
+                                "label": "Sub Title Text",
+                                "name": "sub_title_text",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "A Describtion about my job and what I do and how I can help you.",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_63a578154eea9",
+                                "label": "Form Action",
+                                "name": "from_action",
+                                "aria-label": "",
+                                "type": "link",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "url"
+                            },
+                            {
+                                "key": "field_63a5788b4eeaa",
+                                "label": "Form Button Text",
+                                "name": "form_button_text",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "Get Started",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_63a578ad4eeab",
+                                "label": "Hero Image",
+                                "name": "hero_image",
+                                "aria-label": "",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": "",
+                                "preview_size": "medium"
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_63a4434c0450f": {
+                        "key": "layout_63a4434c0450f",
+                        "name": "hero_secction_2",
+                        "label": "Hero Secction 2",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_63a4434c0450d": {
+                        "key": "layout_63a4434c0450d",
+                        "name": "hero_secction_3",
+                        "label": "Hero Secction 3",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_63a4434b0450b": {
+                        "key": "layout_63a4434b0450b",
+                        "name": "feature_box_1",
+                        "label": "Feature Box 1",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_63a4434a04509": {
+                        "key": "layout_63a4434a04509",
+                        "name": "feature_box_2",
+                        "label": "Feature Box 2",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_63a4465904511": {
+                        "key": "layout_63a4465904511",
+                        "name": "feature_box_3",
+                        "label": "Feature Box 3",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_63a4465d04513": {
+                        "key": "layout_63a4465d04513",
+                        "name": "feature_box_4",
+                        "label": "Feature Box 4",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_63a4465e04515": {
+                        "key": "layout_63a4465e04515",
+                        "name": "accordion_1",
+                        "label": "Accordion 1",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_63a4465f04517": {
+                        "key": "layout_63a4465f04517",
+                        "name": "accordion_2",
+                        "label": "Accordion 2",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_63a4466004519": {
+                        "key": "layout_63a4466004519",
+                        "name": "banner",
+                        "label": "Banner",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_63a4479f0451b": {
+                        "key": "layout_63a4479f0451b",
+                        "name": "counter",
+                        "label": "Counter",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_63a449549fdee": {
+                        "key": "layout_63a449549fdee",
+                        "name": "latest_posts_1",
+                        "label": "Latest Posts 1",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_63a449699fdf0": {
+                        "key": "layout_63a449699fdf0",
+                        "name": "latest_posts_2",
+                        "label": "Latest Posts 2",
+                        "display": "block",
+                        "sub_fields": [],
+                        "min": "",
+                        "max": ""
+                    }
+                },
+                "min": "",
+                "max": "",
+                "button_label": "Add Content"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "front-page-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_63a416ef8cbdb",
+        "title": "Related Posts",
+        "fields": [
+            {
+                "key": "field_63a416efb689f",
+                "label": "Posts",
+                "name": "related_posts",
+                "aria-label": "",
+                "type": "post_object",
+                "instructions": "Sellect related posts to this post.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "0",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "post"
+                ],
+                "taxonomy": "",
+                "return_format": "id",
+                "multiple": 1,
+                "allow_null": 1,
+                "ui": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "To chooce related posts",
+        "show_in_rest": 0
+    }
+]

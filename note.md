@@ -20,13 +20,10 @@
 - Breadcrumbs ✓
 - RTL
 - Translate
+  ✓
 
 ### TODO:
 
 - ADD privacy policy template
 
-- Create "Share It" share links in {single-meta.php" ✓
-
-- Make Content Placement's bloks dynamic
-
-- Add ACF json file
+- Add ACF json file ✓
