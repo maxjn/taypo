@@ -1,3 +1,8 @@
+<?php
+if (isset($args['fields'])) {
+    $fields = $args['fields'];
+}
+?>
 <!--feature start-->
 
 <section class="bg-dark position-relative overflow-hidden z-index-1">
@@ -5,51 +10,55 @@
         <div class="row justify-content-center text-center mb-6">
             <div class="col-12 col-lg-8">
                 <div>
-                    <h6 class="border-bottom border-light border-2 d-inline-block text-primary">Services</h6>
-                    <h2 class="font-w-6 text-white">We've Tone Of Quality Features For Give You The Best Website</h2>
+                    <h6 class="border-bottom border-light border-2 d-inline-block text-primary">
+                        <?= $fields["sub_title"] ?></h6>
+                    <h2 class="font-w-6 text-white"><?= $fields["title"] ?></h2>
                 </div>
             </div>
         </div>
         <div class="row gx-5">
-            <div class="col-lg-4 col-md-6">
+            <?php
+            if (have_rows('box', 'options')) {
+                $i = 1;
+                while (have_rows('box', 'options')) {
+                    the_row();
+                    $class = '';
+                    if ($i % 2 == 0) {
+                        $class = 'mt-6';
+                    } elseif ($i % 3 == 0) {
+                        $class = 'mt-6 mt-lg-0';
+                    };
+
+            ?>
+            <div class="col-lg-4 col-md-6 <?= $class ?>">
                 <div class="p-6 rounded-4 f-icon-hover border border-dark">
                     <div>
-                        <h4 class="mb-3 text-white">Experience Design</h4>
-                        <p class="mb-4 text-light">Get the most of reduction in your team’s operating let’s come up with
-                            taypo. But I must idea of denouncing pleasure.</p>
-                        <a class="btn-arrow" href="#"></a>
+                        <h4 class="mb-3 text-white"><?= get_sub_field('box_title') ?></h4>
+                        <p class="mb-4 text-light"><?= get_sub_field('box_description') ?></p>
+                        <?php
+                                if (get_sub_field('box_link')) {
+                                ?>
+                        <a class="btn-arrow" href="<?= get_sub_field('box_link') ?>"></a>
+                        <?php
+                                }
+                                ?>
                     </div>
                     <div class="mt-6">
-                        <img class="img-fluid" src="images/features/01.png" alt="">
+                        <?php
+                                if (get_sub_field('box_image')) {
+                                    $box_image = get_sub_field('box_image');
+                                ?>
+                        <img class="img-fluid" src="<?= $box_image['url'] ?>" alt="<?= $box_image['title'] ?>">
+                        <?php } ?>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mt-6">
-                <div class="p-6 rounded-4 f-icon-hover border border-dark">
-                    <div>
-                        <h4 class="mb-3 text-white">Analyze Your Data</h4>
-                        <p class="mb-4 text-light">Get the most of reduction in your team’s operating let’s come up with
-                            taypo. But I must idea of denouncing pleasure.</p>
-                        <a class="btn-arrow" href="#"></a>
-                    </div>
-                    <div class="mt-6">
-                        <img class="img-fluid" src="images/features/02.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mt-6 mt-lg-0">
-                <div class="p-6 rounded-4 f-icon-hover border border-dark">
-                    <div>
-                        <h4 class="mb-3 text-white">Task Management</h4>
-                        <p class="mb-4 text-light">Get the most of reduction in your team’s operating let’s come up with
-                            taypo. But I must idea of denouncing pleasure.</p>
-                        <a class="btn-arrow" href="#"></a>
-                    </div>
-                    <div class="mt-6">
-                        <img class="img-fluid" src="images/features/03.png" alt="">
-                    </div>
-                </div>
-            </div>
+
+            <?php
+                    $i++;
+                }
+            }
+            ?>
         </div>
     </div>
     <div class="position-absolute animation-1 w-100">

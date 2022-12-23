@@ -20,12 +20,9 @@
 - Breadcrumbs ✓
 - RTL
 - Translate
-  ✓
 
 ### TODO:
 
 - ADD privacy policy template
 
-- Add ACF json file ✓
-
-- Hero Sections got dynamic using acf ✓
+- 4 Feature Boxes got dynamic using acf ✓

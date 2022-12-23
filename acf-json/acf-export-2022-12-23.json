@@ -512,34 +512,606 @@
                         "name": "feature_box_1",
                         "label": "Feature Box 1",
                         "display": "block",
-                        "sub_fields": [],
+                        "sub_fields": [
+                            {
+                                "key": "field_63a5b27d60e3e",
+                                "label": "Title",
+                                "name": "title",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "The main title of the box feature.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "We're Provide Quality Features Service",
+                                "maxlength": "",
+                                "placeholder": "Title...",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_63a5b29860e3f",
+                                "label": "Description Text",
+                                "name": "description_text",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "Description of the title.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "We are a team of experienced developers who are passionate about their work. No coding required to make customizations.",
+                                "maxlength": "",
+                                "placeholder": "Description...",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_63a5b2e460e40",
+                                "label": "Box",
+                                "name": "box",
+                                "aria-label": "",
+                                "type": "repeater",
+                                "instructions": "A box for the terms you are going to point to.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "table",
+                                "min": 0,
+                                "max": 0,
+                                "collapsed": "field_63a5b37e60e41",
+                                "button_label": "Add Row",
+                                "rows_per_page": 20,
+                                "sub_fields": [
+                                    {
+                                        "key": "field_63a5b37e60e41",
+                                        "label": "Box Title",
+                                        "name": "box_title",
+                                        "aria-label": "",
+                                        "type": "text",
+                                        "instructions": "The title of the box is the subject you are talking about.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "Develop Business",
+                                        "maxlength": "",
+                                        "placeholder": "Title...",
+                                        "prepend": "",
+                                        "append": "",
+                                        "parent_repeater": "field_63a5b2e460e40"
+                                    },
+                                    {
+                                        "key": "field_63a5b3d260e42",
+                                        "label": "Box Description",
+                                        "name": "box_description",
+                                        "aria-label": "",
+                                        "type": "textarea",
+                                        "instructions": "A description of the subject you are talking about in the box.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "maxlength": "",
+                                        "rows": "",
+                                        "placeholder": "",
+                                        "new_lines": "",
+                                        "parent_repeater": "field_63a5b2e460e40"
+                                    },
+                                    {
+                                        "key": "field_63a5b43e60e43",
+                                        "label": "Box Icon",
+                                        "name": "box_icon",
+                                        "aria-label": "",
+                                        "type": "text",
+                                        "instructions": "Go to https:\/\/icons.getbootstrap.com\/\r\nSearch for the icon you are looking for and write the name",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "gear",
+                                        "maxlength": "",
+                                        "placeholder": "Icon Name",
+                                        "prepend": "",
+                                        "append": "",
+                                        "parent_repeater": "field_63a5b2e460e40"
+                                    },
+                                    {
+                                        "key": "field_63a5c179441a7",
+                                        "label": "Box Link",
+                                        "name": "box_link",
+                                        "aria-label": "",
+                                        "type": "url",
+                                        "instructions": "A link to your chosen content.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "https:\/\/...",
+                                        "parent_repeater": "field_63a5b2e460e40"
+                                    }
+                                ]
+                            }
+                        ],
                         "min": "",
                         "max": ""
                     },
-                    "layout_63a4434a04509": {
-                        "key": "layout_63a4434a04509",
+                    "layout_63a5c3d817190": {
+                        "key": "layout_63a5c3d817190",
                         "name": "feature_box_2",
                         "label": "Feature Box 2",
                         "display": "block",
-                        "sub_fields": [],
+                        "sub_fields": [
+                            {
+                                "key": "field_63a5c3d817191",
+                                "label": "Title",
+                                "name": "title",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "The main title of the box feature.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "We're Provide Quality Features Service",
+                                "maxlength": "",
+                                "placeholder": "Title...",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_63a5c3d817193",
+                                "label": "Box",
+                                "name": "box",
+                                "aria-label": "",
+                                "type": "repeater",
+                                "instructions": "A box for the terms you are going to point to.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "table",
+                                "min": 0,
+                                "max": 0,
+                                "collapsed": "field_63a5b37e60e41",
+                                "button_label": "Add Row",
+                                "rows_per_page": 20,
+                                "sub_fields": [
+                                    {
+                                        "key": "field_63a5c3d817194",
+                                        "label": "Box Title",
+                                        "name": "box_title",
+                                        "aria-label": "",
+                                        "type": "text",
+                                        "instructions": "The title of the box is the subject you are talking about.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "Develop Business",
+                                        "maxlength": "",
+                                        "placeholder": "Title...",
+                                        "prepend": "",
+                                        "append": "",
+                                        "parent_repeater": "field_63a5c3d817193"
+                                    },
+                                    {
+                                        "key": "field_63a5c3d817195",
+                                        "label": "Box Description",
+                                        "name": "box_description",
+                                        "aria-label": "",
+                                        "type": "textarea",
+                                        "instructions": "A description of the subject you are talking about in the box.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "maxlength": "",
+                                        "rows": "",
+                                        "placeholder": "",
+                                        "new_lines": "",
+                                        "parent_repeater": "field_63a5c3d817193"
+                                    },
+                                    {
+                                        "key": "field_63a5c3d817196",
+                                        "label": "Box Icon",
+                                        "name": "box_icon",
+                                        "aria-label": "",
+                                        "type": "text",
+                                        "instructions": "Go to https:\/\/icons.getbootstrap.com\/\r\nSearch for the icon you are looking for and write the name",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "gear",
+                                        "maxlength": "",
+                                        "placeholder": "Icon Name",
+                                        "prepend": "",
+                                        "append": "",
+                                        "parent_repeater": "field_63a5c3d817193"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "acfcloneindex",
+                                "label": "Feature Image",
+                                "name": "feature_image",
+                                "aria-label": "",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "",
+                                "library": "",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": "",
+                                "preview_size": "medium"
+                            }
+                        ],
                         "min": "",
                         "max": ""
                     },
-                    "layout_63a4465904511": {
-                        "key": "layout_63a4465904511",
+                    "layout_63a5c42d00cdf": {
+                        "key": "layout_63a5c42d00cdf",
                         "name": "feature_box_3",
                         "label": "Feature Box 3",
                         "display": "block",
-                        "sub_fields": [],
+                        "sub_fields": [
+                            {
+                                "key": "field_63a5c42d00ce0",
+                                "label": "Title",
+                                "name": "title",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "The main title of the box feature.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "We're Provide Quality Features Service",
+                                "maxlength": "",
+                                "placeholder": "Title...",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "acfcloneindex",
+                                "label": "Sub Title",
+                                "name": "sub_title",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "Services",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_63a5c42d00ce2",
+                                "label": "Box",
+                                "name": "box",
+                                "aria-label": "",
+                                "type": "repeater",
+                                "instructions": "A box for the terms you are going to point to.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "table",
+                                "min": 0,
+                                "max": 0,
+                                "collapsed": "field_63a5b37e60e41",
+                                "button_label": "Add Row",
+                                "rows_per_page": 20,
+                                "sub_fields": [
+                                    {
+                                        "key": "field_63a5c42d00ce3",
+                                        "label": "Box Title",
+                                        "name": "box_title",
+                                        "aria-label": "",
+                                        "type": "text",
+                                        "instructions": "The title of the box is the subject you are talking about.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "Develop Business",
+                                        "maxlength": "",
+                                        "placeholder": "Title...",
+                                        "prepend": "",
+                                        "append": "",
+                                        "parent_repeater": "field_63a5c42d00ce2"
+                                    },
+                                    {
+                                        "key": "field_63a5c42d00ce4",
+                                        "label": "Box Description",
+                                        "name": "box_description",
+                                        "aria-label": "",
+                                        "type": "textarea",
+                                        "instructions": "A description of the subject you are talking about in the box.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "maxlength": "",
+                                        "rows": "",
+                                        "placeholder": "",
+                                        "new_lines": "",
+                                        "parent_repeater": "field_63a5c42d00ce2"
+                                    },
+                                    {
+                                        "key": "field_63a5c42d00ce6",
+                                        "label": "Box Link",
+                                        "name": "box_link",
+                                        "aria-label": "",
+                                        "type": "url",
+                                        "instructions": "A link to your chosen content.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "https:\/\/...",
+                                        "parent_repeater": "field_63a5c42d00ce2"
+                                    },
+                                    {
+                                        "key": "field_63a5d4e01b3e6",
+                                        "label": "Box Image",
+                                        "name": "box_image",
+                                        "aria-label": "",
+                                        "type": "image",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "return_format": "array",
+                                        "library": "all",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": "",
+                                        "max_height": "",
+                                        "max_size": "",
+                                        "mime_types": "",
+                                        "preview_size": "medium",
+                                        "parent_repeater": "field_63a5c42d00ce2"
+                                    }
+                                ]
+                            }
+                        ],
                         "min": "",
                         "max": ""
                     },
-                    "layout_63a4465d04513": {
-                        "key": "layout_63a4465d04513",
+                    "layout_63a5c43e00ce7": {
+                        "key": "layout_63a5c43e00ce7",
                         "name": "feature_box_4",
                         "label": "Feature Box 4",
                         "display": "block",
-                        "sub_fields": [],
+                        "sub_fields": [
+                            {
+                                "key": "field_63a5c43e00ce8",
+                                "label": "Title",
+                                "name": "title",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "The main title of the box feature.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "We're Provide Quality Features Service",
+                                "maxlength": "",
+                                "placeholder": "Title...",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_63a5c43e00ce9",
+                                "label": "Description Text",
+                                "name": "description_text",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "Description of the title.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "We are a team of experienced developers who are passionate about their work. No coding required to make customizations.",
+                                "maxlength": "",
+                                "placeholder": "Description...",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_63a5c43e00cea",
+                                "label": "Box",
+                                "name": "box",
+                                "aria-label": "",
+                                "type": "repeater",
+                                "instructions": "A box for the terms you are going to point to.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "table",
+                                "min": 0,
+                                "max": 0,
+                                "collapsed": "field_63a5b37e60e41",
+                                "button_label": "Add Row",
+                                "rows_per_page": 20,
+                                "sub_fields": [
+                                    {
+                                        "key": "field_63a5c43e00ceb",
+                                        "label": "Box Title",
+                                        "name": "box_title",
+                                        "aria-label": "",
+                                        "type": "text",
+                                        "instructions": "The title of the box is the subject you are talking about.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "Develop Business",
+                                        "maxlength": "",
+                                        "placeholder": "Title...",
+                                        "prepend": "",
+                                        "append": "",
+                                        "parent_repeater": "field_63a5c43e00cea"
+                                    },
+                                    {
+                                        "key": "field_63a5c43e00cec",
+                                        "label": "Box Description",
+                                        "name": "box_description",
+                                        "aria-label": "",
+                                        "type": "textarea",
+                                        "instructions": "A description of the subject you are talking about in the box.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "maxlength": "",
+                                        "rows": "",
+                                        "placeholder": "",
+                                        "new_lines": "",
+                                        "parent_repeater": "field_63a5c43e00cea"
+                                    },
+                                    {
+                                        "key": "field_63a5c43e00ced",
+                                        "label": "Box Icon",
+                                        "name": "box_icon",
+                                        "aria-label": "",
+                                        "type": "text",
+                                        "instructions": "Go to https:\/\/icons.getbootstrap.com\/\r\nSearch for the icon you are looking for and write the name",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "gear",
+                                        "maxlength": "",
+                                        "placeholder": "Icon Name",
+                                        "prepend": "",
+                                        "append": "",
+                                        "parent_repeater": "field_63a5c43e00cea"
+                                    },
+                                    {
+                                        "key": "field_63a5c43e00cee",
+                                        "label": "Box Link",
+                                        "name": "box_link",
+                                        "aria-label": "",
+                                        "type": "url",
+                                        "instructions": "A link to your chosen content.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "https:\/\/...",
+                                        "parent_repeater": "field_63a5c43e00cea"
+                                    }
+                                ]
+                            }
+                        ],
                         "min": "",
                         "max": ""
                     },
