@@ -38,7 +38,8 @@ class Assets
         wp_register_style('style', get_stylesheet_uri());
 
         wp_register_style('font', 'https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap', array());
-        wp_register_style('style-main', TAYPO_DIST_CSS_URI . '/style.css', array('font'));
+        wp_register_style('swipe-style-livrary', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css', array('font'));
+        wp_register_style('style-main', TAYPO_DIST_CSS_URI . '/style.css', array('swipe-style-livrary'));
 
 
 
@@ -63,7 +64,9 @@ class Assets
         wp_register_script('countdown', TAYPO_DIST_JS_URI . '/jquery.countdown.min.js', array('odometer'), 1.1, true);
         wp_register_script('typer', TAYPO_DIST_JS_URI . '/typer.js', array('countdown'), 1.1, true);
         wp_register_script('theme-script', TAYPO_DIST_JS_URI . '/theme-script.js', array('typer'), 1.1, true);
-        wp_register_script('main', TAYPO_DIST_JS_URI . '/main.js',  array('theme-script'), 1.1, true);
+        wp_register_script('swiper-library', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js', array('theme-script'), 1.1, true);
+        wp_register_script('swiper-script', TAYPO_DIST_JS_URI . '/swiper-script.js', array('swiper-library'), 1.1, true);
+        wp_register_script('main', TAYPO_DIST_JS_URI . '/main.js',  array('swiper-script'), 1.1, true);
 
         wp_localize_script('main', 'ajax_object', [
             'ajax_url'    => admin_url('admin-ajax.php'),
