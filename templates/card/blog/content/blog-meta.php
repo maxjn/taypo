@@ -7,6 +7,10 @@
  *
  * @package Taypo
  */
+$medium = false;
+if (isset($args['medium'])) { // if there was a $medium->
+    $medium = $args['medium'];
+}
 
 $liked_posts_url = taypo_get_template_page_url('templates/liked-posts.php');
 $saved_posts_url = taypo_get_template_page_url('templates/saved-posts.php');
@@ -32,14 +36,14 @@ $like_class = in_array(get_the_ID(), $old_likes) ?  'bi-heart-fill' : 'bi-heart'
 
 $author_id = $post->post_author;
 $author_display_name = get_the_author_meta('display_name', $author_id);
-$like_save_meta_class = is_single() ? " like-save-meta" : "card-like-save-meta like-save-meta";
+$like_save_meta_class = (is_single() && !$medium) ? " like-save-meta" : "card-like-save-meta like-save-meta";
 ?>
 <!-- Meta Start -->
 <div class="d-flex justify-content-between align-items-center">
     <!-- Main Meta Start -->
     <div class="main-meta">
         <!-- Author Start -->
-        <?php if (is_single()) { ?>
+        <?php if (is_single() && !$medium) { ?>
         <a class="d-inline-block bg-light text-center px-2 py-1 rounded me-2"
             href="<?= get_author_posts_url($author_id) ?>">
             <i class="bi bi-pencil text-dark me-1"></i>
