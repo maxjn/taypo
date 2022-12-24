@@ -1,4 +1,8 @@
 <?php
+if (isset($args['fields'])) {
+    $fields = $args['fields'];
+}
+
 // WP_Query arguments
 $args = array(
     'post_type'              => array('post'), // use any for any kind of post type, custom post type slug for custom post type
@@ -17,13 +21,12 @@ $query = new WP_Query($args);
         <div class="row align-items-end mb-6">
             <div class="col-12 col-md-12 col-lg-6">
                 <div>
-                    <h6 class="border-bottom border-dark border-2 d-inline-block">Blogs</h6>
-                    <h2 class="font-w-6">From Our Blog List Latest News & Article</h2>
+                    <h6 class="border-bottom border-dark border-2 d-inline-block"><?= $fields['sub_title'] ?></h6>
+                    <h2 class="font-w-6"><?= $fields['title'] ?></h2>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-5 ms-auto">
-                <p class="lead mb-0">Advanced cameras combined with a large display, fast performance, and highly
-                    calibrated sensors have always made uniquely capable.</p>
+                <p class="lead mb-0"><?= $fields['description'] ?></p>
             </div>
         </div>
         <!-- / .row -->
