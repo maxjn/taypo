@@ -37,9 +37,9 @@ $img = $fields["image"];
                             <div class="accordion" id="accordion">
                                 <?php
 
-                                if (have_rows('questions', 'options')) {
+                                if (have_rows('questions',)) {
                                     $counter = 1;
-                                    while (have_rows('questions', 'options')) {
+                                    while (have_rows('questions',)) {
                                         the_row()
                                 ?>
                                 <div class="accordion-item border-0 py-3 rounded-4 mb-4">

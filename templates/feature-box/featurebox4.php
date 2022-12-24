@@ -20,8 +20,8 @@ if (isset($args['fields'])) {
             </div>
             <div class="row gx-5">
                 <?php
-                if (have_rows('box', 'options')) {
-                    while (have_rows('box', 'options')) {
+                if (have_rows('box')) {
+                    while (have_rows('box')) {
                         the_row()
                 ?>
                 <div class="col-lg-4 col-md-6 mt-6 mt-lg-0">

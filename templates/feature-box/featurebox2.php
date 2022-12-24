@@ -27,8 +27,8 @@ $feature_image = $fields['feature_image'];
                     <h2 class="mb-5"><?= $fields["title"] ?></h2>
                 </div>
                 <?php
-                if (have_rows('box', 'options')) {
-                    while (have_rows('box', 'options')) {
+                if (have_rows('box')) {
+                    while (have_rows('box')) {
                         the_row()
                 ?>
                 <div class="d-flex align-items-start mb-4">
