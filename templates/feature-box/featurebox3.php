@@ -18,9 +18,9 @@ if (isset($args['fields'])) {
         </div>
         <div class="row gx-5">
             <?php
-            if (have_rows('box', 'options')) {
+            if (have_rows('box')) {
                 $i = 1;
-                while (have_rows('box', 'options')) {
+                while (have_rows('box')) {
                     the_row();
                     $class = '';
                     if ($i % 2 == 0) {

@@ -11,16 +11,13 @@ if (isset($args['fields'])) {
             <!-- Count Box -->
             <div class="col-12 col-xl-5 col-lg-6 mb-8 mb-lg-0 position-relative">
                 <div class="row gx-5 align-items-center text-center z-index-1">
-
                     <?php
-                    if (have_rows('count_box', 'options')) {
-                        $i = 1;
-                        $row_count = 3;
-                        while (have_rows('count_box', 'options')) {
+                    $i = 1;
+                    if (have_rows('count_box')) {
+                        while (have_rows('count_box')) {
+
                             the_row();
-                            if ($i == 1) {
-                                echo '<div class="col-lg-6 col-md-6">';
-                            } else if ($i == 2) {
+                            if ($i % 2 == 1) {
                                 echo '<div class="col-lg-6 col-md-6 mt-5">';
                             }
                     ?>
@@ -34,16 +31,16 @@ if (isset($args['fields'])) {
 
 
                     <?php
-                            if ($i == 1 || $i == 3 || $i == $row_count) {
+                            if ($i % 2 == 0) {
                                 echo '</div>';
                             }
                             $i++;
-                            if ($i == 4) {
-                                break;
-                            }
                         }
-                        reset_rows();
+                        if ($i % 2 == 0) {
+                            echo '</div>';
+                        }
                     }
+
                     ?>
                 </div>
 
@@ -63,8 +60,8 @@ if (isset($args['fields'])) {
                 </div>
                 <!-- Title ###  -->
                 <?php
-                if (have_rows('list', 'options')) {
-                    while (have_rows('list', 'options')) {
+                if (have_rows('list')) {
+                    while (have_rows('list')) {
                         the_row();
 
                 ?>
@@ -82,6 +79,8 @@ if (isset($args['fields'])) {
                 <?php
                     }
                 }
+
+
                 ?>
             </div>
         </div>

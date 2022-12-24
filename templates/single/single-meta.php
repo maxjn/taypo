@@ -43,7 +43,7 @@
           </div>
           <div class="d-flex align-items-center text-md-end mt-5 mt-md-0">
               <?php
-                if (!the_tags() == null) { ?>
+                if (!get_the_tags() == null) { ?>
               <h6 class="mb-0 me-4"><?= esc_html_e('Tags', 'taypo') ?>: </h6>
               <?php
                 }

@@ -25,6 +25,6 @@
 
 - ADD privacy policy template
 
-- 2 Accordions got dynamic using acf ✓
+- 'BOx Count' in "counter.php" got fixed to show more or less than 3 count boxes
 
-- 'BOx Count' in "counter.php" needs to be fixed to show more or less than 3 count boxes
+- Page got dynamic using acf
