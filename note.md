@@ -25,6 +25,6 @@
 
 - ADD privacy policy template
 
-- Banner ,Counter and Latest Posts Blocks got dynamic using acf ✓
+- 2 Accordions got dynamic using acf ✓
 
 - 'BOx Count' in "counter.php" needs to be fixed to show more or less than 3 count boxes
