@@ -1,3 +1,6 @@
+<!-- Template Name: Coming Soon
+Post Type: page
+ -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +24,7 @@
 
         <div id="ht-preloader">
             <div class="loader clear-loader">
-                <img src="images/loader.gif" alt="">
+                <img src="<?= TAYPO_DIR_IMG_URI ?>/loader.gif" alt="">
             </div>
         </div>
 
@@ -44,7 +47,7 @@
                                 autoplay></lottie-player>
                             <div class="coming-soon">
                                 <ul class="countdown list-inline d-flex justify-content-between mt-8 mb-0"
-                                    data-countdown="2023/04/23"></ul>
+                                    data-countdown="<?= get_field('unvieling_date') ?>"></ul>
                             </div>
                         </div>
                         <div class="col-lg-4 ms-auto">
@@ -56,16 +59,24 @@
                             </a>
                             <!-- logo end -->
                             <div class="mt-5">
+                                <?php
+                                if (get_field('subscribe_action')) {
+                                ?>
                                 <h4 class="mb-4"><?php esc_html_e('Subscribe to get notified!', 'taypo'); ?></h4>
                                 <!-- Subscribe form start -->
+
                                 <div class="subscribe-form">
-                                    <form id="mc-form" class="group">
+                                    <form id="mc-form" class="group" action="<?= get_field('subscribe_action') ?>">
                                         <input value="" name="EMAIL" class="email form-control" id="mc-email"
-                                            placeholder="Email Address" required="" type="email">
+                                            placeholder="<?php _e('Email Address', 'taypo') ?>" required=""
+                                            type="email">
                                         <input class="btn btn-primary btn-block mt-3 mb-2" name="subscribe"
                                             value="Subscribe Now" type="submit">
                                     </form>
                                 </div>
+                                <?php
+                                }
+                                ?>
                                 <!-- Subscribe form end -->
                             </div>
                         </div>

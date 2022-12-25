@@ -10,7 +10,7 @@
   *link1: https://wordpress.stackexchange.com/questions/60318/sending-the-reset-password-link-programatically
   *link2: https://www.jclabs.co.uk/lost-password-form-and-password-reset-form/ -->
 - Comments ✓
-- ACF Dynamic HomePage \*
+- ACF Dynamic HomePage ✓
 <!-- ?Regester ACF Fiels in your theme?
 *link1: https://www.advancedcustomfields.com/resources/local-json/
 *link2:https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwir-9Pu54z8AhUC3qQKHZYZDc8QwqsBegQIOhAF&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D0outb6oSJW4&usg=AOvVaw2aAfKdhICQuysynZWUNlPj
@@ -25,6 +25,6 @@
 
 - ADD privacy policy template
 
-- 'BOx Count' in "counter.php" got fixed to show more or less than 3 count boxes
-
-- Page got dynamic using acf
+- Image Paths got fixed
+- coming-soon.php , maintenance.php were added
+- coming-soon.php template got dynamic using acf
