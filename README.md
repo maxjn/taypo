@@ -1,43 +1,55 @@
-![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
+![Logo of the project](assets\libraries\images\logo.png)
 
 # Taypo Template
 
-> Additional information or tagline
-
-A multipurpose wordpress template...
+A modern wordpress Blog template...
 
 ## Installing / Getting started
 
-Put **Typo** folder into **theme** folder of the wordpress template
-
 ### Initial Configuration
 
-Some projects require initial configuration (e.g. access tokens or keys, `npm i`).
-This is the section where you would document those requirements.
+1. Put **Typo** folder into **theme** folder of your wordpress
+
+2. Run **gulp build**
+
+3. Install ACF
+
+4. Import acf-json
+
+5. Activeate the theme
 
 ## Developing
 
-First install packages and then run gulp.
+1. install Dev Dependencies
 
 ```shell
 npm install
+
+```
+
+2. Run gulp to create 'dist' folder.
+
+```shell
+npm install
+
 gulp
 ```
 
-after running gulp 'build files' will be built in assets/dist
+after running gulp 'build files' will be created in assets/dist.
+
+3. Import Field Groups into ACF Plugin fron 'acf-json' folder
+
+4. Activeate the template in your wordpress site
 
 ### Building
 
-**gulpfile.js** will be run automatically after you make any changes in _.css, _.sass , \*.js files.
+Run **gulp** to create dist folder .
 
 ```shell
-./configure
-make
-make install
+gulp build
 ```
 
-Here again you should state what actually happens when the code above gets
-executed.
+_.css , _.scss , \*.js files will get minified.
 
 ### Deploying / Publishing
 
@@ -52,74 +64,36 @@ And again you'd need to tell what the previous code actually does.
 
 ## Features
 
-What's all the bells and whistles this project can perform?
+###### 1 Dynamic Menu
 
-- What's the main functionality
-- You can also do another thing
-- If you get really randy, you can even do this
+- Header Menu
 
-## Configuration
+###### 3 Dynamic Sidebars
 
-Here you should write what are all of the configurations a user can enter when
-using the project.
+- Public Sidebar
+- Footer
+- Blog Page sidebar
 
-#### Argument 1
+###### 9 Widgets
 
-Type: `String`
-Default: `'default value'`
+- Search Form
+- Category List
+- Contact Group
+- Contact Info
+- Link List
+- Recent Posts
+- Tag Cloads
+- Social Media
+- About Us
 
-State what an argument does and how you can use it. If needed, you can provide
-an example below.
+###### 9 Page Templates
 
-Example:
-
-```bash
-awesome-project "Some other value"  # Prints "You're nailing this readme!"
-```
-
-#### Argument 2
-
-Type: `Number|Boolean`
-Default: 100
-
-Copy-paste as many of these as you need.
-
-## Contributing
-
-When you publish something open source, one of the greatest motivations is that
-anyone can just jump in and start contributing to your project.
-
-These paragraphs are meant to welcome those kind souls to feel that they are
-needed. You should state something like:
-
-"If you'd like to contribute, please fork the repository and use a feature
-branch. Pull requests are warmly welcome."
-
-If there's anything else the developer needs to know (e.g. the code style
-guide), you should link it here. If there's a lot of things to take into
-consideration, it is common to separate this section to its own file called
-`CONTRIBUTING.md` (or similar). If so, you should say that it exists here.
-
-## Links
-
-Even though this information can be found inside the project on machine-readable
-format like in a .json file, it's good to include a summary of most useful
-links to humans using your project. You can include links like:
-
-- Project homepage: https://your.github.com/awesome-project/
-- Repository: https://github.com/your/awesome-project/
-- Issue tracker: https://github.com/your/awesome-project/issues
-  - In case of sensitive bugs like security vulnerabilities, please contact
-    my@email.com directly instead of using issue tracker. We value your effort
-    to improve the security and privacy of this project!
-- Related projects:
-  - Your other project: https://github.com/your/other-project/
-  - Someone else's project: https://github.com/someones/awesome-project/
-
-## Licensing
-
-One really important part: Give your project a proper license. Here you should
-state what the license is and how to find the text version of the license.
-Something like:
-
-"The code in this project is licensed under MIT license."
+- Coming Soon
+- Mentenance
+- Login
+- signUp
+- Edit Profile
+- Edit Password
+- Forgot Password
+- Liked Posts
+- Saved Posts

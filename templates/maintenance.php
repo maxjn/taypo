@@ -1,3 +1,6 @@
+<!-- Template Name: Maintenance
+Post Type: page
+ -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +23,7 @@
 
         <div id="ht-preloader">
             <div class="loader clear-loader">
-                <img src="images/loader.gif" alt="">
+                <img src="<?= TAYPO_DIR_IMG_URI ?>/loader.gif" alt="">
             </div>
         </div>
 

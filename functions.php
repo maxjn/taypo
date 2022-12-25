@@ -36,6 +36,13 @@ if (!defined('TAYPO_DIST_CSS_URI')) {
     define('TAYPO_DIST_CSS_URI', untrailingslashit(get_template_directory_uri()) . '/assets/dist/css');
 }
 
+if (!defined('TAYPO_DIR_IMG_PATH')) {
+    define('TAYPO_DIR_IMG_PATH', untrailingslashit(get_template_directory()) . '/assets/libraries/images');
+}
+
+if (!defined('TAYPO_DIR_IMG_URI')) {
+    define('TAYPO_DIR_IMG_URI', untrailingslashit(get_template_directory_uri()) . '/assets/libraries/images');
+}
 
 require_once TAYPO_DIR_PATH . '/inc/helpers/autoloader.php';
 require_once TAYPO_DIR_PATH . '/inc/helpers/template-tags.php';
