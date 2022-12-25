@@ -7,9 +7,11 @@ A modern wordpress Blog template...
 ## Tested on :
 
 **wordpress v 6.1.1**
+\_
+
 **php v 7.4**
 
-Installing / Getting started
+## Installing / Getting started
 
 ### Initial Configuration
 
