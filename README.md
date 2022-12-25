@@ -15,6 +15,8 @@ A modern wordpress Blog template...
 
 ### Initial Configuration
 
+_Database and Config file are added in 'WP Config' folder if needed_
+
 1. Put **Typo** folder into **theme** folder of your wordpress
 
 2. Run **gulp build**
