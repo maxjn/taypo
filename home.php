@@ -15,13 +15,19 @@ get_template_part('templates\hero\hero-title')
         <div class="container">
             <div class="row">
                 <?php
+                $sidebar_side = get_field_object('blog_sidebar_side', 'options')['value'];
 
-                // *Big Blog Card
-                get_template_part('templates\card\blog\container\blog-card-big');
+                // Where to place the sidebar
+                for ($i = 1; $i <= 2; $i++) {
 
-                // *Sidebar
-                get_template_part('templates\sidebar\blog-sidebar');
-
+                    if (($sidebar_side == 'right' && $i == 1) || ($sidebar_side == 'left' && $i == 2)) {
+                        // *Big Blog Card
+                        get_template_part('templates\card\blog\container\blog-card-big');
+                    } else {
+                        // *Sidebar
+                        get_template_part('templates\sidebar\blog-sidebar');
+                    }
+                }
                 ?>
 
 

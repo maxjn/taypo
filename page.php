@@ -1,4 +1,16 @@
 <?php
+// WP_Query argument For the last 3 posts
+$args = array(
+    'post_type'              => array('post'), // use any for any kind of post type, custom post type slug for custom post type
+    'post_status'            => array('publish'), // Also support: pending, draft, auto-draft, future, private, inherit, trash, any
+    'posts_per_page'         => '3', // use -1 for all post
+    'order'                  => 'DESC', // Also support: ASC
+    'orderby'                => 'date', // Also support: none, rand, id, title, slug, modified, parent, menu_order, comment_count
+);
+
+// The Query
+$query = new WP_Query($args);
+
 get_header();
 ?>
 
@@ -10,22 +22,31 @@ get_header();
 
     <!--single post start-->
 
+
+
+
+    <?php
+    $i = 0; //layout andis number
+    //dynamic content
+    if (have_rows('content_placement')) {
+        while (have_rows('content_placement')) {
+            the_row();
+            // every layout and their fields
+            $layout_fields = get_fields()['content_placement'];
+
+            // Get the row layout.
+            $layout = get_row_layout();
+
+            // Content & Comments Open
+            if ($layout == 'comment_section' || $layout == 'content_section') {
+    ?>
     <section>
         <div class="container">
             <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <?php
+                        }
 
-                <?php
-                $i = 0; //layout andis number
-                //dynamic content
-                if (have_rows('content_placement')) {
-                    while (have_rows('content_placement')) {
-                        the_row();
-
-                        // every layout and their fields
-                        $layout_fields = get_fields()['content_placement'];
-
-                        // Get the row layout.
-                        $layout = get_row_layout();
                         // Hero Layout 1
                         if ($layout == 'hero_secction_1') {
                             get_template_part('templates\hero\hero1', null, ['fields' => $layout_fields[$i]]);
@@ -81,36 +102,50 @@ get_header();
                             get_template_part('templates\counter\counter', null, ['fields' => $layout_fields[$i]]);
                         } // Counter  ###
 
+                        // Latests Posts 1 Section
+                        if ($layout == 'latest_posts_1') {
+
+
+                            get_template_part('templates\card\blog\container\blog-card-small', null, ['query' => $query]);
+                        } // Latests Posts 1 Section ###
+
+                        // Latests Posts2 Section
+                        if ($layout == 'latest_posts_2') {
+
+                            get_template_part('templates\card\blog\container\blog-list-big', null, ['fields' => $layout_fields[$i]]);
+                        } // Latests Posts2 Section ###
+
                         // Content Section
                         if ($layout == 'content_section') {
-                ?>
-                <div class="col-lg-10">
-                    <?php
 
-                                get_template_part('templates\card\blog\container\blog-card-small', null, ['query' => $query]);
-                                ?>
-                </div>
-                <?php
+                            the_content();
                         } // Content Section ###
 
                         // Comment Section
                         if ($layout == 'comment_section') {
-                        ?>
-                <div class="col-lg-10">
-                    <?php
-                                get_template_part('templates\card\blog\container\blog-list-big', null, ['fields' => $layout_fields[$i]]);
-                                ?>
-                </div>
-                <?php
+
+                            comments_template('');
                         } // Comment Section ###
 
+                        // Content & Comments Close Tags
+                        if ($layout == 'comment_section' || $layout == 'content_section') {
+                            ?>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php
+                        }
                         $i++;
                     }
                 }
                 //dynamic content ###
                 else {
 
-                    ?>
+        ?>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <?php
 
@@ -120,12 +155,13 @@ get_header();
 
                         ?>
                 </div>
-                <?php
-                }
-                ?>
             </div>
         </div>
     </section>
+    <?php
+                }
+    ?>
+
 
     <!--single end-->
 

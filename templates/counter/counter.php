@@ -23,9 +23,9 @@ if (isset($args['fields'])) {
                     ?>
 
                     <div class="counter bg-white rounded-4 p-5 py-7 shadow mt-7">
-                        <span class="number count text-dark"
-                            data-count="666"><?= get_sub_field('count_box_value'); ?></span>
-                        <span class="text-dark">+</span>
+                        <span class="number count text-dark d-inline"
+                            data-count="<?= get_sub_field('count_box_value'); ?>"><?= get_sub_field('count_box_value'); ?></span>
+                        <span class="text-dark d-inline">+</span>
                         <h6 class="mb-0 text-muted"><?= get_sub_field('count_box_lable'); ?></h6>
                     </div>
 

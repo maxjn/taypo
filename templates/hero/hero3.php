@@ -33,7 +33,8 @@ $hero_img = $fields["hero_image"];
                 <p class="lead my-5 text-dark"><?= $fields["description_text"] ?></p>
                 <div>
                     <?php if ($fields["button_link"]) { ?>
-                    <a class="btn btn-dark me-3" href="<?= $fields["button_link"] ?>"><?= $fields["button_text"] ?></a>
+                    <a class="btn btn-dark me-3"
+                        href="<?= $fields["button_link"]['url'] ?>"><?= $fields["button_text"] ?></a>
                     <?php }
                     if ($fields["video_button_link"]) {
                     ?>

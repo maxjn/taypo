@@ -91,6 +91,7 @@ $query = new WP_Query($args);
                             $item--;
                         endwhile;
                     }
+                    wp_reset_query();
                                     ?>
         </div>
     </div>
