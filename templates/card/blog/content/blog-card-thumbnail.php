@@ -22,8 +22,8 @@ if (isset($args['class'])) { // if there was a $class->
     } //end if
     else {
     ?>
-    <img class="<?= $classes ?>" loading="lazy"
-        src="<?= get_template_directory_uri() ?>\assets\libraries\images\blog\01.jpg" alt="Image">
+    <img class="<?= $classes ?>" loading="lazy" src="<?= TAYPO_DIR_IMG_URI ?>\no-thumbnail\no-thumbnail.png"
+        alt="Image">
     <?php
     } //end else
     ?>

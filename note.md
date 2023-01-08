@@ -25,6 +25,20 @@
 
 - ADD privacy policy template
 
-- Image Paths got fixed
-- coming-soon.php , maintenance.php were added
-- coming-soon.php template got dynamic using acf
+- Counter.php style got fixed so the number and '+' icon would be shown in the beside each other ✓
+
+- ACF Placement Groups got fixed : Links and Url fields got fixed ✓
+
+- Added Sub Title to featurebox3 acf fields ✓
+
+- Added Carousel to all featureboxs ✓
+
+- Fix Repeator 'add buttons' titles ✓
+
+- Dynamic Content in Page.php got fixed so 'Latests Posts' , 'Content' & 'Comments' be shown in their own places ✓
+
+- Added wp_reset_query() to 'blog-list-big.php' & 'blog-card-small.php' so wp query works fine ✓
+
+- no-thumbnail image got changed ✓
+
+- Fixed url problem in 'feature blocks' ✓

@@ -1,5 +1,5 @@
 <?php
-// WP_Query arguments
+// WP_Query argument For the last 3 posts
 $args = array(
     'post_type'              => array('post'), // use any for any kind of post type, custom post type slug for custom post type
     'post_status'            => array('publish'), // Also support: pending, draft, auto-draft, future, private, inherit, trash, any
@@ -98,6 +98,8 @@ get_header();
 
             $i++;
         }
+    } else {
+        get_template_part('templates\card\blog\container\blog-card-small', null, ['query' => $query]);
     }
     //dynamic content ###
 

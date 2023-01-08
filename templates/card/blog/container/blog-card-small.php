@@ -95,3 +95,4 @@ if (isset($args['query'])) { // if there was a $query->
 <!--blog end-->
 <?php
     }
+    wp_reset_query();

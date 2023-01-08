@@ -31,4 +31,5 @@ if ($query->have_posts()) {
 } else {
     get_template_part('templates\content-non');
 }
+wp_reset_query();
 ?>

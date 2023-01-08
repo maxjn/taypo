@@ -17,7 +17,8 @@ if (isset($args['fields'])) {
                     <?php
                     if ($fields["button_link"]) {
                     ?>
-                    <a class="btn btn-primary" href="<?= $fields["button_link"] ?>"><?= $fields["button_text"] ?></a>
+                    <a class="btn btn-primary"
+                        href="<?= $fields["button_link"]['url'] ?>"><?= $fields["button_text"] ?></a>
                     <?php } ?>
                 </div>
             </div>

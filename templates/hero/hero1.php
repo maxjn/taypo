@@ -32,7 +32,9 @@ $hero_img = $fields["hero_image"];
                 <p class="lead text-dark"><?= $fields["description_text"] ?></p>
                 <?php
                 if ($fields["from_action"] !== '') { ?>
-                <form id="mc-form1" class="group">
+
+                <!-- Form -->
+                <form id="mc-form1" class="group" action="<?= $fields["from_action"] ?>">
                     <div class="input-group form-group bg-light p-3 rounded mb-0">
                         <input type="email" value="" name="EMAIL" class="email form-control border-0" id="mc-email1"
                             placeholder="Email Address" required="">
@@ -40,6 +42,8 @@ $hero_img = $fields["hero_image"];
                             value="<?= $fields["form_button_text"] ?>">
                     </div>
                 </form>
+                <!-- Form### -->
+
                 <?php } ?>
             </div>
         </div>
