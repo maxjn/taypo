@@ -27,7 +27,7 @@ if (isset($args['fields'])) {
                             <?php
                                 while (have_rows('carousel')) {
                                     the_row();
-                                    $carousel_image = get_sub_field('carousel_image');
+                                    $carousel_image = get_sub_field('image');
                                 ?>
                             <!-- Carousel Item -->
                             <div class="owl-item cloned active" style="width: 235.2px; margin-right: 30px;">
@@ -92,20 +92,20 @@ if (isset($args['fields'])) {
             <div class="col-lg-4 col-md-6 <?= $class ?>">
                 <div class="p-6 rounded-4 f-icon-hover border border-dark">
                     <div>
-                        <h4 class="mb-3 text-white"><?= get_sub_field('box_title') ?></h4>
-                        <p class="mb-4 text-light"><?= get_sub_field('box_description') ?></p>
+                        <h4 class="mb-3 text-white"><?= get_sub_field('title') ?></h4>
+                        <p class="mb-4 text-light"><?= get_sub_field('description') ?></p>
                         <?php
-                                if (get_sub_field('box_link')) {
+                                if (get_sub_field('link')) {
                                 ?>
-                        <a class="btn-arrow" href="<?= get_sub_field('box_link')['url'] ?>"></a>
+                        <a class="btn-arrow" href="<?= get_sub_field('link')['url'] ?>"></a>
                         <?php
                                 }
                                 ?>
                     </div>
                     <div class="mt-6">
                         <?php
-                                if (get_sub_field('box_image')) {
-                                    $box_image = get_sub_field('box_image');
+                                if (get_sub_field('image')) {
+                                    $box_image = get_sub_field('image');
                                 ?>
                         <img class="img-fluid" src="<?= $box_image['url'] ?>" alt="<?= $box_image['title'] ?>">
                         <?php } ?>

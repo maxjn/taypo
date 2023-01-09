@@ -24,9 +24,9 @@ if (isset($args['fields'])) {
 
                     <div class="counter bg-white rounded-4 p-5 py-7 shadow mt-7">
                         <span class="number count text-dark d-inline"
-                            data-count="<?= get_sub_field('count_box_value'); ?>"><?= get_sub_field('count_box_value'); ?></span>
+                            data-count="<?= get_sub_field('value'); ?>"><?= get_sub_field('value'); ?></span>
                         <span class="text-dark d-inline">+</span>
-                        <h6 class="mb-0 text-muted"><?= get_sub_field('count_box_lable'); ?></h6>
+                        <h6 class="mb-0 text-muted"><?= get_sub_field('lable'); ?></h6>
                     </div>
 
 
@@ -68,11 +68,11 @@ if (isset($args['fields'])) {
                 <!-- List -->
                 <div class="d-flex align-items-start mb-3">
                     <div class="me-3">
-                        <i class="bi bi-<?= get_sub_field('list_icon') ?> fs-2 text-primary"></i>
+                        <i class="bi bi-<?= get_sub_field('icon') ?> fs-2 text-primary"></i>
                     </div>
                     <div>
-                        <h6 class="mb-2"><?= get_sub_field('list_title') ?></h6>
-                        <p class="mb-0"><?= get_sub_field('list_description') ?></p>
+                        <h6 class="mb-2"><?= get_sub_field('title') ?></h6>
+                        <p class="mb-0"><?= get_sub_field('description') ?></p>
                     </div>
                 </div>
                 <!-- List### -->

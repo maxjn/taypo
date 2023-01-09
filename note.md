@@ -44,8 +44,6 @@
 
 ### Don:
 
-- Replaced if with switch in 'Front-Page.php' ✓
+- fixed acf fields' names:deleted repeater name prefixes ✓
 
-- Added 'Price Table' Features ✓
-
-- Added 'copyright text' settings to 'General template settings' ✓
+- fixed content fields designs ✓

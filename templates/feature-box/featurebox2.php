@@ -25,7 +25,7 @@ $feature_image = $fields['feature_image'];
                                 <?php
                                     while (have_rows('carousel')) {
                                         the_row();
-                                        $carousel_image = get_sub_field('carousel_image');
+                                        $carousel_image = get_sub_field('image');
                                     ?>
                                 <!-- Carousel Item -->
                                 <div class="owl-item cloned active" style="width: 235.2px; margin-right: 30px;">
@@ -83,11 +83,11 @@ $feature_image = $fields['feature_image'];
                 ?>
                 <div class="d-flex align-items-start mb-4">
                     <div class="me-3">
-                        <i class="bi bi-<?= get_sub_field('box_icon') ?> fs-3 text-primary"></i>
+                        <i class="bi bi-<?= get_sub_field('icon') ?> fs-3 text-primary"></i>
                     </div>
                     <div>
-                        <h5 class="mb-2"><?= get_sub_field('box_title') ?></h5>
-                        <p class="mb-0"><?= get_sub_field('box_description') ?></p>
+                        <h5 class="mb-2"><?= get_sub_field('title') ?></h5>
+                        <p class="mb-0"><?= get_sub_field('description') ?></p>
                     </div>
                 </div>
                 <?php

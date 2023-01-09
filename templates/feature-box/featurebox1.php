@@ -27,7 +27,7 @@ if (isset($args['fields'])) {
                                 <?php
                                     while (have_rows('carousel')) {
                                         the_row();
-                                        $carousel_image = get_sub_field('carousel_image');
+                                        $carousel_image = get_sub_field('image');
                                     ?>
                                 <!-- Carousel Item -->
                                 <div class="owl-item cloned active" style="width: 235.2px; margin-right: 30px;">
@@ -85,17 +85,17 @@ if (isset($args['fields'])) {
                 <div class="col-lg-4 col-md-6 mt-6 mt-lg-0">
                     <div class="bg-white p-6 rounded-4 f-icon-hover">
                         <div class="mb-4 rounded f-icon-shape-sm"
-                            data-bg-color="<?= get_sub_field('box_icon_background_color') ?>">
-                            <i class="bi bi-<?= get_sub_field('box_icon') ?> fs-1 text-dark"></i>
+                            data-bg-color="<?= get_sub_field('icon_background_color') ?>">
+                            <i class="bi bi-<?= get_sub_field('icon') ?> fs-1 text-dark"></i>
                         </div>
                         <div>
-                            <h5 class="mb-3"><?= get_sub_field('box_title') ?></h5>
-                            <p class="mb-4"><?= get_sub_field('box_description') ?></p>
+                            <h5 class="mb-3"><?= get_sub_field('title') ?></h5>
+                            <p class="mb-4"><?= get_sub_field('description') ?></p>
                             <?php
 
-                                    if (get_sub_field('box_link')) {
+                                    if (get_sub_field('link')) {
                                     ?>
-                            <a class="btn-arrow" href="<?= get_sub_field('box_link')['url'] ?>"></a>
+                            <a class="btn-arrow" href="<?= get_sub_field('link')['url'] ?>"></a>
                             <?php
                                     }
                                     ?>

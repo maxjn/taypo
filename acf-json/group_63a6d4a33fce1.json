@@ -3,8 +3,8 @@
     "title": "Content Placement (Page)",
     "fields": [
         {
-            "key": "field_63a6d4a348a2d",
-            "label": "Page Content Placement",
+            "key": "field_63a442b004508",
+            "label": "Content Placement",
             "name": "content_placement",
             "aria-label": "",
             "type": "flexible_content",
@@ -24,7 +24,24 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_63a6d4a3505f3",
+                            "key": "field_63bc3f498f9ad",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
+                            "key": "field_63a576af4eea5",
                             "label": "Title Firs Part",
                             "name": "title_firs_part",
                             "aria-label": "",
@@ -44,7 +61,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3542be",
+                            "key": "field_63a577094eea6",
                             "label": "Title Main Part",
                             "name": "title_main_part",
                             "aria-label": "",
@@ -57,14 +74,14 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "Priduct",
+                            "default_value": "Product",
                             "maxlength": "",
                             "placeholder": "",
                             "prepend": "",
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a357fb5",
+                            "key": "field_63a577464eea7",
                             "label": "Title Last Part",
                             "name": "title_last_part",
                             "aria-label": "",
@@ -84,7 +101,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a35bcc5",
+                            "key": "field_63a577b04eea8",
                             "label": "Description Text",
                             "name": "description_text",
                             "aria-label": "",
@@ -97,14 +114,51 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "A Describtion about my job and what I do and how I can help you.",
+                            "default_value": "We're helped client to create your website with our talented experts.",
                             "maxlength": "",
                             "placeholder": "",
                             "prepend": "",
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a35f9b8",
+                            "key": "field_63a59e00dfcec",
+                            "label": "Button Text",
+                            "name": "button_text",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Let's Get Started",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_63bc3faf8f9ae",
+                            "label": "Subscribe Form",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63a578154eea9",
                             "label": "Form Action",
                             "name": "from_action",
                             "aria-label": "",
@@ -121,7 +175,7 @@
                             "placeholder": ""
                         },
                         {
-                            "key": "field_63a6d4a363704",
+                            "key": "field_63a5788b4eeaa",
                             "label": "Form Button Text",
                             "name": "form_button_text",
                             "aria-label": "",
@@ -141,7 +195,41 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3673c0",
+                            "key": "field_63bc3fde8f9af",
+                            "label": "Image",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63bc40830f6be",
+                            "label": "Video Button",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63a578ad4eeab",
                             "label": "Hero Image",
                             "name": "hero_image",
                             "aria-label": "",
@@ -164,6 +252,22 @@
                             "max_size": "",
                             "mime_types": "",
                             "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_63a5a507bf48d",
+                            "label": "Button Link",
+                            "name": "button_link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
                         }
                     ],
                     "min": "",
@@ -176,7 +280,24 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_63a6d4a36b26b",
+                            "key": "field_63bc40380f6bb",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
+                            "key": "field_63a59bb8dfcea",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -196,7 +317,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a36ef81",
+                            "key": "field_63a59dd1dfceb",
                             "label": "Description Text",
                             "name": "description_text",
                             "aria-label": "",
@@ -216,11 +337,11 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a372ccf",
-                            "label": "Button Text",
-                            "name": "button_text",
+                            "key": "field_63bc403f0f6bc",
+                            "label": "Button",
+                            "name": "",
                             "aria-label": "",
-                            "type": "text",
+                            "type": "tab",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -229,14 +350,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "Let's Get Started",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
+                            "placement": "top",
+                            "endpoint": 0
                         },
                         {
-                            "key": "field_63a6d4a3769e5",
+                            "key": "field_63a59e3adfced",
                             "label": "Button Link",
                             "name": "button_link",
                             "aria-label": "",
@@ -252,7 +370,7 @@
                             "return_format": "array"
                         },
                         {
-                            "key": "field_63a6d4a37a781",
+                            "key": "field_63a59e55dfcee",
                             "label": "Video Button Text",
                             "name": "video_button_text",
                             "aria-label": "",
@@ -272,7 +390,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a37e3f2",
+                            "key": "field_63a59e85dfcef",
                             "label": "Video Button Link",
                             "name": "video_button_link",
                             "aria-label": "",
@@ -289,7 +407,24 @@
                             "placeholder": ""
                         },
                         {
-                            "key": "field_63a6d4a382303",
+                            "key": "field_63bc40440f6bd",
+                            "label": "Image",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63a59e9edfcf0",
                             "label": "Hero Image",
                             "name": "hero_image",
                             "aria-label": "",
@@ -324,7 +459,24 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_63a6d4a385ffd",
+                            "key": "field_63bc4179fd464",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
+                            "key": "field_63a5a326bf487",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -344,7 +496,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a389ccb",
+                            "key": "field_63a5a344bf488",
                             "label": "Typer Fixed Part",
                             "name": "typer_fixed_part",
                             "aria-label": "",
@@ -364,7 +516,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a38dac0",
+                            "key": "field_63a5a37fbf489",
                             "label": "Typer Text",
                             "name": "typer_text",
                             "aria-label": "",
@@ -379,12 +531,12 @@
                             },
                             "default_value": "web design,creative ideas,mobile design,WebApp,Agency,Marketing,Designer,Developer",
                             "maxlength": "",
-                            "placeholder": "",
+                            "placeholder": "word1,word2,word3,...",
                             "prepend": "",
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3917fd",
+                            "key": "field_63a5a49cbf48a",
                             "label": "Description Text",
                             "name": "description_text",
                             "aria-label": "",
@@ -404,7 +556,24 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3953d1",
+                            "key": "field_63bc417cfd465",
+                            "label": "Button",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63a5a503bf48c",
                             "label": "Button Text",
                             "name": "button_text",
                             "aria-label": "",
@@ -424,11 +593,11 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3990da",
-                            "label": "Button Link",
-                            "name": "button_link",
+                            "key": "field_63bc4180fd466",
+                            "label": "Video Button",
+                            "name": "",
                             "aria-label": "",
-                            "type": "link",
+                            "type": "tab",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -437,27 +606,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array"
+                            "placement": "top",
+                            "endpoint": 0
                         },
                         {
-                            "key": "field_63a6d4a39cfca",
-                            "label": "Video Button Link",
-                            "name": "video_button_link",
-                            "aria-label": "",
-                            "type": "url",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_63a6d4a3a0cec",
+                            "key": "field_63a5a511bf48e",
                             "label": "Video Button Text",
                             "name": "video_button_text",
                             "aria-label": "",
@@ -477,7 +630,41 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3a4a2f",
+                            "key": "field_63a5a515bf48f",
+                            "label": "Video Button Link",
+                            "name": "video_button_link",
+                            "aria-label": "",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_63bc4189fd467",
+                            "label": "Image",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63a5a4cebf48b",
                             "label": "Hero Image",
                             "name": "hero_image",
                             "aria-label": "",
@@ -512,7 +699,24 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_63a6d4a3a872b",
+                            "key": "field_63bc422619671",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
+                            "key": "field_63a5b27d60e3e",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -532,7 +736,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3ac409",
+                            "key": "field_63a5b29860e3f",
                             "label": "Description Text",
                             "name": "description_text",
                             "aria-label": "",
@@ -552,7 +756,24 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3b012d",
+                            "key": "field_63bc424119672",
+                            "label": "Box",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63a5b2e460e40",
                             "label": "Box",
                             "name": "box",
                             "aria-label": "",
@@ -573,9 +794,9 @@
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_63a6d4a442171",
+                                    "key": "field_63a5b37e60e41",
                                     "label": "Box Title",
-                                    "name": "box_title",
+                                    "name": "title",
                                     "aria-label": "",
                                     "type": "text",
                                     "instructions": "The title of the box is the subject you are talking about.",
@@ -591,12 +812,12 @@
                                     "placeholder": "Title...",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_63a6d4a3b012d"
+                                    "parent_repeater": "field_63a5b2e460e40"
                                 },
                                 {
-                                    "key": "field_63a6d4a445ed9",
+                                    "key": "field_63a5b3d260e42",
                                     "label": "Box Description",
-                                    "name": "box_description",
+                                    "name": "description",
                                     "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "A description of the subject you are talking about in the box.",
@@ -607,20 +828,37 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
+                                    "default_value": "Get the most of reduction in your team’s operating let’s come up with taypo. But I must idea of denouncing pleasure.",
                                     "maxlength": "",
                                     "rows": "",
                                     "placeholder": "",
                                     "new_lines": "",
-                                    "parent_repeater": "field_63a6d4a3b012d"
+                                    "parent_repeater": "field_63a5b2e460e40"
                                 },
                                 {
-                                    "key": "field_63a6d4a449b8a",
+                                    "key": "field_63a5c179441a7",
+                                    "label": "Box Link",
+                                    "name": "link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "A link to your chosen content.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "parent_repeater": "field_63a5b2e460e40"
+                                },
+                                {
+                                    "key": "field_63a5b43e60e43",
                                     "label": "Box Icon",
-                                    "name": "box_icon",
+                                    "name": "icon",
                                     "aria-label": "",
                                     "type": "text",
-                                    "instructions": "Go to https:\/\/icons.getbootstrap.com\/\r\nSearch for the icon you are looking for and write the name",
+                                    "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -633,29 +871,12 @@
                                     "placeholder": "Icon Name",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_63a6d4a3b012d"
+                                    "parent_repeater": "field_63a5b2e460e40"
                                 },
                                 {
-                                    "key": "field_63a6d4a44d845",
-                                    "label": "Box Link",
-                                    "name": "box_link",
-                                    "aria-label": "",
-                                    "type": "link",
-                                    "instructions": "A link to your chosen content.",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "parent_repeater": "field_63a6d4a3b012d"
-                                },
-                                {
-                                    "key": "field_63b99aba321ba",
-                                    "label": "Box Icon Background Color",
-                                    "name": "box_icon_background_color",
+                                    "key": "field_63b9888075193",
+                                    "label": "Box Icon BackGround Color",
+                                    "name": "icon_background_color",
                                     "aria-label": "",
                                     "type": "color_picker",
                                     "instructions": "",
@@ -669,12 +890,29 @@
                                     "default_value": "#ffebda",
                                     "enable_opacity": 0,
                                     "return_format": "string",
-                                    "parent_repeater": "field_63a6d4a3b012d"
+                                    "parent_repeater": "field_63a5b2e460e40"
                                 }
                             ]
                         },
                         {
-                            "key": "field_63ba94674ccce",
+                            "key": "field_63bc425719673",
+                            "label": "Carousel",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63ba8c5947d7d",
                             "label": "carousel",
                             "name": "carousel",
                             "aria-label": "",
@@ -687,8 +925,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "layout": "",
-                            "pagination": 0,
+                            "layout": "table",
                             "min": 0,
                             "max": 0,
                             "collapsed": "",
@@ -696,9 +933,9 @@
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_63ba94674cccf",
+                                    "key": "field_63ba8c8047d7e",
                                     "label": "Carousel Image",
-                                    "name": "carousel_image",
+                                    "name": "image",
                                     "aria-label": "",
                                     "type": "image",
                                     "instructions": "Add images to be shown in the carousel. (Brand logos,...)",
@@ -719,7 +956,7 @@
                                     "max_size": "",
                                     "mime_types": "",
                                     "preview_size": "medium",
-                                    "parent_repeater": "field_63ba94674ccce"
+                                    "parent_repeater": "field_63ba8c5947d7d"
                                 }
                             ]
                         }
@@ -734,7 +971,24 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_63a6d4a3b3f93",
+                            "key": "field_63bc446f241c9",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
+                            "key": "field_63a5c3d817191",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -754,7 +1008,24 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3c33f0",
+                            "key": "field_63bc4473241ca",
+                            "label": "Image",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63ba914522a22",
                             "label": "Feature Image",
                             "name": "feature_image",
                             "aria-label": "",
@@ -767,8 +1038,8 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "",
-                            "library": "",
+                            "return_format": "array",
+                            "library": "all",
                             "min_width": "",
                             "min_height": "",
                             "min_size": "",
@@ -779,7 +1050,24 @@
                             "preview_size": "medium"
                         },
                         {
-                            "key": "field_63a6d4a3b7cec",
+                            "key": "field_63bc44ca241cc",
+                            "label": "Box",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63a5c3d817193",
                             "label": "Box",
                             "name": "box",
                             "aria-label": "",
@@ -800,9 +1088,9 @@
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_63a6d4a459166",
+                                    "key": "field_63a5c3d817194",
                                     "label": "Box Title",
-                                    "name": "box_title",
+                                    "name": "title",
                                     "aria-label": "",
                                     "type": "text",
                                     "instructions": "The title of the box is the subject you are talking about.",
@@ -818,12 +1106,12 @@
                                     "placeholder": "Title...",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_63a6d4a3b7cec"
+                                    "parent_repeater": "field_63a5c3d817193"
                                 },
                                 {
-                                    "key": "field_63a6d4a45ce95",
+                                    "key": "field_63a5c3d817195",
                                     "label": "Box Description",
-                                    "name": "box_description",
+                                    "name": "description",
                                     "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "A description of the subject you are talking about in the box.",
@@ -834,20 +1122,20 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
+                                    "default_value": "Get the most of reduction in your team’s operating let’s come up with taypo. But I must idea of denouncing pleasure.",
                                     "maxlength": "",
                                     "rows": "",
                                     "placeholder": "",
                                     "new_lines": "",
-                                    "parent_repeater": "field_63a6d4a3b7cec"
+                                    "parent_repeater": "field_63a5c3d817193"
                                 },
                                 {
-                                    "key": "field_63a6d4a460aca",
+                                    "key": "field_63a5c3d817196",
                                     "label": "Box Icon",
-                                    "name": "box_icon",
+                                    "name": "icon",
                                     "aria-label": "",
                                     "type": "text",
-                                    "instructions": "Go to https:\/\/icons.getbootstrap.com\/\r\nSearch for the icon you are looking for and write the name",
+                                    "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -860,12 +1148,29 @@
                                     "placeholder": "Icon Name",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_63a6d4a3b7cec"
+                                    "parent_repeater": "field_63a5c3d817193"
                                 }
                             ]
                         },
                         {
-                            "key": "field_63ba945e4cccc",
+                            "key": "field_63bc4476241cb",
+                            "label": "Carousel",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63ba923076356",
                             "label": "carousel",
                             "name": "carousel",
                             "aria-label": "",
@@ -879,7 +1184,6 @@
                                 "id": ""
                             },
                             "layout": "",
-                            "pagination": 0,
                             "min": 0,
                             "max": 0,
                             "collapsed": "",
@@ -887,9 +1191,9 @@
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_63ba945e4cccd",
+                                    "key": "field_63ba923076357",
                                     "label": "Carousel Image",
-                                    "name": "carousel_image",
+                                    "name": "image",
                                     "aria-label": "",
                                     "type": "image",
                                     "instructions": "Add images to be shown in the carousel. (Brand logos,...)",
@@ -900,8 +1204,8 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "",
-                                    "library": "",
+                                    "return_format": "array",
+                                    "library": "all",
                                     "min_width": "",
                                     "min_height": "",
                                     "min_size": "",
@@ -910,7 +1214,7 @@
                                     "max_size": "",
                                     "mime_types": "",
                                     "preview_size": "medium",
-                                    "parent_repeater": "field_63ba945e4cccc"
+                                    "parent_repeater": "field_63ba923076356"
                                 }
                             ]
                         }
@@ -925,7 +1229,24 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_63a6d4a3bf708",
+                            "key": "field_63bc457e4b271",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
+                            "key": "field_63a5c42d00ce0",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -945,7 +1266,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63b9a27d9f0f6",
+                            "key": "acfcloneindex",
                             "label": "Sub Title",
                             "name": "sub_title",
                             "aria-label": "",
@@ -965,7 +1286,24 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3c70ce",
+                            "key": "field_63bc45774b26f",
+                            "label": "Box",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63a5c42d00ce2",
                             "label": "Box",
                             "name": "box",
                             "aria-label": "",
@@ -986,9 +1324,9 @@
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_63a6d4a46c3e2",
+                                    "key": "field_63a5c42d00ce3",
                                     "label": "Box Title",
-                                    "name": "box_title",
+                                    "name": "title",
                                     "aria-label": "",
                                     "type": "text",
                                     "instructions": "The title of the box is the subject you are talking about.",
@@ -1004,12 +1342,12 @@
                                     "placeholder": "Title...",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_63a6d4a3c70ce"
+                                    "parent_repeater": "field_63a5c42d00ce2"
                                 },
                                 {
-                                    "key": "field_63a6d4a47011d",
+                                    "key": "field_63a5c42d00ce4",
                                     "label": "Box Description",
-                                    "name": "box_description",
+                                    "name": "description",
                                     "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "A description of the subject you are talking about in the box.",
@@ -1020,17 +1358,17 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
+                                    "default_value": "Get the most of reduction in your team’s operating let’s come up with taypo. But I must idea of denouncing pleasure.",
                                     "maxlength": "",
                                     "rows": "",
                                     "placeholder": "",
                                     "new_lines": "",
-                                    "parent_repeater": "field_63a6d4a3c70ce"
+                                    "parent_repeater": "field_63a5c42d00ce2"
                                 },
                                 {
-                                    "key": "field_63a6d4a473e32",
+                                    "key": "field_63a5c42d00ce6",
                                     "label": "Box Link",
-                                    "name": "box_link",
+                                    "name": "link",
                                     "aria-label": "",
                                     "type": "link",
                                     "instructions": "A link to your chosen content.",
@@ -1042,12 +1380,12 @@
                                         "id": ""
                                     },
                                     "return_format": "array",
-                                    "parent_repeater": "field_63a6d4a3c70ce"
+                                    "parent_repeater": "field_63a5c42d00ce2"
                                 },
                                 {
-                                    "key": "field_63a6d4a477b1c",
+                                    "key": "field_63a5d4e01b3e6",
                                     "label": "Box Image",
-                                    "name": "box_image",
+                                    "name": "image",
                                     "aria-label": "",
                                     "type": "image",
                                     "instructions": "",
@@ -1068,12 +1406,29 @@
                                     "max_size": "",
                                     "mime_types": "",
                                     "preview_size": "medium",
-                                    "parent_repeater": "field_63a6d4a3c70ce"
+                                    "parent_repeater": "field_63a5c42d00ce2"
                                 }
                             ]
                         },
                         {
-                            "key": "field_63ba94e02f5b7",
+                            "key": "field_63bc45764b26e",
+                            "label": "Carousel",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63ba930ec8bcf",
                             "label": "carousel",
                             "name": "carousel",
                             "aria-label": "",
@@ -1087,7 +1442,6 @@
                                 "id": ""
                             },
                             "layout": "",
-                            "pagination": 0,
                             "min": 0,
                             "max": 0,
                             "collapsed": "",
@@ -1095,9 +1449,9 @@
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_63ba94e02f5b8",
+                                    "key": "field_63ba930ec8bd0",
                                     "label": "Carousel Image",
-                                    "name": "carousel_image",
+                                    "name": "image",
                                     "aria-label": "",
                                     "type": "image",
                                     "instructions": "Add images to be shown in the carousel. (Brand logos,...)",
@@ -1108,8 +1462,8 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "",
-                                    "library": "",
+                                    "return_format": "array",
+                                    "library": "all",
                                     "min_width": "",
                                     "min_height": "",
                                     "min_size": "",
@@ -1118,7 +1472,7 @@
                                     "max_size": "",
                                     "mime_types": "",
                                     "preview_size": "medium",
-                                    "parent_repeater": "field_63ba94e02f5b7"
+                                    "parent_repeater": "field_63ba930ec8bcf"
                                 }
                             ]
                         }
@@ -1133,7 +1487,24 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_63a6d4a3cae24",
+                            "key": "field_63bc4786e7f62",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
+                            "key": "field_63a5c43e00ce8",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -1153,7 +1524,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3ceb77",
+                            "key": "field_63a5c43e00ce9",
                             "label": "Description Text",
                             "name": "description_text",
                             "aria-label": "",
@@ -1173,7 +1544,24 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3d2870",
+                            "key": "field_63bc478ae7f63",
+                            "label": "Box",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63a5c43e00cea",
                             "label": "Box",
                             "name": "box",
                             "aria-label": "",
@@ -1194,9 +1582,9 @@
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_63a6d4a4870b9",
+                                    "key": "field_63a5c43e00ceb",
                                     "label": "Box Title",
-                                    "name": "box_title",
+                                    "name": "title",
                                     "aria-label": "",
                                     "type": "text",
                                     "instructions": "The title of the box is the subject you are talking about.",
@@ -1212,12 +1600,12 @@
                                     "placeholder": "Title...",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_63a6d4a3d2870"
+                                    "parent_repeater": "field_63a5c43e00cea"
                                 },
                                 {
-                                    "key": "field_63a6d4a48ae68",
+                                    "key": "field_63a5c43e00cec",
                                     "label": "Box Description",
-                                    "name": "box_description",
+                                    "name": "description",
                                     "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "A description of the subject you are talking about in the box.",
@@ -1228,20 +1616,37 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
+                                    "default_value": "Get the most of reduction in your team’s operating let’s come up with taypo. But I must idea of denouncing pleasure.",
                                     "maxlength": "",
                                     "rows": "",
                                     "placeholder": "",
                                     "new_lines": "",
-                                    "parent_repeater": "field_63a6d4a3d2870"
+                                    "parent_repeater": "field_63a5c43e00cea"
                                 },
                                 {
-                                    "key": "field_63a6d4a48eb0e",
+                                    "key": "field_63a5c43e00cee",
+                                    "label": "Box Link",
+                                    "name": "link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "A link to your chosen content.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "parent_repeater": "field_63a5c43e00cea"
+                                },
+                                {
+                                    "key": "field_63a5c43e00ced",
                                     "label": "Box Icon",
-                                    "name": "box_icon",
+                                    "name": "icon",
                                     "aria-label": "",
                                     "type": "text",
-                                    "instructions": "Go to https:\/\/icons.getbootstrap.com\/\r\nSearch for the icon you are looking for and write the name",
+                                    "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -1254,29 +1659,12 @@
                                     "placeholder": "Icon Name",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_63a6d4a3d2870"
+                                    "parent_repeater": "field_63a5c43e00cea"
                                 },
                                 {
-                                    "key": "field_63a6d4a4927df",
-                                    "label": "Box Link",
-                                    "name": "box_link",
-                                    "aria-label": "",
-                                    "type": "link",
-                                    "instructions": "A link to your chosen content.",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "parent_repeater": "field_63a6d4a3d2870"
-                                },
-                                {
-                                    "key": "field_63b99b4c321bb",
-                                    "label": "Box Icon Background Color",
-                                    "name": "box_icon_background_color",
+                                    "key": "field_63b99960ec919",
+                                    "label": "Box Icon BackGround Color",
+                                    "name": "icon_background_color",
                                     "aria-label": "",
                                     "type": "color_picker",
                                     "instructions": "",
@@ -1289,13 +1677,30 @@
                                     },
                                     "default_value": "#ffebda",
                                     "enable_opacity": 0,
-                                    "return_format": "",
-                                    "parent_repeater": "field_63a6d4a3d2870"
+                                    "return_format": "string",
+                                    "parent_repeater": "field_63a5c43e00cea"
                                 }
                             ]
                         },
                         {
-                            "key": "field_63ba94e22f5b9",
+                            "key": "field_63bc478ee7f64",
+                            "label": "Carousel",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63ba9366ab09e",
                             "label": "carousel",
                             "name": "carousel",
                             "aria-label": "",
@@ -1309,7 +1714,6 @@
                                 "id": ""
                             },
                             "layout": "",
-                            "pagination": 0,
                             "min": 0,
                             "max": 0,
                             "collapsed": "",
@@ -1317,9 +1721,9 @@
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_63ba94e22f5ba",
+                                    "key": "field_63ba9366ab09f",
                                     "label": "Carousel Image",
-                                    "name": "carousel_image",
+                                    "name": "image",
                                     "aria-label": "",
                                     "type": "image",
                                     "instructions": "Add images to be shown in the carousel. (Brand logos,...)",
@@ -1330,8 +1734,8 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "",
-                                    "library": "",
+                                    "return_format": "array",
+                                    "library": "all",
                                     "min_width": "",
                                     "min_height": "",
                                     "min_size": "",
@@ -1340,7 +1744,7 @@
                                     "max_size": "",
                                     "mime_types": "",
                                     "preview_size": "medium",
-                                    "parent_repeater": "field_63ba94e22f5b9"
+                                    "parent_repeater": "field_63ba9366ab09e"
                                 }
                             ]
                         }
@@ -1355,7 +1759,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_63a6d4a3d6528",
+                            "key": "field_63a6d1cef5a0b",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -1375,7 +1779,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3da2d7",
+                            "key": "field_63a6c4ac40b82",
                             "label": "Sub Title",
                             "name": "sub_title",
                             "aria-label": "",
@@ -1395,7 +1799,24 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3ddfbd",
+                            "key": "field_63bc567f7d98d",
+                            "label": "Image",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63a6c4c440b83",
                             "label": "Image",
                             "name": "image",
                             "aria-label": "",
@@ -1420,7 +1841,24 @@
                             "preview_size": "medium"
                         },
                         {
-                            "key": "field_63a6d4a3e1c7b",
+                            "key": "field_63bc56967d98e",
+                            "label": "Questions",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63a6bfd1990d0",
                             "label": "Questions",
                             "name": "questions",
                             "aria-label": "",
@@ -1436,12 +1874,12 @@
                             "layout": "table",
                             "min": 0,
                             "max": 0,
-                            "collapsed": "",
+                            "collapsed": "field_63a6bff5990d1",
                             "button_label": "Add Row",
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_63a6d4a4a5a8b",
+                                    "key": "field_63a6bff5990d1",
                                     "label": "Question",
                                     "name": "question",
                                     "aria-label": "",
@@ -1459,10 +1897,10 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_63a6d4a3e1c7b"
+                                    "parent_repeater": "field_63a6bfd1990d0"
                                 },
                                 {
-                                    "key": "field_63a6d4a4a97aa",
+                                    "key": "field_63a6c033990d2",
                                     "label": "Answer",
                                     "name": "answer",
                                     "aria-label": "",
@@ -1480,7 +1918,30 @@
                                     "rows": "",
                                     "placeholder": "",
                                     "new_lines": "",
-                                    "parent_repeater": "field_63a6d4a3e1c7b"
+                                    "parent_repeater": "field_63a6bfd1990d0"
+                                },
+                                {
+                                    "key": "field_63bc56427d98c",
+                                    "label": "",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placement": "top",
+                                    "endpoint": 0,
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63a6bfd1990d0"
                                 }
                             ]
                         }
@@ -1495,7 +1956,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_63a6d4a3e5b56",
+                            "key": "field_63a6c5c3f81c4",
                             "label": "Questions",
                             "name": "questions",
                             "aria-label": "",
@@ -1516,7 +1977,7 @@
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_63a6d4a4b11a5",
+                                    "key": "field_63a6c5c3f81c5",
                                     "label": "Question",
                                     "name": "question",
                                     "aria-label": "",
@@ -1534,10 +1995,10 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_63a6d4a3e5b56"
+                                    "parent_repeater": "field_63a6c5c3f81c4"
                                 },
                                 {
-                                    "key": "field_63a6d4a4b4ed8",
+                                    "key": "field_63a6c5c3f81c6",
                                     "label": "Answer",
                                     "name": "answer",
                                     "aria-label": "",
@@ -1555,7 +2016,7 @@
                                     "rows": "",
                                     "placeholder": "",
                                     "new_lines": "",
-                                    "parent_repeater": "field_63a6d4a3e5b56"
+                                    "parent_repeater": "field_63a6c5c3f81c4"
                                 }
                             ]
                         }
@@ -1570,7 +2031,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_63a6d4a3e9a47",
+                            "key": "field_63a5dc448da4e",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -1590,7 +2051,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a3ed75e",
+                            "key": "field_63a5dc658da4f",
                             "label": "Description Text",
                             "name": "description_text",
                             "aria-label": "",
@@ -1610,7 +2071,7 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_63a6d4a3f148a",
+                            "key": "field_63a5dc7d8da50",
                             "label": "Button Text",
                             "name": "button_text",
                             "aria-label": "",
@@ -1630,7 +2091,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a400fe2",
+                            "key": "field_63a5dc908da51",
                             "label": "Button Link",
                             "name": "button_link",
                             "aria-label": "",
@@ -1656,7 +2117,24 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_63a6d4a404dad",
+                            "key": "field_63bc5817ba08b",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
+                            "key": "field_63a69c0b719df",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -1676,7 +2154,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a408c4b",
+                            "key": "field_63a69c47719e0",
                             "label": "Description",
                             "name": "description",
                             "aria-label": "",
@@ -1696,7 +2174,24 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_63a6d4a40c975",
+                            "key": "field_63bc574c7d992",
+                            "label": "List",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63a69c91719e1",
                             "label": "List",
                             "name": "list",
                             "aria-label": "",
@@ -1712,14 +2207,14 @@
                             "layout": "table",
                             "min": 0,
                             "max": 0,
-                            "collapsed": "",
-                            "button_label": "Add Row",
+                            "collapsed": "field_63a69d16719e2",
+                            "button_label": "Add Item",
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_63a6d4a4c43a4",
+                                    "key": "field_63a69d16719e2",
                                     "label": "List Title",
-                                    "name": "list_title",
+                                    "name": "title",
                                     "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
@@ -1735,12 +2230,12 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_63a6d4a40c975"
+                                    "parent_repeater": "field_63a69c91719e1"
                                 },
                                 {
-                                    "key": "field_63a6d4a4c810a",
+                                    "key": "field_63a69d3d719e3",
                                     "label": "List Description",
-                                    "name": "list_description",
+                                    "name": "description",
                                     "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "",
@@ -1756,15 +2251,15 @@
                                     "rows": "",
                                     "placeholder": "",
                                     "new_lines": "",
-                                    "parent_repeater": "field_63a6d4a40c975"
+                                    "parent_repeater": "field_63a69c91719e1"
                                 },
                                 {
-                                    "key": "field_63a6d4a4cbdb3",
+                                    "key": "field_63a69d60719e4",
                                     "label": "List Icon",
-                                    "name": "list_icon",
+                                    "name": "icon",
                                     "aria-label": "",
                                     "type": "text",
-                                    "instructions": "Go to https:\/\/icons.getbootstrap.com\/ (Bootstrap icon library),\r\nSearch for the icon you are looking for and write the name",
+                                    "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -1777,12 +2272,29 @@
                                     "placeholder": "List Icon",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_63a6d4a40c975"
+                                    "parent_repeater": "field_63a69c91719e1"
                                 }
                             ]
                         },
                         {
-                            "key": "field_63a6d4a4106fb",
+                            "key": "field_63bc57517d993",
+                            "label": "Count Boxe",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63a69df414ca1",
                             "label": "Count Box",
                             "name": "count_box",
                             "aria-label": "",
@@ -1795,7 +2307,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "layout": "table",
+                            "layout": "block",
                             "min": 0,
                             "max": 0,
                             "collapsed": "field_63a69e7514ca3",
@@ -1803,9 +2315,9 @@
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_63a6d4a4d3780",
+                                    "key": "field_63a69e7514ca3",
                                     "label": "Count Box Lable",
-                                    "name": "count_box_lable",
+                                    "name": "lable",
                                     "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
@@ -1821,12 +2333,12 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_63a6d4a4106fb"
+                                    "parent_repeater": "field_63a69df414ca1"
                                 },
                                 {
-                                    "key": "field_63a6d4a4d754d",
+                                    "key": "field_63a69e3714ca2",
                                     "label": "Count Box Value",
-                                    "name": "count_box_value",
+                                    "name": "value",
                                     "aria-label": "",
                                     "type": "number",
                                     "instructions": "",
@@ -1844,7 +2356,7 @@
                                     "step": "",
                                     "prepend": "",
                                     "append": "",
-                                    "parent_repeater": "field_63a6d4a4106fb"
+                                    "parent_repeater": "field_63a69df414ca1"
                                 }
                             ]
                         }
@@ -1868,7 +2380,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_63a6d4a4143a3",
+                            "key": "field_63a698f4d8b8a",
                             "label": "Title",
                             "name": "title",
                             "aria-label": "",
@@ -1888,7 +2400,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a418056",
+                            "key": "field_63a699e64b956",
                             "label": "Sub Title",
                             "name": "sub_title",
                             "aria-label": "",
@@ -1908,7 +2420,7 @@
                             "append": ""
                         },
                         {
-                            "key": "field_63a6d4a41bdb7",
+                            "key": "field_63a69a174d2b3",
                             "label": "Description",
                             "name": "description",
                             "aria-label": "",
@@ -1931,21 +2443,1326 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_63a6d4d8b0329": {
-                    "key": "layout_63a6d4d8b0329",
-                    "name": "content_section",
-                    "label": "Content Section",
+                "layout_63bbc3b484f95": {
+                    "key": "layout_63bbc3b484f95",
+                    "name": "price_table_1",
+                    "label": "Price Table 1",
                     "display": "block",
-                    "sub_fields": [],
+                    "sub_fields": [
+                        {
+                            "key": "field_63bc084ff5b50",
+                            "label": "Header Section",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
+                            "key": "field_63bbe00cc34bf",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Get a Special Price Just For You!",
+                            "maxlength": "",
+                            "placeholder": "Title...",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_63bbe053c34c0",
+                            "label": "Description",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "We are a team of experienced developers who are passionate about their work. No coding required to make customizations.",
+                            "maxlength": "",
+                            "rows": 3,
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_63bc08b5acded",
+                            "label": "Price Cards",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63bbe071c34c1",
+                            "label": "Cards",
+                            "name": "price_card",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Card",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_63bc19b49f3f1",
+                                    "label": "Card Theme",
+                                    "name": "theme",
+                                    "aria-label": "",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "Light": "Light",
+                                        "Dark": "Dark"
+                                    },
+                                    "default_value": "Light",
+                                    "return_format": "value",
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "layout": "horizontal",
+                                    "save_other_choice": 0,
+                                    "parent_repeater": "field_63bbe071c34c1"
+                                },
+                                {
+                                    "key": "field_63bc1695a6b05",
+                                    "label": "Card Header",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63bbe071c34c1"
+                                },
+                                {
+                                    "key": "field_63bc1956ecdda",
+                                    "label": "Card Title",
+                                    "name": "title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Basic",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bbe071c34c1"
+                                },
+                                {
+                                    "key": "field_63bc16eca6b08",
+                                    "label": "Card Icon",
+                                    "name": "icon",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "32",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "award",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bbe071c34c1"
+                                },
+                                {
+                                    "key": "field_63bc16c8a6b07",
+                                    "label": "Card Description",
+                                    "name": "description",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "A beautiful, simple website",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bbe071c34c1"
+                                },
+                                {
+                                    "key": "field_63bc0acfa7145",
+                                    "label": "Card Price",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63bbe071c34c1"
+                                },
+                                {
+                                    "key": "field_63bbe400c34c5",
+                                    "label": "Card Price",
+                                    "name": "price",
+                                    "aria-label": "",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": 48,
+                                    "min": "",
+                                    "max": "",
+                                    "placeholder": "",
+                                    "step": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bbe071c34c1"
+                                },
+                                {
+                                    "key": "field_63bbe454c34c6",
+                                    "label": "Card Time",
+                                    "name": "time",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "When you offer a service for a specific time you can specify the time in this field.\r\nexample:\r\nda stands for daily\r\nmo stands for monthly\r\nye stands for yearly\r\n.\r\n.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "\/mo",
+                                    "maxlength": "",
+                                    "placeholder": "Service Time...",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bbe071c34c1"
+                                },
+                                {
+                                    "key": "field_63bbe58ec34c7",
+                                    "label": "Card Currency",
+                                    "name": "currency",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "$",
+                                    "maxlength": "",
+                                    "placeholder": "Currency...",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bbe071c34c1"
+                                },
+                                {
+                                    "key": "field_63bc0ae4a7146",
+                                    "label": "Card Features",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63bbe071c34c1"
+                                },
+                                {
+                                    "key": "field_63bc2247bca77",
+                                    "label": "Features",
+                                    "name": "features",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "table",
+                                    "min": 0,
+                                    "max": 0,
+                                    "collapsed": "field_63bc2261bca78",
+                                    "button_label": "Add Item",
+                                    "rows_per_page": 20,
+                                    "parent_repeater": "field_63bbe071c34c1",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_63bc2261bca78",
+                                            "label": "Text",
+                                            "name": "text",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "10 Pages Responsive Website",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_63bc2247bca77"
+                                        },
+                                        {
+                                            "key": "field_63bc226abca79",
+                                            "label": "Icon",
+                                            "name": "icon",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "check-lg",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_63bc2247bca77"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_63bc0b26a7147",
+                                    "label": "Card Button",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63bbe071c34c1"
+                                },
+                                {
+                                    "key": "field_63bbe622c34c8",
+                                    "label": "Card Button Text",
+                                    "name": "button_text",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Choose Package",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bbe071c34c1"
+                                },
+                                {
+                                    "key": "field_63bbe649c34c9",
+                                    "label": "Card Button Link",
+                                    "name": "button_link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "parent_repeater": "field_63bbe071c34c1"
+                                }
+                            ]
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 },
-                "layout_63a6d4f3b032b": {
-                    "key": "layout_63a6d4f3b032b",
-                    "name": "comment_section",
-                    "label": "Comment Section",
+                "layout_63bc2c74b2667": {
+                    "key": "layout_63bc2c74b2667",
+                    "name": "price_table_2",
+                    "label": "Price Table 2",
                     "display": "block",
-                    "sub_fields": [],
+                    "sub_fields": [
+                        {
+                            "key": "field_63bc2c74b2668",
+                            "label": "Header Section",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
+                            "key": "field_63bc2c74b2669",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Get a Special Price Just For You!",
+                            "maxlength": "",
+                            "placeholder": "Title...",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_63bc2c74b266a",
+                            "label": "Description",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "We are a team of experienced developers who are passionate about their work. No coding required to make customizations.",
+                            "maxlength": "",
+                            "rows": 3,
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_63bc2c74b266b",
+                            "label": "Price Cards",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63bc2c74b266c",
+                            "label": "Cards",
+                            "name": "price_card",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Card",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_63bc2c74b266d",
+                                    "label": "Card Theme",
+                                    "name": "theme",
+                                    "aria-label": "",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "Light": "Light",
+                                        "Dark": "Dark"
+                                    },
+                                    "default_value": "Light",
+                                    "return_format": "value",
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "save_other_choice": 0,
+                                    "layout": "horizontal",
+                                    "parent_repeater": "field_63bc2c74b266c"
+                                },
+                                {
+                                    "key": "field_63bc2c74b266e",
+                                    "label": "Card Header",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63bc2c74b266c"
+                                },
+                                {
+                                    "key": "field_63bc2c74b266f",
+                                    "label": "Card Title",
+                                    "name": "title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Basic",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc2c74b266c"
+                                },
+                                {
+                                    "key": "field_63bc2c74b2670",
+                                    "label": "Card Icon",
+                                    "name": "icon",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "32",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "award",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc2c74b266c"
+                                },
+                                {
+                                    "key": "field_63bc2c74b2671",
+                                    "label": "Card Description",
+                                    "name": "description",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "A beautiful, simple website",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc2c74b266c"
+                                },
+                                {
+                                    "key": "field_63bc2c74b2672",
+                                    "label": "Card Price",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63bc2c74b266c"
+                                },
+                                {
+                                    "key": "field_63bc2c74b2673",
+                                    "label": "Card Price",
+                                    "name": "price",
+                                    "aria-label": "",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": 48,
+                                    "min": "",
+                                    "max": "",
+                                    "placeholder": "",
+                                    "step": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc2c74b266c"
+                                },
+                                {
+                                    "key": "field_63bc2c74b2674",
+                                    "label": "Card Time",
+                                    "name": "time",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "When you offer a service for a specific time you can specify the time in this field.\r\nexample:\r\nda stands for daily\r\nmo stands for monthly\r\nye stands for yearly\r\n.\r\n.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "\/mo",
+                                    "maxlength": "",
+                                    "placeholder": "Service Time...",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc2c74b266c"
+                                },
+                                {
+                                    "key": "field_63bc2c74b2675",
+                                    "label": "Card Currency",
+                                    "name": "currency",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "$",
+                                    "maxlength": "",
+                                    "placeholder": "Currency...",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc2c74b266c"
+                                },
+                                {
+                                    "key": "field_63bc2c74b2676",
+                                    "label": "Card Features",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63bc2c74b266c"
+                                },
+                                {
+                                    "key": "field_63bc2c74b2677",
+                                    "label": "Features",
+                                    "name": "features",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "table",
+                                    "min": 0,
+                                    "max": 0,
+                                    "collapsed": "field_63bc2261bca78",
+                                    "button_label": "Add Item",
+                                    "rows_per_page": 20,
+                                    "parent_repeater": "field_63bc2c74b266c",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_63bc2c74b2678",
+                                            "label": "Text",
+                                            "name": "text",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "10 Pages Responsive Website",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_63bc2c74b2677"
+                                        },
+                                        {
+                                            "key": "field_63bc2c74b2679",
+                                            "label": "Icon",
+                                            "name": "icon",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "check-lg",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_63bc2c74b2677"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_63bc2c74b267a",
+                                    "label": "Card Button",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63bc2c74b266c"
+                                },
+                                {
+                                    "key": "field_63bc2c74b267b",
+                                    "label": "Card Button Text",
+                                    "name": "button_text",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Choose Package",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc2c74b266c"
+                                },
+                                {
+                                    "key": "field_63bc2c74b267c",
+                                    "label": "Card Button Link",
+                                    "name": "button_link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "parent_repeater": "field_63bc2c74b266c"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63bc35aa8e3a6": {
+                    "key": "layout_63bc35aa8e3a6",
+                    "name": "price_table_3",
+                    "label": "Price Table 3",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63bc35aa8e3a7",
+                            "label": "Header Section",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
+                            "key": "field_63bc35aa8e3a8",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Get a Special Price Just For You!",
+                            "maxlength": "",
+                            "placeholder": "Title...",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_63bc35aa8e3a9",
+                            "label": "Description",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "We are a team of experienced developers who are passionate about their work. No coding required to make customizations.",
+                            "maxlength": "",
+                            "rows": 3,
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_63bc35aa8e3aa",
+                            "label": "Price Cards",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_63bc35aa8e3ab",
+                            "label": "Cards",
+                            "name": "price_card",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Card",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_63bc35aa8e3ac",
+                                    "label": "Card Theme",
+                                    "name": "theme",
+                                    "aria-label": "",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "Light": "Light",
+                                        "Dark": "Dark"
+                                    },
+                                    "default_value": "Light",
+                                    "return_format": "value",
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "save_other_choice": 0,
+                                    "layout": "horizontal",
+                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                },
+                                {
+                                    "key": "field_63bc35aa8e3ad",
+                                    "label": "Card Header",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                },
+                                {
+                                    "key": "field_63bc35aa8e3ae",
+                                    "label": "Card Title",
+                                    "name": "title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Basic",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                },
+                                {
+                                    "key": "field_63bc35aa8e3af",
+                                    "label": "Card Icon",
+                                    "name": "icon",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "32",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "award",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                },
+                                {
+                                    "key": "field_63bc35aa8e3b0",
+                                    "label": "Card Description",
+                                    "name": "description",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "A beautiful, simple website",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                },
+                                {
+                                    "key": "field_63bc35aa8e3b1",
+                                    "label": "Card Price",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                },
+                                {
+                                    "key": "field_63bc35aa8e3b2",
+                                    "label": "Card Price",
+                                    "name": "price",
+                                    "aria-label": "",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": 48,
+                                    "min": "",
+                                    "max": "",
+                                    "placeholder": "",
+                                    "step": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                },
+                                {
+                                    "key": "field_63bc35aa8e3b3",
+                                    "label": "Card Time",
+                                    "name": "time",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "When you offer a service for a specific time you can specify the time in this field.\r\nexample:\r\nda stands for daily\r\nmo stands for monthly\r\nye stands for yearly\r\n.\r\n.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "\/mo",
+                                    "maxlength": "",
+                                    "placeholder": "Service Time...",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                },
+                                {
+                                    "key": "field_63bc35aa8e3b4",
+                                    "label": "Card Currency",
+                                    "name": "currency",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.3",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "$",
+                                    "maxlength": "",
+                                    "placeholder": "Currency...",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                },
+                                {
+                                    "key": "field_63bc35aa8e3b5",
+                                    "label": "Card Features",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                },
+                                {
+                                    "key": "field_63bc35aa8e3b6",
+                                    "label": "Features",
+                                    "name": "features",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "table",
+                                    "min": 0,
+                                    "max": 0,
+                                    "collapsed": "field_63bc2261bca78",
+                                    "button_label": "Add Item",
+                                    "rows_per_page": 20,
+                                    "parent_repeater": "field_63bc35aa8e3ab",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_63bc35aa8e3b7",
+                                            "label": "Text",
+                                            "name": "text",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "10 Pages Responsive Website",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_63bc35aa8e3b6"
+                                        },
+                                        {
+                                            "key": "field_63bc35aa8e3b8",
+                                            "label": "Icon",
+                                            "name": "icon",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "check-lg",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_63bc35aa8e3b6"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_63bc35aa8e3b9",
+                                    "label": "Card Button",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                },
+                                {
+                                    "key": "field_63bc35aa8e3ba",
+                                    "label": "Card Button Text",
+                                    "name": "button_text",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Choose Package",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                },
+                                {
+                                    "key": "field_63bc35aa8e3bb",
+                                    "label": "Card Button Link",
+                                    "name": "button_link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                }
+                            ]
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 }
@@ -1983,5 +3800,5 @@
     "active": true,
     "description": "Manage Contents placement on every page",
     "show_in_rest": 0,
-    "modified": 1673251084
+    "modified": 1673289025
 }
