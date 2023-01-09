@@ -28,28 +28,24 @@
 
 - Add Breadcrumbs
 
-- Add 'Price Table' Features
-
 - Add 'Testimonial' Features
-
-- Add 'copyright text' settings to 'General template settings'
 
 - Add 'Team' post type
 
 - Add 'Team' single
 
+- Add 'Team' Features
+
 - Add 'Portfolio' post type
 
 - Add 'Portfolio' single
 
-- Add 'Team' Features
+- Add 'Portfolio' Features
 
 ### Don:
 
-- Fixed ACF auto save/load prolem: Now Groups' json files will be saved locally and automatically loaded ✓
+- Replaced if with switch in 'Front-Page.php' ✓
 
-- Changed README.md ✓
+- Added 'Price Table' Features ✓
 
-- Deleted old acf-json files ✓
-
-- Deleted config folder ✓
+- Added 'copyright text' settings to 'General template settings' ✓

@@ -10,6 +10,16 @@
 
 
         </div>
+        <!-- Copy Right -->
+        <?php
+        if (get_field('copy_right_text', 'options')) { ?>
+        <div class="row mt-7">
+            <div class="col text-center text-dark d-flex justify-content-center">
+                <?= get_field('copy_right_text', 'options') ?> </div>
+        </div>
+        <?php } ?>
+        <!-- Copy Right ### -->
+
 
     </div>
     <div class="position-absolute animation-1 opacity-1">

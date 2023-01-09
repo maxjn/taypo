@@ -44,6 +44,11 @@ if (!defined('TAYPO_DIR_IMG_URI')) {
     define('TAYPO_DIR_IMG_URI', untrailingslashit(get_template_directory_uri()) . '/assets/libraries/images');
 }
 
+if (!defined('TAYPO_DIR_Template_PATH')) {
+    define('TAYPO_DIR_Template_PATH', untrailingslashit('templates'));
+}
+
+
 require_once TAYPO_DIR_PATH . '/inc/helpers/autoloader.php';
 require_once TAYPO_DIR_PATH . '/inc/helpers/template-tags.php';
 

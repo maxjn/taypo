@@ -29,77 +29,64 @@ get_header();
 
             // Get the row layout.
             $layout = get_row_layout();
-            // Hero Layout 1
-            if ($layout == 'hero_secction_1') {
-                get_template_part('templates\hero\hero1', null, ['fields' => $layout_fields[$i]]);
-            } // Hero Layout 1 ###
 
-            // Hero Layout 2
-            if ($layout == 'hero_secction_2') {
-                get_template_part('templates\hero\hero2', null, ['fields' => $layout_fields[$i]]);
-            } // Hero Layout 2 ###
-
-            // Hero Layout 3
-            if ($layout == 'hero_secction_3') {
-                get_template_part('templates\hero\hero3', null, ['fields' => $layout_fields[$i]]);
-            } // Hero Layout 3 ###
-
-            // Feature Box 1
-            if ($layout == 'feature_box_1') {
-                get_template_part('templates\feature-box\featurebox1', null, ['fields' => $layout_fields[$i]]);
-            } // Feature Box 1 ###
-
-            // Feature Box 2
-            if ($layout == 'feature_box_2') {
-                get_template_part('templates\feature-box\featurebox2', null, ['fields' => $layout_fields[$i]]);
-            } // Feature Box 2 ###
-
-            // Feature Box 3
-            if ($layout == 'feature_box_3') {
-                get_template_part('templates\feature-box\featurebox3', null, ['fields' => $layout_fields[$i]]);
-            } // Feature Box 3 ###
-
-            // Feature Box 4
-            if ($layout == 'feature_box_4') {
-                get_template_part('templates\feature-box\featurebox4', null, ['fields' => $layout_fields[$i]]);
-            } // Feature Box 4 ###
-
-            // Accordion 1
-            if ($layout == 'accordion_1') {
-                get_template_part('templates\accordian\accordian1', null, ['fields' => $layout_fields[$i]]);
-            } // Accordion 1 ###
-
-            // Accordion 2
-            if ($layout == 'accordion_2') {
-                get_template_part('templates\accordian\accordian2', null, ['fields' => $layout_fields[$i]]);
-            } // Accordion 2 ###
-
-            // Banner 1
-            if ($layout == 'banner') {
-                get_template_part('templates\banner\banner', null, ['fields' => $layout_fields[$i]]);
-            } // Banner 1 ###
-
-            // Counter
-            if ($layout == 'counter') {
-                get_template_part('templates\counter\counter', null, ['fields' => $layout_fields[$i]]);
-            } // Counter  ###
-
-            // Latest Posts 1
-            if ($layout == 'latest_posts_1') {
+            switch ($layout) {
+                case 'hero_secction_1':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\hero\hero1', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'hero_secction_2':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\hero\hero2', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'hero_secction_3':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\hero\hero3', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'feature_box_1':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\feature-box\featurebox1', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'feature_box_2':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\feature-box\featurebox2', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'feature_box_3':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\feature-box\featurebox3', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'feature_box_4':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\feature-box\featurebox4', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'accordion_1':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\accordian\accordian1', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'accordion_2':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\accordian\accordian2', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'banner':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\banner\banner', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'counter':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\counter\counter', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'latest_posts_1':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\card\blog\container\blog-card-small', null, ['query' => $query]);
+                    break;
+                case 'latest_posts_2':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\card\blog\container\blog-list-big', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'price_table_1':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\card\price-card\price1', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'price_table_2':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\card\price-card\price2', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'price_table_3':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\card\price-card\price3', null, ['fields' => $layout_fields[$i]]);
+                    break;
+            }
 
 
-                get_template_part('templates\card\blog\container\blog-card-small', null, ['query' => $query]);
-            } // Latest Posts 1 ###
-
-            // Latest Posts 2
-            if ($layout == 'latest_posts_2') {
-                get_template_part('templates\card\blog\container\blog-list-big', null, ['fields' => $layout_fields[$i]]);
-            } // Latest Posts 2 ###
 
             $i++;
         }
     } else {
-        get_template_part('templates\card\blog\container\blog-card-small', null, ['query' => $query]);
+        get_template_part(TAYPO_DIR_Template_PATH . '\card\blog\container\blog-card-small', null, ['query' => $query]);
     }
     //dynamic content ###
 
