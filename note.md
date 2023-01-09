@@ -1,6 +1,7 @@
 ###### TODO:
 
 - File Structure ✓
+- Adding Theme assets ✓
 - Custom Menu ✓
 - Sidebars ✓
 - Widgets ✓
@@ -16,8 +17,8 @@
 *link2:https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwir-9Pu54z8AhUC3qQKHZYZDc8QwqsBegQIOhAF&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D0outb6oSJW4&usg=AOvVaw2aAfKdhICQuysynZWUNlPj
 *Link3:https://imranhsayed.medium.com/saving-the-acf-json-to-your-plugin-or-theme-file-f3b72b99257b-->
 - Like & Save system ✓
-- Cudtom Post Type ✓
-- Breadcrumbs ✓
+- Breadcrumbs
+- Custom Post Type
 - RTL
 - Translate
 
@@ -25,20 +26,30 @@
 
 - ADD privacy policy template
 
-- Counter.php style got fixed so the number and '+' icon would be shown in the beside each other ✓
+- Add Breadcrumbs
 
-- ACF Placement Groups got fixed : Links and Url fields got fixed ✓
+- Add 'Price Table' Features
 
-- Added Sub Title to featurebox3 acf fields ✓
+- Add 'Testimonial' Features
 
-- Added Carousel to all featureboxs ✓
+- Add 'copyright text' settings to 'General template settings'
 
-- Fix Repeator 'add buttons' titles ✓
+- Add 'Team' post type
 
-- Dynamic Content in Page.php got fixed so 'Latests Posts' , 'Content' & 'Comments' be shown in their own places ✓
+- Add 'Team' single
 
-- Added wp_reset_query() to 'blog-list-big.php' & 'blog-card-small.php' so wp query works fine ✓
+- Add 'Portfolio' post type
 
-- no-thumbnail image got changed ✓
+- Add 'Portfolio' single
 
-- Fixed url problem in 'feature blocks' ✓
+- Add 'Team' Features
+
+### Don:
+
+- Fixed ACF auto save/load prolem: Now Groups' json files will be saved locally and automatically loaded ✓
+
+- Changed README.md ✓
+
+- Deleted old acf-json files ✓
+
+- Deleted config folder ✓

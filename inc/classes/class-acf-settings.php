@@ -35,7 +35,11 @@ class ACF_Settings
     /**
      * ACF Save Points
      *
+     *  Register the path to Save the ACF json files so that they are version controlled.
+     *
      * @package Taypo
+     *
+     * @param $paths The default relative path to the folder where ACF saves the files. Tip: use PATH not URI
      *
      * @return  string | path
      */
@@ -43,7 +47,7 @@ class ACF_Settings
     {
 
         // update path
-        $path = TAYPO_DIR_URI . '/acf-json';
+        $path = TAYPO_DIR_PATH . '/acf-json';
 
 
         // return
@@ -51,8 +55,12 @@ class ACF_Settings
     }
 
     /**
+     *  ACF Save Points
+     *
      * Register the path to load the ACF json files so that they are version controlled.
-     * @param $paths The default relative path to the folder where ACF saves the files.
+     *
+     * @param $paths The default relative path to the folder where ACF saves the files. Tip: use PATH not URI
+     *
      * @return string The new relative path to the folder where we are saving the files.
      */
     public function taypo_acf_load_point($paths)
@@ -63,7 +71,7 @@ class ACF_Settings
 
 
         // append path
-        $paths[] = TAYPO_DIR_URI . '/acf-json';
+        $paths[] = TAYPO_DIR_PATH . '/acf-json';
 
 
         // return

@@ -2,7 +2,7 @@
 
 # Taypo Template
 
-A modern wordpress Blog template...
+A modern MultiPurpose wordpress template...
 
 ## Tested on :
 
@@ -11,21 +11,23 @@ A modern wordpress Blog template...
 
 **php v 7.4**
 
+**php v 8.1**
+
 ## Installing / Getting started
 
 ### Initial Configuration
 
-_Database and Config file are added in 'WP Config' folder if needed_
+_\*\*\*_
 
 1. Put **Typo** folder into **theme** folder of your wordpress
 
-2. Run **gulp build**
+2. Run **gulp build** to create dist folder which contains js and css files
 
 3. Install ACF
 
-4. Import acf-json
+4. Activeate the theme
 
-5. Activeate the theme
+5. Sync acf-json
 
 ## Developing
 
@@ -44,11 +46,13 @@ npm install
 gulp
 ```
 
-after running gulp 'build files' will be created in assets/dist.
+after running gulp dist folder will be created which contains js and css files.
 
-3. Import Field Groups into ACF Plugin fron 'acf-json' folder
+3. Install ACF
 
-4. Activeate the template in your wordpress site
+4. Activeate the template
+
+5. Sync acf-json
 
 ### Building
 
@@ -58,7 +62,7 @@ Run **gulp** to create dist folder .
 gulp build
 ```
 
-_.css , _.scss , \*.js files will get minified.
+dist folder will be created which contains js and css files.
 
 ## Features
 
