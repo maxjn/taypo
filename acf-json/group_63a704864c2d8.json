@@ -1,0 +1,73 @@
+{
+    "key": "group_63a704864c2d8",
+    "title": "Coming Soon Template",
+    "fields": [
+        {
+            "key": "field_63a70486340f5",
+            "label": "Unveiling Date",
+            "name": "unvieling_date",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "Y\/m\/d",
+            "return_format": "Y\/m\/d",
+            "first_day": 1
+        },
+        {
+            "key": "field_63a7056f340f6",
+            "label": "Subscribe Form Action Link",
+            "name": "subscribe_action",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/coming-soon.php"
+            }
+        ]
+    ],
+    "menu_order": -999999,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "Manage Coming Soon Page Template",
+    "show_in_rest": 0,
+    "modified": 1673251410
+}

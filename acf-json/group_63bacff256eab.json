@@ -1,0 +1,51 @@
+{
+    "key": "group_63bacff256eab",
+    "title": "Sidebars Side",
+    "fields": [
+        {
+            "key": "field_63bacff252951",
+            "label": "Blog Sidebar Side",
+            "name": "blog_sidebar_side",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Choose which side you want the sidebar to be on.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "right": "right",
+                "left": "left"
+            },
+            "default_value": "right",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Choosing sidebars sides",
+    "show_in_rest": 0,
+    "modified": 1673250850
+}
