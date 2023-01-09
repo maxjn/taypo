@@ -1,184 +1,108 @@
+<?php
+if (isset($args['fields'])) {
+    $fields = $args['fields'];
+}
+?>
 <!--pricing start-->
 
 <section class="position-relative overflow-hidden">
     <div class="container">
-        <div class="row justify-content-center text-center mb-6">
+        <div
+            class="row justify-content-center text-center <?= ($fields['title'] || $fields['description']) ? 'mb-6' : ''; ?>">
             <div class="col-12 col-lg-8">
                 <div>
-                    <h2>Get a Special Price Just For You!</h2>
-                    <p class="lead">We are a team of experienced developers who are passionate about their work. No
-                        coding required to make customizations.</p>
+                    <h2><?= $fields['title'] ?></h2>
+                    <p class="lead"><?= $fields['description'] ?></p>
                 </div>
             </div>
         </div>
+
+        <!-- PriceCards row -->
+        <?php
+        if (have_rows('price_card')) {
+            $row_count = count($fields['price_card']);
+        ?>
         <div class="row align-items-center">
             <div class="col-12">
-                <div class="row gx-0 align-items-center">
-                    <div class="col-12 col-lg-4 mb-8 mb-lg-0">
+                <div class="row align-items-center">
+                    <?php
+
+                        while (have_rows('price_card')) {
+                            the_row();
+                            $dark_theme = get_sub_field('theme') == 'Light' ? false : true;
+                        ?>
+                    <!-- Price Card -->
+                    <div class="col-12  col-lg-4 mb-8 <?= ($row_count > 3) ? '' : 'mb-lg-0'; ?> p-0">
                         <!-- Card -->
-                        <div class="card rounded-4">
+                        <div class="card <?= $dark_theme ? 'bg-dark border-0' : ''; ?>  rounded-4">
                             <!-- Body -->
                             <div class="card-body py-8 px-6">
                                 <div class="mb-2 d-flex align-items-center">
-                                    <i class="bi bi-award fs-1 text-primary me-2"></i>
-                                    <h5 class="mb-0">Basic</h5>
+                                    <i class="bi bi-<?= get_sub_field('icon') ?> fs-1 text-primary me-2"></i>
+                                    <h5 class="mb-0 <?= $dark_theme ? 'text-white' : ''; ?>">
+                                        <?= get_sub_field('title') ?>
+                                    </h5>
                                 </div>
-                                <p class="text-muted mb-4">A beautiful, simple website</p>
+                                <p class="<?= $dark_theme ? 'text-light' : ''; ?> mb-4">
+                                    <?= get_sub_field('description') ?></p>
                                 <!-- Price -->
-                                <div class="d-flex text-dark border-bottom border-light pb-4 mb-4">
-                                    <span class="h6 text-dark mb-0 mt-2">$</span>
-                                    <span class="price display-2 fw-bold">48</span>
-                                    <span class="h6 align-self-end mb-1">/mo</span>
+                                <div
+                                    class="d-flex <?= $dark_theme ? ' text-white border-dark ' : 'text-dark border-light'; ?> border-bottom pb-4 mb-4">
+                                    <span
+                                        class="h6 <?= $dark_theme ? 'text-white' : ''; ?> mb-0 mt-2"><?= get_sub_field('currency') ?></span>
+                                    <span
+                                        class="price display-2 fw-bold <?= $dark_theme ? 'text-white' : ''; ?>"><?= get_sub_field('price') ?></span>
+                                    <span
+                                        class="h6 align-self-end mb-1 <?= $dark_theme ? 'text-white' : ''; ?>"><?= get_sub_field('time') ?></span>
                                 </div>
-                                <!-- Features -->
+                                <!-- Card Features -->
+                                <?php
+                                        if (get_sub_field('features')) {
+                                            foreach (get_sub_field('features') as $key => $list_item) {
+                                        ?>
                                 <div class="d-flex align-items-center mb-3">
                                     <!-- Check -->
                                     <div class="me-2">
-                                        <i class="bi bi-check-lg text-primary"></i>
+                                        <i class="bi bi-<?= $list_item['icon'] ?> text-primary"></i>
                                     </div>
                                     <!-- Text -->
-                                    <p class="mb-0">10 Pages Responsive Website</p>
+                                    <p class="mb-0 <?= $dark_theme ? 'text-light' : ''; ?> "><?= $list_item['text'] ?>
+                                    </p>
                                 </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <!-- Check -->
-                                    <div class="me-2">
-                                        <i class="bi bi-check-lg text-primary"></i>
-                                    </div>
-                                    <!-- Text -->
-                                    <p class="mb-0">Request API Integration</p>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <!-- Check -->
-                                    <div class="me-2">
-                                        <i class="bi bi-check-lg text-primary"></i>
-                                    </div>
-                                    <!-- Text -->
-                                    <p class="mb-0">Flexible, simple license</p>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <!-- Check -->
-                                    <div class="me-2">
-                                        <i class="bi bi-check-lg text-primary"></i>
-                                    </div>
-                                    <!-- Text -->
-                                    <p class="mb-0">Outstanding Support</p>
-                                </div>
+                                <?php
+                                            }
+                                        }
+                                        ?>
+
+                                <!-- Card Features### -->
+
+                                <?php
+                                        if (isset(get_sub_field('button_link')['url'])) {
+                                        ?>
                                 <!-- Button -->
-                                <a href="#" class="btn btn-block btn-outline-dark mt-5"> Choose Packege </a>
+
+                                <a href="<?= get_sub_field('button_link')['url'] ?>"
+                                    class="btn btn-block btn-outline-<?= $dark_theme ? 'light' : 'dark'; ?> mt-5"><?= get_sub_field('button_text') ?></a>
+                                <!-- Button ###-->
+                                <?php
+                                        } // end
+                                        ?>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mb-8 mb-lg-0">
-                        <!-- Card -->
-                        <div class="card rounded-4">
-                            <!-- Body -->
-                            <div class="card-body py-8 px-6">
-                                <div class="mb-2 d-flex align-items-center">
-                                    <i class="bi bi-brightness-high fs-1 text-primary me-2"></i>
-                                    <h5 class="mb-0">Standard</h5>
-                                </div>
-                                <p class="text-muted mb-4">A beautiful, simple website</p>
-                                <!-- Price -->
-                                <div class="d-flex text-dark border-bottom border-light pb-4 mb-4">
-                                    <span class="h6 text-dark mb-0 mt-2">$</span>
-                                    <span class="price display-2 fw-bold">78</span>
-                                    <span class="h6 align-self-end mb-1">/mo</span>
-                                </div>
-                                <!-- Features -->
-                                <div class="d-flex align-items-center mb-3">
-                                    <!-- Check -->
-                                    <div class="me-2">
-                                        <i class="bi bi-check-lg text-primary"></i>
-                                    </div>
-                                    <!-- Text -->
-                                    <p class="mb-0">10 Pages Responsive Website</p>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <!-- Check -->
-                                    <div class="me-2">
-                                        <i class="bi bi-check-lg text-primary"></i>
-                                    </div>
-                                    <!-- Text -->
-                                    <p class="mb-0">Request API Integration</p>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <!-- Check -->
-                                    <div class="me-2">
-                                        <i class="bi bi-check-lg text-primary"></i>
-                                    </div>
-                                    <!-- Text -->
-                                    <p class="mb-0">Flexible, simple license</p>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <!-- Check -->
-                                    <div class="me-2">
-                                        <i class="bi bi-check-lg text-primary"></i>
-                                    </div>
-                                    <!-- Text -->
-                                    <p class="mb-0">Outstanding Support</p>
-                                </div>
-                                <!-- Button -->
-                                <a href="#" class="btn btn-block btn-outline-dark mt-5"> Choose Packege </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <!-- Card -->
-                        <div class="card rounded-4">
-                            <!-- Body -->
-                            <div class="card-body py-8 px-6">
-                                <div class="mb-2 d-flex align-items-center">
-                                    <i class="bi bi-phone-vibrate fs-1 text-primary me-2"></i>
-                                    <h5 class="mb-0">Ultimate</h5>
-                                </div>
-                                <p class="text-muted mb-4">For professional purpose</p>
-                                <!-- Price -->
-                                <div class="d-flex text-dark border-bottom border-light pb-4 mb-4">
-                                    <span class="h6 text-dark mb-0 mt-2">$</span>
-                                    <span class="price display-2 fw-bold">138</span>
-                                    <span class="h6 align-self-end mb-1">/mo</span>
-                                </div>
-                                <!-- Features -->
-                                <div class="d-flex align-items-center mb-3">
-                                    <!-- Check -->
-                                    <div class="me-2">
-                                        <i class="bi bi-check-lg text-primary"></i>
-                                    </div>
-                                    <!-- Text -->
-                                    <p class="mb-0">10 Pages Responsive Website</p>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <!-- Check -->
-                                    <div class="me-2">
-                                        <i class="bi bi-check-lg text-primary"></i>
-                                    </div>
-                                    <!-- Text -->
-                                    <p class="mb-0">Request API Integration</p>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <!-- Check -->
-                                    <div class="me-2">
-                                        <i class="bi bi-check-lg text-primary"></i>
-                                    </div>
-                                    <!-- Text -->
-                                    <p class="mb-0">Flexible, simple license</p>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <!-- Check -->
-                                    <div class="me-2">
-                                        <i class="bi bi-check-lg text-primary"></i>
-                                    </div>
-                                    <!-- Text -->
-                                    <p class="mb-0">Outstanding Support</p>
-                                </div>
-                                <!-- Button -->
-                                <a href="#" class="btn btn-block btn-outline-dark mt-5"> Choose Package </a>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Price Card### -->
+                    <?php
+                        } //end while(have_rows...
+                        ?>
                 </div>
             </div>
         </div>
+
+        <?php
+        } // end if(have_rows...
+        ?>
+
+        <!-- PriceCards row ### -->
         <!-- / .row -->
     </div>
     <!-- / .container -->
