@@ -24,6 +24,23 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_63bc3f498f9ad",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
                             "key": "field_63a576af4eea5",
                             "label": "Title Firs Part",
                             "name": "title_firs_part",
@@ -104,6 +121,23 @@
                             "append": ""
                         },
                         {
+                            "key": "field_63bc3faf8f9ae",
+                            "label": "Subscribe Form",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_63a578154eea9",
                             "label": "Form Action",
                             "name": "from_action",
@@ -141,6 +175,23 @@
                             "append": ""
                         },
                         {
+                            "key": "field_63bc3fde8f9af",
+                            "label": "Image",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_63a578ad4eeab",
                             "label": "Hero Image",
                             "name": "hero_image",
@@ -175,6 +226,23 @@
                     "label": "Hero Secction 2",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_63bc40380f6bb",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
                         {
                             "key": "field_63a59bb8dfcea",
                             "label": "Title",
@@ -216,6 +284,23 @@
                             "append": ""
                         },
                         {
+                            "key": "field_63bc403f0f6bc",
+                            "label": "Button",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_63a59e00dfcec",
                             "label": "Button Text",
                             "name": "button_text",
@@ -250,6 +335,23 @@
                                 "id": ""
                             },
                             "return_format": "array"
+                        },
+                        {
+                            "key": "field_63bc40830f6be",
+                            "label": "Video Button",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
                         },
                         {
                             "key": "field_63a59e55dfcee",
@@ -289,6 +391,23 @@
                             "placeholder": ""
                         },
                         {
+                            "key": "field_63bc40440f6bd",
+                            "label": "Image",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_63a59e9edfcf0",
                             "label": "Hero Image",
                             "name": "hero_image",
@@ -323,6 +442,23 @@
                     "label": "Hero Secction 3",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_63bc4179fd464",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
                         {
                             "key": "field_63a5a326bf487",
                             "label": "Title",
@@ -404,6 +540,23 @@
                             "append": ""
                         },
                         {
+                            "key": "field_63bc417cfd465",
+                            "label": "Button",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_63a5a503bf48c",
                             "label": "Button Text",
                             "name": "button_text",
@@ -438,6 +591,23 @@
                                 "id": ""
                             },
                             "return_format": "array"
+                        },
+                        {
+                            "key": "field_63bc4180fd466",
+                            "label": "Video Button",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
                         },
                         {
                             "key": "field_63a5a511bf48e",
@@ -477,6 +647,23 @@
                             "placeholder": ""
                         },
                         {
+                            "key": "field_63bc4189fd467",
+                            "label": "Image",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_63a5a4cebf48b",
                             "label": "Hero Image",
                             "name": "hero_image",
@@ -511,6 +698,23 @@
                     "label": "Feature Box 1",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_63bc422619671",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
                         {
                             "key": "field_63a5b27d60e3e",
                             "label": "Title",
@@ -552,6 +756,23 @@
                             "append": ""
                         },
                         {
+                            "key": "field_63bc424119672",
+                            "label": "Box",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_63a5b2e460e40",
                             "label": "Box",
                             "name": "box",
@@ -575,7 +796,7 @@
                                 {
                                     "key": "field_63a5b37e60e41",
                                     "label": "Box Title",
-                                    "name": "box_title",
+                                    "name": "title",
                                     "aria-label": "",
                                     "type": "text",
                                     "instructions": "The title of the box is the subject you are talking about.",
@@ -596,7 +817,7 @@
                                 {
                                     "key": "field_63a5b3d260e42",
                                     "label": "Box Description",
-                                    "name": "box_description",
+                                    "name": "description",
                                     "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "A description of the subject you are talking about in the box.",
@@ -607,7 +828,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
+                                    "default_value": "Get the most of reduction in your team’s operating let’s come up with taypo. But I must idea of denouncing pleasure.",
                                     "maxlength": "",
                                     "rows": "",
                                     "placeholder": "",
@@ -615,12 +836,29 @@
                                     "parent_repeater": "field_63a5b2e460e40"
                                 },
                                 {
+                                    "key": "field_63a5c179441a7",
+                                    "label": "Box Link",
+                                    "name": "link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "A link to your chosen content.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "parent_repeater": "field_63a5b2e460e40"
+                                },
+                                {
                                     "key": "field_63a5b43e60e43",
                                     "label": "Box Icon",
-                                    "name": "box_icon",
+                                    "name": "icon",
                                     "aria-label": "",
                                     "type": "text",
-                                    "instructions": "Go to https:\/\/icons.getbootstrap.com\/\r\nSearch for the icon you are looking for and write the name",
+                                    "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -636,26 +874,9 @@
                                     "parent_repeater": "field_63a5b2e460e40"
                                 },
                                 {
-                                    "key": "field_63a5c179441a7",
-                                    "label": "Box Link",
-                                    "name": "box_link",
-                                    "aria-label": "",
-                                    "type": "link",
-                                    "instructions": "A link to your chosen content.",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "parent_repeater": "field_63a5b2e460e40"
-                                },
-                                {
                                     "key": "field_63b9888075193",
                                     "label": "Box Icon BackGround Color",
-                                    "name": "box_icon_background_color",
+                                    "name": "icon_background_color",
                                     "aria-label": "",
                                     "type": "color_picker",
                                     "instructions": "",
@@ -672,6 +893,23 @@
                                     "parent_repeater": "field_63a5b2e460e40"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_63bc425719673",
+                            "label": "Carousel",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
                         },
                         {
                             "key": "field_63ba8c5947d7d",
@@ -697,7 +935,7 @@
                                 {
                                     "key": "field_63ba8c8047d7e",
                                     "label": "Carousel Image",
-                                    "name": "carousel_image",
+                                    "name": "image",
                                     "aria-label": "",
                                     "type": "image",
                                     "instructions": "Add images to be shown in the carousel. (Brand logos,...)",
@@ -733,6 +971,23 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_63bc446f241c9",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
                             "key": "field_63a5c3d817191",
                             "label": "Title",
                             "name": "title",
@@ -751,6 +1006,23 @@
                             "placeholder": "Title...",
                             "prepend": "",
                             "append": ""
+                        },
+                        {
+                            "key": "field_63bc4473241ca",
+                            "label": "Image",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
                         },
                         {
                             "key": "field_63ba914522a22",
@@ -778,6 +1050,23 @@
                             "preview_size": "medium"
                         },
                         {
+                            "key": "field_63bc44ca241cc",
+                            "label": "Box",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_63a5c3d817193",
                             "label": "Box",
                             "name": "box",
@@ -801,7 +1090,7 @@
                                 {
                                     "key": "field_63a5c3d817194",
                                     "label": "Box Title",
-                                    "name": "box_title",
+                                    "name": "title",
                                     "aria-label": "",
                                     "type": "text",
                                     "instructions": "The title of the box is the subject you are talking about.",
@@ -822,7 +1111,7 @@
                                 {
                                     "key": "field_63a5c3d817195",
                                     "label": "Box Description",
-                                    "name": "box_description",
+                                    "name": "description",
                                     "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "A description of the subject you are talking about in the box.",
@@ -833,7 +1122,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
+                                    "default_value": "Get the most of reduction in your team’s operating let’s come up with taypo. But I must idea of denouncing pleasure.",
                                     "maxlength": "",
                                     "rows": "",
                                     "placeholder": "",
@@ -843,10 +1132,10 @@
                                 {
                                     "key": "field_63a5c3d817196",
                                     "label": "Box Icon",
-                                    "name": "box_icon",
+                                    "name": "icon",
                                     "aria-label": "",
                                     "type": "text",
-                                    "instructions": "Go to https:\/\/icons.getbootstrap.com\/\r\nSearch for the icon you are looking for and write the name",
+                                    "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -862,6 +1151,23 @@
                                     "parent_repeater": "field_63a5c3d817193"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_63bc4476241cb",
+                            "label": "Carousel",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
                         },
                         {
                             "key": "field_63ba923076356",
@@ -887,7 +1193,7 @@
                                 {
                                     "key": "field_63ba923076357",
                                     "label": "Carousel Image",
-                                    "name": "carousel_image",
+                                    "name": "image",
                                     "aria-label": "",
                                     "type": "image",
                                     "instructions": "Add images to be shown in the carousel. (Brand logos,...)",
@@ -898,8 +1204,8 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "",
-                                    "library": "",
+                                    "return_format": "array",
+                                    "library": "all",
                                     "min_width": "",
                                     "min_height": "",
                                     "min_size": "",
@@ -922,6 +1228,23 @@
                     "label": "Feature Box 3",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_63bc457e4b271",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
                         {
                             "key": "field_63a5c42d00ce0",
                             "label": "Title",
@@ -963,6 +1286,23 @@
                             "append": ""
                         },
                         {
+                            "key": "field_63bc45774b26f",
+                            "label": "Box",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_63a5c42d00ce2",
                             "label": "Box",
                             "name": "box",
@@ -986,7 +1326,7 @@
                                 {
                                     "key": "field_63a5c42d00ce3",
                                     "label": "Box Title",
-                                    "name": "box_title",
+                                    "name": "title",
                                     "aria-label": "",
                                     "type": "text",
                                     "instructions": "The title of the box is the subject you are talking about.",
@@ -1007,7 +1347,7 @@
                                 {
                                     "key": "field_63a5c42d00ce4",
                                     "label": "Box Description",
-                                    "name": "box_description",
+                                    "name": "description",
                                     "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "A description of the subject you are talking about in the box.",
@@ -1018,7 +1358,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
+                                    "default_value": "Get the most of reduction in your team’s operating let’s come up with taypo. But I must idea of denouncing pleasure.",
                                     "maxlength": "",
                                     "rows": "",
                                     "placeholder": "",
@@ -1028,7 +1368,7 @@
                                 {
                                     "key": "field_63a5c42d00ce6",
                                     "label": "Box Link",
-                                    "name": "box_link",
+                                    "name": "link",
                                     "aria-label": "",
                                     "type": "link",
                                     "instructions": "A link to your chosen content.",
@@ -1045,7 +1385,7 @@
                                 {
                                     "key": "field_63a5d4e01b3e6",
                                     "label": "Box Image",
-                                    "name": "box_image",
+                                    "name": "image",
                                     "aria-label": "",
                                     "type": "image",
                                     "instructions": "",
@@ -1071,6 +1411,23 @@
                             ]
                         },
                         {
+                            "key": "field_63bc45764b26e",
+                            "label": "Carousel",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_63ba930ec8bcf",
                             "label": "carousel",
                             "name": "carousel",
@@ -1094,7 +1451,7 @@
                                 {
                                     "key": "field_63ba930ec8bd0",
                                     "label": "Carousel Image",
-                                    "name": "carousel_image",
+                                    "name": "image",
                                     "aria-label": "",
                                     "type": "image",
                                     "instructions": "Add images to be shown in the carousel. (Brand logos,...)",
@@ -1105,8 +1462,8 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "",
-                                    "library": "",
+                                    "return_format": "array",
+                                    "library": "all",
                                     "min_width": "",
                                     "min_height": "",
                                     "min_size": "",
@@ -1129,6 +1486,23 @@
                     "label": "Feature Box 4",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_63bc4786e7f62",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
                         {
                             "key": "field_63a5c43e00ce8",
                             "label": "Title",
@@ -1170,6 +1544,23 @@
                             "append": ""
                         },
                         {
+                            "key": "field_63bc478ae7f63",
+                            "label": "Box",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_63a5c43e00cea",
                             "label": "Box",
                             "name": "box",
@@ -1193,7 +1584,7 @@
                                 {
                                     "key": "field_63a5c43e00ceb",
                                     "label": "Box Title",
-                                    "name": "box_title",
+                                    "name": "title",
                                     "aria-label": "",
                                     "type": "text",
                                     "instructions": "The title of the box is the subject you are talking about.",
@@ -1214,7 +1605,7 @@
                                 {
                                     "key": "field_63a5c43e00cec",
                                     "label": "Box Description",
-                                    "name": "box_description",
+                                    "name": "description",
                                     "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "A description of the subject you are talking about in the box.",
@@ -1225,7 +1616,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
+                                    "default_value": "Get the most of reduction in your team’s operating let’s come up with taypo. But I must idea of denouncing pleasure.",
                                     "maxlength": "",
                                     "rows": "",
                                     "placeholder": "",
@@ -1233,12 +1624,29 @@
                                     "parent_repeater": "field_63a5c43e00cea"
                                 },
                                 {
+                                    "key": "field_63a5c43e00cee",
+                                    "label": "Box Link",
+                                    "name": "link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "A link to your chosen content.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "parent_repeater": "field_63a5c43e00cea"
+                                },
+                                {
                                     "key": "field_63a5c43e00ced",
                                     "label": "Box Icon",
-                                    "name": "box_icon",
+                                    "name": "icon",
                                     "aria-label": "",
                                     "type": "text",
-                                    "instructions": "Go to https:\/\/icons.getbootstrap.com\/\r\nSearch for the icon you are looking for and write the name",
+                                    "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -1254,26 +1662,9 @@
                                     "parent_repeater": "field_63a5c43e00cea"
                                 },
                                 {
-                                    "key": "field_63a5c43e00cee",
-                                    "label": "Box Link",
-                                    "name": "box_link",
-                                    "aria-label": "",
-                                    "type": "link",
-                                    "instructions": "A link to your chosen content.",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "parent_repeater": "field_63a5c43e00cea"
-                                },
-                                {
                                     "key": "field_63b99960ec919",
                                     "label": "Box Icon BackGround Color",
-                                    "name": "box_icon_background_color",
+                                    "name": "icon_background_color",
                                     "aria-label": "",
                                     "type": "color_picker",
                                     "instructions": "",
@@ -1286,10 +1677,27 @@
                                     },
                                     "default_value": "#ffebda",
                                     "enable_opacity": 0,
-                                    "return_format": "",
+                                    "return_format": "string",
                                     "parent_repeater": "field_63a5c43e00cea"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_63bc478ee7f64",
+                            "label": "Carousel",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
                         },
                         {
                             "key": "field_63ba9366ab09e",
@@ -1315,7 +1723,7 @@
                                 {
                                     "key": "field_63ba9366ab09f",
                                     "label": "Carousel Image",
-                                    "name": "carousel_image",
+                                    "name": "image",
                                     "aria-label": "",
                                     "type": "image",
                                     "instructions": "Add images to be shown in the carousel. (Brand logos,...)",
@@ -1326,8 +1734,8 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "",
-                                    "library": "",
+                                    "return_format": "array",
+                                    "library": "all",
                                     "min_width": "",
                                     "min_height": "",
                                     "min_size": "",
@@ -1391,6 +1799,23 @@
                             "append": ""
                         },
                         {
+                            "key": "field_63bc567f7d98d",
+                            "label": "Image",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_63a6c4c440b83",
                             "label": "Image",
                             "name": "image",
@@ -1414,6 +1839,23 @@
                             "max_size": "",
                             "mime_types": "",
                             "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_63bc56967d98e",
+                            "label": "Questions",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
                         },
                         {
                             "key": "field_63a6bfd1990d0",
@@ -1476,6 +1918,29 @@
                                     "rows": "",
                                     "placeholder": "",
                                     "new_lines": "",
+                                    "parent_repeater": "field_63a6bfd1990d0"
+                                },
+                                {
+                                    "key": "field_63bc56427d98c",
+                                    "label": "",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placement": "top",
+                                    "endpoint": 0,
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
                                     "parent_repeater": "field_63a6bfd1990d0"
                                 }
                             ]
@@ -1566,6 +2031,23 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_63bc5ffe06983",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
                             "key": "field_63a5dc448da4e",
                             "label": "Title",
                             "name": "title",
@@ -1604,6 +2086,23 @@
                             "rows": "",
                             "placeholder": "",
                             "new_lines": ""
+                        },
+                        {
+                            "key": "field_63bc602d06984",
+                            "label": "Button",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
                         },
                         {
                             "key": "field_63a5dc7d8da50",
@@ -1652,6 +2151,23 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_63bc5817ba08b",
+                            "label": "Title",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 1
+                        },
+                        {
                             "key": "field_63a69c0b719df",
                             "label": "Title",
                             "name": "title",
@@ -1692,6 +2208,23 @@
                             "new_lines": ""
                         },
                         {
+                            "key": "field_63bc574c7d992",
+                            "label": "List",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_63a69c91719e1",
                             "label": "List",
                             "name": "list",
@@ -1715,7 +2248,7 @@
                                 {
                                     "key": "field_63a69d16719e2",
                                     "label": "List Title",
-                                    "name": "list_title",
+                                    "name": "title",
                                     "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
@@ -1736,7 +2269,7 @@
                                 {
                                     "key": "field_63a69d3d719e3",
                                     "label": "List Description",
-                                    "name": "list_description",
+                                    "name": "description",
                                     "aria-label": "",
                                     "type": "textarea",
                                     "instructions": "",
@@ -1757,10 +2290,10 @@
                                 {
                                     "key": "field_63a69d60719e4",
                                     "label": "List Icon",
-                                    "name": "list_icon",
+                                    "name": "icon",
                                     "aria-label": "",
                                     "type": "text",
-                                    "instructions": "Go to https:\/\/icons.getbootstrap.com\/ (Bootstrap icon library),\r\nSearch for the icon you are looking for and write the name",
+                                    "instructions": "We use 'Bootstrap Icons' so :\r\n1. Go to  https:\/\/icons.getbootstrap.com\/\r\n2. Search for the icon you need & copy its name\r\n3. Past the icon's name in the field",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -1776,6 +2309,23 @@
                                     "parent_repeater": "field_63a69c91719e1"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_63bc57517d993",
+                            "label": "Count Boxe",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
                         },
                         {
                             "key": "field_63a69df414ca1",
@@ -1801,7 +2351,7 @@
                                 {
                                     "key": "field_63a69e7514ca3",
                                     "label": "Count Box Lable",
-                                    "name": "count_box_lable",
+                                    "name": "lable",
                                     "aria-label": "",
                                     "type": "text",
                                     "instructions": "",
@@ -1822,7 +2372,7 @@
                                 {
                                     "key": "field_63a69e3714ca2",
                                     "label": "Count Box Value",
-                                    "name": "count_box_value",
+                                    "name": "value",
                                     "aria-label": "",
                                     "type": "number",
                                     "instructions": "",
@@ -2259,6 +2809,7 @@
                                     "collapsed": "field_63bc2261bca78",
                                     "button_label": "Add Item",
                                     "rows_per_page": 20,
+                                    "parent_repeater": "field_63bbe071c34c1",
                                     "sub_fields": [
                                         {
                                             "key": "field_63bc2261bca78",
@@ -2302,8 +2853,7 @@
                                             "append": "",
                                             "parent_repeater": "field_63bc2247bca77"
                                         }
-                                    ],
-                                    "parent_repeater": "field_63bbe071c34c1"
+                                    ]
                                 },
                                 {
                                     "key": "field_63bc0b26a7147",
@@ -2700,6 +3250,7 @@
                                     "collapsed": "field_63bc2261bca78",
                                     "button_label": "Add Item",
                                     "rows_per_page": 20,
+                                    "parent_repeater": "field_63bc2c74b266c",
                                     "sub_fields": [
                                         {
                                             "key": "field_63bc2c74b2678",
@@ -2743,8 +3294,7 @@
                                             "append": "",
                                             "parent_repeater": "field_63bc2c74b2677"
                                         }
-                                    ],
-                                    "parent_repeater": "field_63bc2c74b266c"
+                                    ]
                                 },
                                 {
                                     "key": "field_63bc2c74b267a",
@@ -3141,6 +3691,7 @@
                                     "collapsed": "field_63bc2261bca78",
                                     "button_label": "Add Item",
                                     "rows_per_page": 20,
+                                    "parent_repeater": "field_63bc35aa8e3ab",
                                     "sub_fields": [
                                         {
                                             "key": "field_63bc35aa8e3b7",
@@ -3184,8 +3735,7 @@
                                             "append": "",
                                             "parent_repeater": "field_63bc35aa8e3b6"
                                         }
-                                    ],
-                                    "parent_repeater": "field_63bc35aa8e3ab"
+                                    ]
                                 },
                                 {
                                     "key": "field_63bc35aa8e3b9",
@@ -3274,5 +3824,5 @@
     "active": true,
     "description": "Manage Contents placement on Front Page",
     "show_in_rest": 0,
-    "modified": 1673278901
+    "modified": 1673289798
 }
