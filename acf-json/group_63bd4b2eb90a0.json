@@ -1,0 +1,56 @@
+{
+    "key": "group_63bd4b2eb90a0",
+    "title": "Breadcrumb",
+    "fields": [
+        {
+            "key": "field_63bd4b2f57561",
+            "label": "Breadcrumb",
+            "name": "breadcrumb",
+            "aria-label": "",
+            "type": "checkbox",
+            "instructions": "Whether to show breadcrumb or not",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Active": "true"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "allow_custom": 0,
+            "layout": "vertical",
+            "toggle": 0,
+            "save_custom": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Whether to show breadcrumb or not",
+    "show_in_rest": 0,
+    "modified": 1673350242
+}

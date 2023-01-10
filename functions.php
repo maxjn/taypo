@@ -44,8 +44,12 @@ if (!defined('TAYPO_DIR_IMG_URI')) {
     define('TAYPO_DIR_IMG_URI', untrailingslashit(get_template_directory_uri()) . '/assets/libraries/images');
 }
 
-if (!defined('TAYPO_DIR_Template_PATH')) {
-    define('TAYPO_DIR_Template_PATH', untrailingslashit('templates'));
+if (!defined('TAYPO_DIR_TEMPLATE_PATH')) {
+    define('TAYPO_DIR_TEMPLATE_PATH', untrailingslashit('templates'));
+}
+
+if (!defined('TAYPO_DIR_FEATURE_PATH')) {
+    define('TAYPO_DIR_FEATURE_PATH', untrailingslashit('templates/features'));
 }
 
 

@@ -26,8 +26,6 @@
 
 - ADD privacy policy template
 
-- Add Breadcrumbs
-
 - Add 'Team' post type
 
 - Add 'Team' single
@@ -42,4 +40,9 @@
 
 ### Don:
 
-- Added 'Testimonial' Features
+- Added Breadcrumbs using AIO SEO plugin ✓
+- Added 'Breadcrumb Group Field' in ACF so the user can decide whether they want the breadcrumb or not ✓
+- Separated 'Content Placement' code and placed it in "content-placement.php" ✓
+- Removed Content Placement (Page) ✓
+- Moved 'features' into 'template/features' folder ✓
+- Added new path in 'functions.php' for features ✓

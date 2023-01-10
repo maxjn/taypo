@@ -1,6 +1,6 @@
 {
     "key": "group_63a442b032dd8",
-    "title": "Content Placement (Front Page)",
+    "title": "Content Placement",
     "fields": [
         {
             "key": "field_63a442b004508",
@@ -8,7 +8,7 @@
             "name": "content_placement",
             "aria-label": "",
             "type": "flexible_content",
-            "instructions": "Placement of the page blocks.\r\nIf nothing is selected the default placement will be shown.",
+            "instructions": "Placement of contents on every page.\r\nIf nothing is selected the default placement will be shown.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -4401,6 +4401,23 @@
                 "operator": "==",
                 "value": "front-page-settings"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            },
+            {
+                "param": "page_type",
+                "operator": "!=",
+                "value": "front_page"
+            },
+            {
+                "param": "page_type",
+                "operator": "!=",
+                "value": "posts_page"
+            }
         ]
     ],
     "menu_order": 0,
@@ -4410,7 +4427,7 @@
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
-    "description": "Manage Contents placement on Front Page",
+    "description": "Manage Contents placement",
     "show_in_rest": 0,
-    "modified": 1673336960
+    "modified": 1673351927
 }

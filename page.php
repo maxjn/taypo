@@ -14,19 +14,20 @@ $query = new WP_Query($args);
 get_header();
 ?>
 
-
-
 <!--body content start-->
 
 <div class="page-content">
 
-    <!--single post start-->
-
-
-
-
     <?php
-    $i = 0; //layout andis number
+    // Breadcrumbs
+    if (get_field('breadcrumb')) {
+        get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\header\breadcrumb');
+    }
+    // Breadcrumbs ### -->
+    ?>
+    <!--single Page start-->
+    <?php
+    $i = 0; //layout index number
     //dynamic content
     if (have_rows('content_placement')) {
         while (have_rows('content_placement')) {
@@ -40,73 +41,25 @@ get_header();
             // Content & Comments Open
             if ($layout == 'comment_section' || $layout == 'content_section') {
     ?>
-    <section>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <?php
+                <section>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                            <?php
                         }
 
-                        switch ($layout) {
-                            case 'hero_secction_1':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\hero\hero1', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'hero_secction_2':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\hero\hero2', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'hero_secction_3':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\hero\hero3', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'feature_box_1':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\feature-box\featurebox1', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'feature_box_2':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\feature-box\featurebox2', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'feature_box_3':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\feature-box\featurebox3', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'feature_box_4':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\feature-box\featurebox4', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'accordion_1':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\accordian\accordian1', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'accordion_2':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\accordian\accordian2', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'banner':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\banner\banner', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'counter':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\counter\counter', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'latest_posts_1':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\card\blog\container\blog-card-small', null, ['query' => $query]);
-                                break;
-                            case 'latest_posts_2':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\card\blog\container\blog-list-big', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'price_table_1':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\card\price-card\price1', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'price_table_2':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\card\price-card\price2', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                            case 'price_table_3':
-                                get_template_part(TAYPO_DIR_Template_PATH . '\card\price-card\price3', null, ['fields' => $layout_fields[$i]]);
-                                break;
-                        }
+                        // Content Placement
+                        get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\content-placement', null, ['layout' => [$layout, $i], 'layout_fields' => $layout_fields]);
 
 
                         // Content & Comments Close Tags
                         if ($layout == 'comment_section' || $layout == 'content_section') {
                             ?>
-                </div>
-            </div>
-        </div>
-    </section>
-    <?php
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        <?php
                         }
                         $i++;
                     }
@@ -115,21 +68,21 @@ get_header();
                 else {
 
         ?>
-    <section>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <?php
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <?php
 
                         the_content();
 
                         comments_template('');
 
                         ?>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     <?php
                 }
     ?>
