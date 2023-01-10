@@ -79,6 +79,15 @@ get_header();
                 case 'price_table_3':
                     get_template_part(TAYPO_DIR_Template_PATH . '\card\price-card\price3', null, ['fields' => $layout_fields[$i]]);
                     break;
+                case 'testimonial_1':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\card\testimonial\testimonial1', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'testimonial_2':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\card\testimonial\testimonial2', null, ['fields' => $layout_fields[$i]]);
+                    break;
+                case 'testimonial_3':
+                    get_template_part(TAYPO_DIR_Template_PATH . '\card\testimonial\testimonial3', null, ['fields' => $layout_fields[$i]]);
+                    break;
             }
 
 

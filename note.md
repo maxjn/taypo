@@ -28,8 +28,6 @@
 
 - Add Breadcrumbs
 
-- Add 'Testimonial' Features
-
 - Add 'Team' post type
 
 - Add 'Team' single
@@ -44,6 +42,4 @@
 
 ### Don:
 
-- fixed acf fields' names:deleted repeater name prefixes ✓
-
-- fixed content fields designs ✓
+- Added 'Testimonial' Features
