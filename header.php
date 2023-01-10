@@ -20,7 +20,7 @@
 
         <div id="ht-preloader">
             <div class="loader clear-loader">
-                <img src="<?= get_template_directory_uri() ?>/assets/libraries/images/loader.gif" alt="">
+                <img src="<?= TAYPO_DIR_IMG_URI ?>/loader.gif" alt="">
             </div>
         </div>
 
@@ -32,14 +32,14 @@
                 <div class="container">
                     <div class="row">
                         <!--menu start-->
-                        <?php get_template_part('templates/header/nav') ?>
+                        <?php get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\header\nav') ?>
                         <!--menu end-->
                     </div>
                 </div>
             </div>
         </header>
 
-        <?php get_template_part('templates\sidebar\public-sidebar');  ?>
+        <?php get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\sidebar\public-sidebar');  ?>
 
 
         <!--header end-->

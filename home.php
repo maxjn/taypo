@@ -2,10 +2,11 @@
 get_header();
 
 
-get_template_part('templates\hero\hero-title')
+// Breadcrumbs
+get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\header\breadcrumb');
+// Breadcrumbs ### -->
 ?>
 <!--body content start-->
-
 <div class="page-content">
     <!--body content start-->
 

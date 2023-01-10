@@ -1024,8 +1024,21 @@ Other
   color: var(--white);
 }
 
-a.bread-crumb-link {
+/* ------------------------
+    Breadcrumbs
+------------------------*/
+.aioseo-breadcrumbs {
   display: flex;
+  gap: 0.5rem;
+}
+
+.aioseo-breadcrumb a:hover,
+.aioseo-breadcrumbs:last-child {
+  color: var(--primary);
+}
+.aioseo-breadcrumb a,
+.aioseo-breadcrumb-separator {
+  color: var(--text-dark);
 }
 
 /* ------------------------

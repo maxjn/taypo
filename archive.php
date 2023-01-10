@@ -1,20 +1,25 @@
 <?php
 get_header();
 
-///*Title
-if (!is_author()) {
-    get_template_part('templates\hero\hero-title');
-}
+
+
 ?>
 <!--body content start-->
 
 <div class="page-content">
     <?php
+
     if (is_author()) {
-        get_template_part('templates\archive\author-info');
+        // Author Info
+        get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\archive\author-info');
+        // Author Info ### -->
+    } else {
+        // Breadcrumbs
+        get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\header\breadcrumb');
+        // Breadcrumbs ### -->
     }
     ///*Posts
-    get_template_part('templates\card\blog\container\blog-card-small');
+    get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\card\blog\container\blog-card-small');
     ?>
 </div>
 

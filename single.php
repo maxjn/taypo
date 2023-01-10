@@ -2,25 +2,28 @@
 get_header();
 ?>
 
-
-
 <!--body content start-->
-
 <div class="page-content">
 
+    <?php
+    // Breadcrumbs
+    if (get_field('breadcrumb')) {
+        get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\header\breadcrumb');
+    }
+    // Breadcrumbs ### -->
+    ?>
     <!--single post start-->
-
     <section>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
 
                     <?php
-                    get_template_part('templates\single\hero-single');
+                    get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\single\hero-single');
 
                     the_content();
 
-                    get_template_part('templates\single\single-meta');
+                    get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\single\single-meta');
                     // Related Posts -->
                     $related_posts = get_field('related_posts');
                     if ($related_posts) {
@@ -35,11 +38,9 @@ get_header();
 
                         // The Query
                         $query = new WP_Query($args);
-                        get_template_part('templates\card\blog\container\blog-card-medium', null, ['query' => $query]);
+                        get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\card\blog\container\blog-card-medium', null, ['query' => $query]);
                     }
                     // Related Posts ### -->
-
-
 
                     comments_template('');
 
@@ -49,11 +50,9 @@ get_header();
             </div>
         </div>
     </section>
-
     <!--single end-->
 
 </div>
-
 <!--body content end-->
 
 <?php
