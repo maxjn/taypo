@@ -19,7 +19,21 @@ get_header();
         // Breadcrumbs ### -->
     }
     ///*Posts
-    get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\card\blog\container\blog-card-small');
+
+    if (is_post_type_archive('post') || is_category() || is_tag()) {
+        get_template_part(TAYPO_DIR_TEMPLATE_PATH . '\card\blog\container\blog-card-small');
+    } elseif (is_tax('portfolio_category')) {
+    ?>
+    <section>
+        <div class="container">
+            <?php
+                // Portfolio Card
+                get_template_part(TAYPO_DIR_FEATURE_PATH . '\portfolio\content\portfolio-posts');
+                ?>
+        </div>
+    </section>
+    <?php
+    }
     ?>
 </div>
 

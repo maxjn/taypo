@@ -31,7 +31,8 @@ if (isset($args['query'])) { // if there was a $query->
 
         </div>
 
-        <?php // *Pagination
+        <?php
+                // *Pagination
                 get_template_part('templates\archive\pagination');
                 ?>
 

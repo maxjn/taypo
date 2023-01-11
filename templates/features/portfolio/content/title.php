@@ -1,7 +1,10 @@
 <?php
-$post_id = (is_page() && !is_front_page()) ? get_the_ID() : 'options';
-$selector = (is_page() || is_front_page()) ? 'title' : 'portfolio_blog_title';
-$title = get_field($selector, $post_id);
+
+if (isset($args['fields'])) {
+    $fields = $args['fields'];
+}
+$title = $fields ? $fields['title'] : get_field('portfolio_blog_title', 'options');
+
 ?>
 <!-- Title -->
 <div class="col-12 col-md-12 col-lg-5">
