@@ -18,7 +18,7 @@ if (is_home() || is_front_page()) {
 
         <div class="page-content">
             <?php
-            if (is_home() && current_user_can('publish_posts')) {
+            if ((is_home() || is_front_page() || is_archive()) || is_page() && current_user_can('publish_posts')) {
             ?>
             <p>
                 <?php

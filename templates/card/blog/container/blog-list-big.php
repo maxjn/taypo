@@ -90,6 +90,8 @@ $query = new WP_Query($args);
                             }
                             $item--;
                         endwhile;
+                    } else {
+                        get_template_part('templates\content-non');
                     }
                     wp_reset_query();
                                     ?>
