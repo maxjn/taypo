@@ -60,7 +60,8 @@ class Taxonomies
             'show_ui'           => true,
             'show_admin_column' => true,
             'query_var'         => true,
-            'rewrite'      => false
+            'rewrite'           => false,
+
         );
 
         register_taxonomy('portfolio_category', array('portfolio'), $args);

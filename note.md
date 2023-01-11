@@ -33,7 +33,6 @@
 - Add 'Team' archive
 
 - Add 'Team' Features
-
 ### Don:
 
 - Added 'Portfolio' post type ✓
@@ -51,3 +50,4 @@
 - Separated portfolio card code ✓
 
 - Added pagination for portfolios ✓
+
