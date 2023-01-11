@@ -3,6 +3,18 @@ if (isset($args['layout']) && isset($args['layout_fields'])) {
     $layout = $args['layout'][0];
     $i = $args['layout'][1];
     $layout_fields = $args['layout_fields'];
+
+    // WP_Query argument For the last 3 posts
+    $args = array(
+        'post_type'              => array('post'), // use any for any kind of post type, custom post type slug for custom post type
+        'post_status'            => array('publish'), // Also support: pending, draft, auto-draft, future, private, inherit, trash, any
+        'posts_per_page'         => '3', // use -1 for all post
+        'order'                  => 'DESC', // Also support: ASC
+        'orderby'                => 'date', // Also support: none, rand, id, title, slug, modified, parent, menu_order, comment_count
+    );
+
+    // The Query
+    $query = new WP_Query($args);
 }
 switch ($layout) {
     case 'hero_secction_1':
@@ -61,6 +73,9 @@ switch ($layout) {
         break;
     case 'testimonial_3':
         get_template_part(TAYPO_DIR_FEATURE_PATH . '\testimonial\testimonial3', null, ['fields' => $layout_fields[$i]]);
+        break;
+    case 'portfolio':
+        get_template_part(TAYPO_DIR_FEATURE_PATH . '\portfolio\container\portfolio');
         break;
     case 'comment_section':
         if (!is_front_page()) {

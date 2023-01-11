@@ -1,4 +1,4 @@
-###### TODO:
+### TODO:
 
 - File Structure ✓
 - Adding Theme assets ✓
@@ -32,17 +32,16 @@
 
 - Add 'Team' Features
 
-- Add 'Portfolio' post type
-
-- Add 'Portfolio' single
-
 - Add 'Portfolio' Features
+
+- Fix Portfolio Title
 
 ### Don:
 
-- Added Breadcrumbs using AIO SEO plugin ✓
-- Added 'Breadcrumb Group Field' in ACF so the user can decide whether they want the breadcrumb or not ✓
-- Separated 'Content Placement' code and placed it in "content-placement.php" ✓
-- Removed Content Placement (Page) ✓
-- Moved 'features' into 'template/features' folder ✓
-- Added new path in 'functions.php' for features ✓
+- Added 'Portfolio' post type ✓
+
+- Added 'Portfolio' single ✓
+
+- Added 'Portfolio' Archive Page ✓
+
+- Fixed 'content-non.php' to be shown on front and archive pages correctly ✓

@@ -4387,6 +4387,36 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_63be874c70614": {
+                    "key": "layout_63be874c70614",
+                    "name": "portfolio",
+                    "label": "Portfolio",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63be875b70616",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Some of our Creative & Finest Work.",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -4429,5 +4459,5 @@
     "active": true,
     "description": "Manage Contents placement",
     "show_in_rest": 0,
-    "modified": 1673351927
+    "modified": 1673430896
 }

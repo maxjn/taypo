@@ -1042,6 +1042,12 @@ Other
 }
 
 /* ------------------------
+    Portfolio Single
+------------------------*/
+.cases-meta li {
+  gap: 0.5rem;
+}
+/* ------------------------
     Comments Output
 ------------------------*/
 /* https://www.wpbeginner.com/wp-themes/how-to-style-your-wordpress-comments-layout/ */
