@@ -30,11 +30,9 @@
 
 - Add 'Team' single
 
+- Add 'Team' archive
+
 - Add 'Team' Features
-
-- Add 'Portfolio' Features
-
-- Fix Portfolio Title
 
 ### Don:
 
@@ -45,3 +43,11 @@
 - Added 'Portfolio' Archive Page ✓
 
 - Fixed 'content-non.php' to be shown on front and archive pages correctly ✓
+
+- Add 'Portfolio' Features ✓
+
+- Fixed Portfolio Title ✓
+
+- Separated portfolio card code ✓
+
+- Added pagination for portfolios ✓
