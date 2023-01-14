@@ -25,29 +25,16 @@
 ### TODO:
 
 - ADD privacy policy template
+- Add Forgot Password Ajax
 
-- Add 'Team' post type
+### Don:
+
+- Added 'Team' post type
 
 - Add 'Team' single
 
 - Add 'Team' archive
 
 - Add 'Team' Features
-### Don:
 
-- Added 'Portfolio' post type ✓
-
-- Added 'Portfolio' single ✓
-
-- Added 'Portfolio' Archive Page ✓
-
-- Fixed 'content-non.php' to be shown on front and archive pages correctly ✓
-
-- Add 'Portfolio' Features ✓
-
-- Fixed Portfolio Title ✓
-
-- Separated portfolio card code ✓
-
-- Added pagination for portfolios ✓
-
+- Added custom post types and their taxonomies to a plugin called 'Taypo Post Type'

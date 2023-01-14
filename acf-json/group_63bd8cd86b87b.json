@@ -1,6 +1,6 @@
 {
     "key": "group_63bd8cd86b87b",
-    "title": "Portfolio Features",
+    "title": "Portfolio Information",
     "fields": [
         {
             "key": "field_63bd8e3a86388",
@@ -139,7 +139,7 @@
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
-    "description": "",
+    "description": "Additional information about the work",
     "show_in_rest": 0,
-    "modified": 1673367134
+    "modified": 1673453461
 }

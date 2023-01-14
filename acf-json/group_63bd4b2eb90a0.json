@@ -48,6 +48,13 @@
                 "operator": "==",
                 "value": "portfolio"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "team_member"
+            }
         ]
     ],
     "menu_order": 0,
@@ -59,5 +66,5 @@
     "active": true,
     "description": "Whether to show breadcrumb or not",
     "show_in_rest": 0,
-    "modified": 1673362193
+    "modified": 1673532677
 }
