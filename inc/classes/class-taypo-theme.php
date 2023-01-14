@@ -18,8 +18,6 @@ class TAYPO_THEME
     {
         Assets::get_instance();
         ACF_Settings::get_instance();
-        Taxonomies::get_instance();
-        Post_Types::get_instance();
         Menus::get_instance();
         Sidebars::get_instance();
         Btn_Ajax::get_instance();

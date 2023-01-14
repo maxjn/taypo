@@ -75,8 +75,14 @@ switch ($layout) {
         get_template_part(TAYPO_DIR_FEATURE_PATH . '\testimonial\testimonial3', null, ['fields' => $layout_fields[$i]]);
         break;
     case 'portfolio':
-        get_template_part(TAYPO_DIR_FEATURE_PATH . '\portfolio\container\portfolio-feature', null, ['fields' => $layout_fields[$i]]);
-
+        if (post_type_exists('portfolio')) {
+            get_template_part(TAYPO_DIR_FEATURE_PATH . '\portfolio\container\portfolio-feature', null, ['fields' => $layout_fields[$i]]);
+        }
+        break;
+    case 'team_members':
+        if (post_type_exists('team_member')) {
+            get_template_part(TAYPO_DIR_FEATURE_PATH . '\team\container\team-feature', null, ['fields' => $layout_fields[$i]]);
+        }
         break;
     case 'comment_section':
         if (!is_front_page()) {

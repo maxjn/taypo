@@ -33,6 +33,17 @@ get_header();
         </div>
     </section>
     <?php
+    } elseif (is_tax('team_member_position')) {
+    ?>
+    <section>
+        <div class="container">
+            <?php
+                // Portfolio Card
+                get_template_part(TAYPO_DIR_FEATURE_PATH . '\team\content\team-posts');
+                ?>
+        </div>
+    </section>
+    <?php
     }
     ?>
 </div>
